@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 /// <summary>
 /// Represents a doorway that transitions the player to another room.
@@ -6,6 +7,10 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
     [SerializeField] private string targetScene;
+    [SerializeField] private string requiredItemId;
+    [SerializeField] private bool consumeItem;
+    [SerializeField] private UnityEvent onOpened;
+    [SerializeField] private UnityEvent onFailed;
 
     private RoomManager roomManager;
 
@@ -15,14 +20,31 @@ public class Door : MonoBehaviour
     }
 
     /// <summary>
-    /// Loads the configured scene and applies atmosphere settings.
+    /// Attempts to open the door using the player's inventory.
     /// </summary>
-    public void Enter()
+    public bool Interact(InventorySystem inventory, UIManager ui)
     {
-        if (roomManager == null) return;
-        if (!string.IsNullOrEmpty(targetScene))
+        if (!string.IsNullOrEmpty(requiredItemId))
+        {
+            if (!inventory.HasItem(requiredItemId))
+            {
+                onFailed?.Invoke();
+                ui?.ShowFlavourText($"You need {requiredItemId}");
+                return false;
+            }
+            if (consumeItem)
+            {
+                inventory.UseItem(requiredItemId);
+                ui?.RefreshInventory(inventory);
+            }
+        }
+
+        onOpened?.Invoke();
+
+        if (roomManager != null && !string.IsNullOrEmpty(targetScene))
         {
             roomManager.LoadRoom(targetScene);
         }
+        return true;
     }
 }

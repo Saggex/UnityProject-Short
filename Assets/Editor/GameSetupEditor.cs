@@ -4,6 +4,7 @@ using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using TMPro;
 
 /// <summary>
 /// Automates initial game setup by creating required prefabs and
@@ -108,13 +109,11 @@ public static class GameSetupEditor
 
         var flavourTextGO = new GameObject("FlavourText");
         flavourTextGO.transform.SetParent(canvasGO.transform, false);
-        var flavourText = flavourTextGO.AddComponent<Text>();
-        flavourText.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+        var flavourText = flavourTextGO.AddComponent<TextMeshProUGUI>();
 
         var promptGO = new GameObject("Prompt");
         promptGO.transform.SetParent(canvasGO.transform, false);
-        var promptText = promptGO.AddComponent<Text>();
-        promptText.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+        var promptText = promptGO.AddComponent<TextMeshProUGUI>();
         promptGO.SetActive(false);
 
         var uiSO = new SerializedObject(uiManager);
