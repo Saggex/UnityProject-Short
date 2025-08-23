@@ -189,8 +189,8 @@ TextureImporter:
       name: items_3
       rect:
         serializedVersion: 2
-        x: 48
-        y: 32
+        x: 0
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -210,7 +210,7 @@ TextureImporter:
       name: items_4
       rect:
         serializedVersion: 2
-        x: 0
+        x: 16
         y: 16
         width: 16
         height: 16
@@ -231,7 +231,7 @@ TextureImporter:
       name: items_5
       rect:
         serializedVersion: 2
-        x: 16
+        x: 32
         y: 16
         width: 16
         height: 16
@@ -252,8 +252,8 @@ TextureImporter:
       name: items_6
       rect:
         serializedVersion: 2
-        x: 32
-        y: 16
+        x: 0
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -273,8 +273,8 @@ TextureImporter:
       name: items_7
       rect:
         serializedVersion: 2
-        x: 48
-        y: 16
+        x: 16
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -294,7 +294,7 @@ TextureImporter:
       name: items_8
       rect:
         serializedVersion: 2
-        x: 0
+        x: 32
         y: 0
         width: 16
         height: 16
@@ -315,7 +315,7 @@ TextureImporter:
       name: items_9
       rect:
         serializedVersion: 2
-        x: 32
+        x: 48
         y: 0
         width: 16
         height: 16
@@ -328,27 +328,6 @@ TextureImporter:
       bones: []
       spriteID: 2202141cf1b2a5b4eb8caaa75bcc51f0
       internalID: 1308019174
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: items_10
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 906b2536546dcb34c8c78167794f95a8
-      internalID: -2074524197
       vertices: []
       indices: 
       edges: []
@@ -366,7 +345,6 @@ TextureImporter:
     nameFileIdTable:
       items_0: 1150153907
       items_1: -1102455800
-      items_10: -2074524197
       items_2: -526125788
       items_3: -682074173
       items_4: -658061052

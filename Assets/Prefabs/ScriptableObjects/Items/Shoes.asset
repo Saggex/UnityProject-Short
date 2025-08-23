@@ -15,4 +15,4 @@ MonoBehaviour:
   id: 8
   displayName: Slippers
   description: Too big, but comfy.
-  sprite: {fileID: -658061052, guid: 6ceed08971aaccc4aa8a891e8b130520, type: 3}
+  sprite: {fileID: -682074173, guid: 6ceed08971aaccc4aa8a891e8b130520, type: 3}
