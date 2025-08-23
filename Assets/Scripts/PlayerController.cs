@@ -1,9 +1,10 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
 /// Handles player movement, crouch/tiptoe, and basic interaction input.
 /// </summary>
-[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Rigidbody2D), typeof(Collider2D), typeof(ScaleWithDepth))]
 public class PlayerController : MonoBehaviour
 {
     [Header("Movement Settings")]
@@ -13,12 +14,14 @@ public class PlayerController : MonoBehaviour
     [Header("References")]
     [SerializeField] private InventorySystem inventory;
     [SerializeField] private UIManager ui;
-    [SerializeField] private float interactRange = 1f;
 
     private Rigidbody2D rb;
     private Vector2 input;
     private Vector2 facing = Vector2.down;
     private bool isTiptoeing;
+
+    private readonly List<ItemPickup> nearbyPickups = new();
+    private readonly List<GhostAI> nearbyGhosts = new();
 
     private void Awake()
     {
@@ -37,7 +40,12 @@ public class PlayerController : MonoBehaviour
 
     private void HandleInput()
     {
-        input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        input = Vector2.zero;
+        if (Input.GetKey(KeyCode.W)) input.y += 1f;
+        if (Input.GetKey(KeyCode.S)) input.y -= 1f;
+        if (Input.GetKey(KeyCode.A)) input.x -= 1f;
+        if (Input.GetKey(KeyCode.D)) input.x += 1f;
+
         if (input.sqrMagnitude > 0.01f)
         {
             facing = input;
@@ -59,13 +67,9 @@ public class PlayerController : MonoBehaviour
 
     private void Interact()
     {
-        var hit = Physics2D.Raycast(rb.position, facing, interactRange);
-        if (!hit)
-            return;
-
-        var pickup = hit.collider.GetComponent<ItemPickup>();
-        if (pickup != null)
+        if (nearbyPickups.Count > 0)
         {
+            var pickup = nearbyPickups[0];
             inventory.AddItem(pickup.Item);
             ui?.RefreshInventory(inventory);
             ui?.ShowFlavourText($"Picked up {pickup.Item.DisplayName}");
@@ -73,9 +77,9 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        var ghost = hit.collider.GetComponent<GhostAI>();
-        if (ghost != null)
+        if (nearbyGhosts.Count > 0)
         {
+            var ghost = nearbyGhosts[0];
             if (inventory.HasItem(ghost.RequiredItemId))
             {
                 var item = inventory.UseItem(ghost.RequiredItemId);
@@ -86,6 +90,36 @@ public class PlayerController : MonoBehaviour
             {
                 ui?.ShowFlavourText($"You need {ghost.RequiredItemId}");
             }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        var pickup = collision.GetComponent<ItemPickup>();
+        if (pickup != null && !nearbyPickups.Contains(pickup))
+        {
+            nearbyPickups.Add(pickup);
+        }
+
+        var ghost = collision.GetComponent<GhostAI>();
+        if (ghost != null && !nearbyGhosts.Contains(ghost))
+        {
+            nearbyGhosts.Add(ghost);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        var pickup = collision.GetComponent<ItemPickup>();
+        if (pickup != null)
+        {
+            nearbyPickups.Remove(pickup);
+        }
+
+        var ghost = collision.GetComponent<GhostAI>();
+        if (ghost != null)
+        {
+            nearbyGhosts.Remove(ghost);
         }
     }
 }
