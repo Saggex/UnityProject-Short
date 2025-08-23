@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
 
     private readonly List<ItemPickup> nearbyPickups = new();
     private readonly List<GhostAI> nearbyGhosts = new();
+    private readonly List<Door> nearbyDoors = new();
 
     private void Awake()
     {
@@ -77,6 +78,13 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
+        if (nearbyDoors.Count > 0)
+        {
+            var door = nearbyDoors[0];
+            door.Enter();
+            return;
+        }
+
         if (nearbyGhosts.Count > 0)
         {
             var ghost = nearbyGhosts[0];
@@ -101,11 +109,20 @@ public class PlayerController : MonoBehaviour
             nearbyPickups.Add(pickup);
         }
 
+        var door = collision.GetComponent<Door>();
+        if (door != null && !nearbyDoors.Contains(door))
+        {
+            nearbyDoors.Add(door);
+        }
+
         var ghost = collision.GetComponent<GhostAI>();
         if (ghost != null && !nearbyGhosts.Contains(ghost))
         {
             nearbyGhosts.Add(ghost);
         }
+
+        var highlight = collision.GetComponent<IHighlightable>();
+        highlight?.SetHighlighted(true);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -116,10 +133,19 @@ public class PlayerController : MonoBehaviour
             nearbyPickups.Remove(pickup);
         }
 
+        var door = collision.GetComponent<Door>();
+        if (door != null)
+        {
+            nearbyDoors.Remove(door);
+        }
+
         var ghost = collision.GetComponent<GhostAI>();
         if (ghost != null)
         {
             nearbyGhosts.Remove(ghost);
         }
+
+        var highlight = collision.GetComponent<IHighlightable>();
+        highlight?.SetHighlighted(false);
     }
 }
