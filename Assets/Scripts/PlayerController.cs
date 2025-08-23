@@ -12,18 +12,12 @@ public class PlayerController : MonoBehaviour
 
     [Header("References")]
     [SerializeField] private InventorySystem inventory;
-<<<<<<< HEAD
     [SerializeField] private UIManager ui;
     [SerializeField] private float interactRange = 1f;
 
     private Rigidbody2D rb;
     private Vector2 input;
     private Vector2 facing = Vector2.down;
-=======
-
-    private Rigidbody2D rb;
-    private Vector2 input;
->>>>>>> main
     private bool isTiptoeing;
 
     private void Awake()
@@ -33,10 +27,6 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-<<<<<<< HEAD
-=======
-        // TODO: Gather input for movement and interactions.
->>>>>>> main
         HandleInput();
     }
 
@@ -47,7 +37,6 @@ public class PlayerController : MonoBehaviour
 
     private void HandleInput()
     {
-<<<<<<< HEAD
         input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         if (input.sqrMagnitude > 0.01f)
         {
@@ -57,13 +46,6 @@ public class PlayerController : MonoBehaviour
         isTiptoeing = Input.GetKey(KeyCode.LeftShift) || Input.GetButton("Fire2");
 
         if (Input.GetKeyDown(KeyCode.E) || Input.GetButtonDown("Fire1"))
-=======
-        // Placeholder for keyboard/controller input.
-        input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        isTiptoeing = Input.GetKey(KeyCode.LeftShift);
-
-        if (Input.GetKeyDown(KeyCode.E))
->>>>>>> main
         {
             Interact();
         }
@@ -77,7 +59,6 @@ public class PlayerController : MonoBehaviour
 
     private void Interact()
     {
-<<<<<<< HEAD
         var hit = Physics2D.Raycast(rb.position, facing, interactRange);
         if (!hit)
             return;
@@ -106,8 +87,5 @@ public class PlayerController : MonoBehaviour
                 ui?.ShowFlavourText($"You need {ghost.RequiredItemId}");
             }
         }
-=======
-        // Placeholder for interaction logic.
->>>>>>> main
     }
 }

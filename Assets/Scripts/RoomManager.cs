@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class RoomManager : MonoBehaviour
 {
-<<<<<<< HEAD
     [System.Serializable]
     public class RoomSettings
     {
@@ -17,18 +16,11 @@ public class RoomManager : MonoBehaviour
 
     [SerializeField] private SoundManager soundManager;
     [SerializeField] private RoomSettings[] rooms;
-
-=======
->>>>>>> main
     /// <summary>
     /// Loads a room scene by name.
     /// </summary>
     public void LoadRoom(string sceneName)
     {
-<<<<<<< HEAD
-=======
-        // Placeholder for transition effects.
->>>>>>> main
         SceneManager.LoadScene(sceneName);
     }
 
@@ -37,7 +29,6 @@ public class RoomManager : MonoBehaviour
     /// </summary>
     public void ApplyAtmosphere(string roomId)
     {
-<<<<<<< HEAD
         foreach (var room in rooms)
         {
             if (room.roomId != roomId) continue;
@@ -49,8 +40,5 @@ public class RoomManager : MonoBehaviour
             RenderSettings.ambientLight = room.ambientLight;
             break;
         }
-=======
-        // Implementation specific to project setup.
->>>>>>> main
     }
 }
