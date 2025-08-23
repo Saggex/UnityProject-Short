@@ -12,6 +12,7 @@ using UnityEngine.EventSystems;
 public static class GameSetupEditor
 {
     private const string CanvasPrefabPath = "Assets/Prefabs/UICanvas.prefab";
+    private const string InventoryButtonPrefabPath = "Assets/Prefabs/InventoryButton.prefab";
 
     [MenuItem("Tools/Setup Game")]
     public static void SetupGame()
@@ -98,10 +99,8 @@ public static class GameSetupEditor
         panelImage.color = new Color(0f, 0f, 0f, 0.5f);
         inventoryPanel.SetActive(false);
 
-        var inventoryTextGO = new GameObject("InventoryText");
-        inventoryTextGO.transform.SetParent(inventoryPanel.transform, false);
-        var inventoryText = inventoryTextGO.AddComponent<Text>();
-        inventoryText.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+        var gridGO = new GameObject("InventoryGrid");
+        gridGO.transform.SetParent(inventoryPanel.transform, false);
 
         var flavourTextGO = new GameObject("FlavourText");
         flavourTextGO.transform.SetParent(canvasGO.transform, false);
@@ -115,7 +114,9 @@ public static class GameSetupEditor
         promptGO.SetActive(false);
 
         var uiSO = new SerializedObject(uiManager);
-        uiSO.FindProperty("inventoryText").objectReferenceValue = inventoryText;
+        uiSO.FindProperty("inventoryContainer").objectReferenceValue = gridGO.transform;
+        uiSO.FindProperty("inventoryButtonPrefab").objectReferenceValue =
+            AssetDatabase.LoadAssetAtPath<InventoryButton>(InventoryButtonPrefabPath);
         uiSO.FindProperty("flavourText").objectReferenceValue = flavourText;
         uiSO.FindProperty("prompt").objectReferenceValue = promptGO;
         uiSO.ApplyModifiedProperties();

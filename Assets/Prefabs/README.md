@@ -31,9 +31,10 @@ This folder holds reusable templates for the game's interaction systems. Drop th
 ## SoundManager.prefab
 - Uses two `AudioSource` components for music and effects. Link the sources to the script fields and assign audio clips as needed.
 
-## UIManager.prefab and UICanvas.prefab
-- `UICanvas` includes sample text objects.
-- `UIManager` should reference UI elements on the canvas such as **inventoryText**, **flavourText**, and **prompt**.
+## UICanvas.prefab and InventoryButton.prefab
+- `UICanvas` contains an `InventoryPanel` with a child `InventoryGrid` where item buttons are spawned at runtime.
+- `UIManager` should reference **inventoryContainer**, **inventoryButtonPrefab**, **flavourText**, and **prompt**.
+- `InventoryButton` is a basic `Button` with an `Image` and `InventoryButton` script.
 
 ## ScriptableObjects/Items
 - Contains example `Item` assets. Duplicate `SampleItem.asset` to create new items.
