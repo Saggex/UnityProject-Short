@@ -80,19 +80,16 @@ public class PlayerController : MonoBehaviour
         if (nearbyPickups.Count > 0)
         {
             var pickup = nearbyPickups[0];
-            Debug.Log($"[PlayerController] Picking up {pickup.Item.DisplayName}");
-            inventory.AddItem(pickup.Item);
-            ui?.RefreshInventory(inventory);
-            ui?.ShowFlavourText($"Picked up {pickup.Item.DisplayName}");
-            Destroy(pickup.gameObject);
+            Debug.Log($"[PlayerController] Interacting with pickup {pickup.name}");
+            pickup.Interact(inventory, ui);
             return;
         }
 
         if (nearbyDoors.Count > 0)
         {
             var door = nearbyDoors[0];
-            Debug.Log($"[PlayerController] Entering door {door.name}");
-            door.Enter();
+            Debug.Log($"[PlayerController] Interacting with door {door.name}");
+            door.Interact(inventory, ui);
             return;
         }
 
@@ -100,18 +97,7 @@ public class PlayerController : MonoBehaviour
         {
             var ghost = nearbyGhosts[0];
             Debug.Log($"[PlayerController] Interacting with ghost {ghost.name}");
-            if (inventory.HasItem(ghost.RequiredItemId))
-            {
-                var item = inventory.UseItem(ghost.RequiredItemId);
-                Debug.Log($"[PlayerController] Using {ghost.RequiredItemId} on ghost {ghost.name}");
-                ghost.TrySatisfy(item);
-                ui?.RefreshInventory(inventory);
-            }
-            else
-            {
-                Debug.Log($"[PlayerController] Missing required item {ghost.RequiredItemId} for ghost {ghost.name}");
-                ui?.ShowFlavourText($"You need {ghost.RequiredItemId}");
-            }
+            ghost.Interact(inventory, ui);
         }
     }
 
