@@ -11,6 +11,8 @@ public class ItemPickup : MonoBehaviour
     [SerializeField] private bool consumeItem;
     [SerializeField] private UnityEvent onPickedUp;
     [SerializeField] private UnityEvent onFailed;
+    [SerializeField] [TextArea] private string[] successResponses;
+    [SerializeField] [TextArea] private string[] failedResponses;
 
     /// <summary>
     /// The item granted when picked up.
@@ -27,7 +29,7 @@ public class ItemPickup : MonoBehaviour
             if (!inventory.HasItem(requiredItemId))
             {
                 onFailed?.Invoke();
-                ui?.ShowFlavourText($"You need {requiredItemId}");
+                ui?.ShowFlavourText(GetRandomResponse(failedResponses) ?? $"You need {requiredItemId}");
                 return false;
             }
             if (consumeItem)
@@ -39,9 +41,15 @@ public class ItemPickup : MonoBehaviour
 
         inventory.AddItem(item);
         ui?.RefreshInventory(inventory);
-        ui?.ShowFlavourText($"Picked up {item.DisplayName}");
+        ui?.ShowFlavourText(GetRandomResponse(successResponses) ?? $"Picked up {item.DisplayName}");
         onPickedUp?.Invoke();
         Destroy(gameObject);
         return true;
+    }
+
+    private string GetRandomResponse(string[] responses)
+    {
+        if (responses == null || responses.Length == 0) return null;
+        return responses[Random.Range(0, responses.Length)];
     }
 }
