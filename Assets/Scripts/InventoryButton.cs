@@ -5,18 +5,19 @@ using UnityEngine.UI;
 /// UI button representing an inventory item. Displays the item's sprite and
 /// forwards click events to the UIManager for flavour text display.
 /// </summary>
-[RequireComponent(typeof(Button), typeof(Image))]
+[RequireComponent(typeof(Button))]
 public class InventoryButton : MonoBehaviour
 {
-    private Item item;
-    private UIManager ui;
-    private Image icon;
-    private Button button;
+    public Item item;
+    public UIManager ui;
+    public Image icon;
+    public Button button;
 
     private void Awake()
     {
-        icon = GetComponent<Image>();
+        icon = GetComponentInChildren<Image>();
         button = GetComponent<Button>();
+        button.onClick.AddListener(OnClick);
     }
 
     /// <summary>
