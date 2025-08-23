@@ -11,6 +11,8 @@ public class Door : MonoBehaviour
     [SerializeField] private bool consumeItem;
     [SerializeField] private UnityEvent onOpened;
     [SerializeField] private UnityEvent onFailed;
+    [SerializeField] [TextArea] private string[] successResponses;
+    [SerializeField] [TextArea] private string[] failedResponses;
 
     private RoomManager roomManager;
 
@@ -29,7 +31,7 @@ public class Door : MonoBehaviour
             if (!inventory.HasItem(requiredItemId))
             {
                 onFailed?.Invoke();
-                ui?.ShowFlavourText($"You need {requiredItemId}");
+                ui?.ShowFlavourText(GetRandomResponse(failedResponses) ?? $"You need {requiredItemId}");
                 return false;
             }
             if (consumeItem)
@@ -40,11 +42,22 @@ public class Door : MonoBehaviour
         }
 
         onOpened?.Invoke();
+        var success = GetRandomResponse(successResponses);
+        if (!string.IsNullOrEmpty(success))
+        {
+            ui?.ShowFlavourText(success);
+        }
 
         if (roomManager != null && !string.IsNullOrEmpty(targetScene))
         {
             roomManager.LoadRoom(targetScene);
         }
         return true;
+    }
+
+    private string GetRandomResponse(string[] responses)
+    {
+        if (responses == null || responses.Length == 0) return null;
+        return responses[Random.Range(0, responses.Length)];
     }
 }

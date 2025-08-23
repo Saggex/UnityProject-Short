@@ -11,6 +11,8 @@ public class GhostAI : MonoBehaviour
     [SerializeField] private bool isDefeated;
     [SerializeField] private UnityEvent onDefeated;
     [SerializeField] private UnityEvent onFailed;
+    [SerializeField] [TextArea] private string[] successResponses;
+    [SerializeField] [TextArea] private string[] failedResponses;
 
     /// <summary>
     /// Item id required to clear the ghost.
@@ -28,7 +30,7 @@ public class GhostAI : MonoBehaviour
             if (!inventory.HasItem(requiredItemId))
             {
                 onFailed?.Invoke();
-                ui?.ShowFlavourText($"You need {requiredItemId}");
+                ui?.ShowFlavourText(GetRandomResponse(failedResponses) ?? $"You need {requiredItemId}");
                 return false;
             }
             if (consumeItem)
@@ -40,7 +42,18 @@ public class GhostAI : MonoBehaviour
 
         isDefeated = true;
         onDefeated?.Invoke();
+        var success = GetRandomResponse(successResponses);
+        if (!string.IsNullOrEmpty(success))
+        {
+            ui?.ShowFlavourText(success);
+        }
         gameObject.SetActive(false);
         return true;
+    }
+
+    private string GetRandomResponse(string[] responses)
+    {
+        if (responses == null || responses.Length == 0) return null;
+        return responses[Random.Range(0, responses.Length)];
     }
 }
