@@ -101,17 +101,17 @@ public static class GameSetupEditor
         var inventoryTextGO = new GameObject("InventoryText");
         inventoryTextGO.transform.SetParent(inventoryPanel.transform, false);
         var inventoryText = inventoryTextGO.AddComponent<Text>();
-        inventoryText.font = Resources.GetBuiltinResource<Font>("Arial.ttf");
+        inventoryText.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
 
         var flavourTextGO = new GameObject("FlavourText");
         flavourTextGO.transform.SetParent(canvasGO.transform, false);
         var flavourText = flavourTextGO.AddComponent<Text>();
-        flavourText.font = Resources.GetBuiltinResource<Font>("Arial.ttf");
+        flavourText.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
 
         var promptGO = new GameObject("Prompt");
         promptGO.transform.SetParent(canvasGO.transform, false);
         var promptText = promptGO.AddComponent<Text>();
-        promptText.font = Resources.GetBuiltinResource<Font>("Arial.ttf");
+        promptText.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
         promptGO.SetActive(false);
 
         var uiSO = new SerializedObject(uiManager);
