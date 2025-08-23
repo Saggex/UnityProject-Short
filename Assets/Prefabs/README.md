@@ -19,21 +19,13 @@ This folder holds reusable templates for the game's interaction systems. Drop th
 ## InventorySystem.prefab
 - Holds the `InventorySystem` component. Keep one instance in the scene and reference it from the player and UI.
 
-## PuzzleManager.prefab
-- Contains `PuzzleManager`. Assign a `RoomManager` and define puzzle rules in the inspector.
-
 ## RoomManager.prefab
 - Provides `RoomManager`. Populate the **Rooms** array with ambience settings and link a `SoundManager`.
-
-## QuestManager.prefab
-- Tracks completed quests with the `QuestManager` script.
 
 ## SoundManager.prefab
 - Uses two `AudioSource` components for music and effects. Link the sources to the script fields and assign audio clips as needed.
 
-## UICanvas.prefab and InventoryButton.prefab
-- `UICanvas` contains an `InventoryPanel` with a child `InventoryGrid` where item buttons are spawned at runtime.
-- `UIManager` should reference **inventoryContainer**, **inventoryButtonPrefab**, **flavourText**, and **prompt**.
+## InventoryButton.prefab
 - `InventoryButton` is a basic `Button` with an `Image` and `InventoryButton` script.
 
 ## ScriptableObjects/Items

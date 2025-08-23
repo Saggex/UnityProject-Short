@@ -7,8 +7,10 @@ using UnityEngine.Events;
 public class GhostAI : MonoBehaviour
 {
     [SerializeField] private string requiredItemId;
+    [SerializeField] private bool consumeItem = true;
     [SerializeField] private bool isDefeated;
     [SerializeField] private UnityEvent onDefeated;
+    [SerializeField] private UnityEvent onFailed;
 
     /// <summary>
     /// Item id required to clear the ghost.
@@ -16,12 +18,25 @@ public class GhostAI : MonoBehaviour
     public string RequiredItemId => requiredItemId;
 
     /// <summary>
-    /// Attempts to satisfy the ghost using the provided item.
+    /// Attempts to interact with the ghost using the player's inventory.
     /// </summary>
-    public bool TrySatisfy(Item item)
+    public bool Interact(InventorySystem inventory, UIManager ui)
     {
-        if (isDefeated || item == null) return false;
-        if (item.Id != requiredItemId) return false;
+        if (isDefeated) return false;
+        if (!string.IsNullOrEmpty(requiredItemId))
+        {
+            if (!inventory.HasItem(requiredItemId))
+            {
+                onFailed?.Invoke();
+                ui?.ShowFlavourText($"You need {requiredItemId}");
+                return false;
+            }
+            if (consumeItem)
+            {
+                inventory.UseItem(requiredItemId);
+                ui?.RefreshInventory(inventory);
+            }
+        }
 
         isDefeated = true;
         onDefeated?.Invoke();
