@@ -20,9 +20,9 @@ public class PlayerController : MonoBehaviour
     private Vector2 facing = Vector2.down;
     private bool isTiptoeing;
 
-    private readonly List<ItemPickup> nearbyPickups = new();
-    private readonly List<GhostAI> nearbyGhosts = new();
-    private readonly List<Door> nearbyDoors = new();
+    public List<ItemPickup> nearbyPickups = new();
+    public readonly List<GhostAI> nearbyGhosts = new();
+    public readonly List<Door> nearbyDoors = new();
 
     private void Awake()
     {
@@ -103,6 +103,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Collision Entered");
         var pickup = collision.GetComponent<ItemPickup>();
         if (pickup != null && !nearbyPickups.Contains(pickup))
         {
