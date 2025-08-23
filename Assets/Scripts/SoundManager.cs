@@ -20,6 +20,18 @@ public class SoundManager : MonoBehaviour
     }
 
     /// <summary>
+<<<<<<< HEAD
+    /// Stops the current music track.
+    /// </summary>
+    public void StopMusic()
+    {
+        if (musicSource == null) return;
+        musicSource.Stop();
+    }
+
+    /// <summary>
+=======
+>>>>>>> main
     /// Plays a one-shot sound effect.
     /// </summary>
     public void PlaySFX(AudioClip clip)
