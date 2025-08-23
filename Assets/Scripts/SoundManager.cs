@@ -20,7 +20,6 @@ public class SoundManager : MonoBehaviour
     }
 
     /// <summary>
-<<<<<<< HEAD
     /// Stops the current music track.
     /// </summary>
     public void StopMusic()
@@ -30,8 +29,6 @@ public class SoundManager : MonoBehaviour
     }
 
     /// <summary>
-=======
->>>>>>> main
     /// Plays a one-shot sound effect.
     /// </summary>
     public void PlaySFX(AudioClip clip)
