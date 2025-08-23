@@ -8,10 +8,10 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Button), typeof(Image))]
 public class InventoryButton : MonoBehaviour
 {
-    private Item item;
-    private UIManager ui;
-    private Image icon;
-    private Button button;
+    public Item item;
+    public UIManager ui;
+    public Image icon;
+    public Button button;
 
     private void Awake()
     {
@@ -37,8 +37,8 @@ public class InventoryButton : MonoBehaviour
         }
         Debug.Log($"[InventoryButton] Initialized for {item.DisplayName}");
     }
-
-    private void OnClick()
+    
+    public void OnClick()
     {
         if (ui != null && item != null)
         {

@@ -10,6 +10,7 @@ public class InventoryUI : MonoBehaviour
 
     private void Awake()
     {
+
         Debug.Log("[InventoryUI] Initialized");
     }
 

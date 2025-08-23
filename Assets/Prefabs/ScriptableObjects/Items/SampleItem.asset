@@ -16,4 +16,4 @@ MonoBehaviour:
   displayName: Test Item
   description: This is just a test Item. You should not have this. It even looks
     weird.
-  sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  sprite: {fileID: 2073366913, guid: 6ceed08971aaccc4aa8a891e8b130520, type: 3}
