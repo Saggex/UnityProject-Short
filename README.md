@@ -55,6 +55,18 @@ Located in `Assets/Editor/`, this editor utility generates placeholder prefabs f
 - Open the Unity editor and select **Tools > Build Prefabs**.
 - Prefabs will be created in `Assets/Prefabs/` with each script component attached.
 
+## Interaction Systems
+The gameplay loop revolves around several small systems that communicate through trigger collisions and shared references:
+
+1. **Item collection** – `PlayerController` gathers nearby `ItemPickup` objects and stores their `Item` in the `InventorySystem`, prompting the `UIManager` to refresh its display.
+2. **Ghost encounters** – pressing the interact key near a `GhostAI` checks the inventory for the ghost's `requiredItemId`. If found, `GhostAI.TrySatisfy` fires `onDefeated` events and hides the ghost.
+3. **Puzzle solving** – `PuzzleManager` rules consume specific items to mark puzzles solved and can trigger room changes via the `RoomManager`.
+4. **Room transitions** – `RoomManager` loads new scenes and applies ambience by calling the `SoundManager` and adjusting lighting.
+5. **Quest tracking** – `QuestManager` simply records completed quest ids so other systems can gate content.
+
+## Prefab Setup
+Prefab templates for these systems are provided in `Assets/Prefabs/`. Drop them into a scene and assign required references as outlined in [`Assets/Prefabs/README.md`](Assets/Prefabs/README.md).
+
 ## Usage
 1. Create scenes for **Bedroom**, **Dark Hallway**, **Living Room**, **Bathroom**, and **Garden**.
 2. Populate scenes with interactable objects and ghosts, assigning the appropriate scripts.
