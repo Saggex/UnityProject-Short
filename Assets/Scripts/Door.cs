@@ -6,7 +6,6 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
     [SerializeField] private string targetScene;
-    [SerializeField] private string targetRoomId;
 
     private RoomManager roomManager;
 
@@ -24,10 +23,6 @@ public class Door : MonoBehaviour
         if (!string.IsNullOrEmpty(targetScene))
         {
             roomManager.LoadRoom(targetScene);
-        }
-        if (!string.IsNullOrEmpty(targetRoomId))
-        {
-            roomManager.ApplyAtmosphere(targetRoomId);
         }
     }
 }
