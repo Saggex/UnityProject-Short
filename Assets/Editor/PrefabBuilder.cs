@@ -16,12 +16,10 @@ public static class PrefabBuilder
         EnsureFolder();
         CreatePrefab<PlayerController>("Player");
         CreatePrefab<InventorySystem>("InventorySystem");
-        CreatePrefab<PuzzleManager>("PuzzleManager");
         CreatePrefab<GhostAI>("Ghost");
         CreatePrefab<RoomManager>("RoomManager");
         CreatePrefab<SoundManager>("SoundManager");
         CreatePrefab<UIManager>("UIManager");
-        CreatePrefab<QuestManager>("QuestManager");
         CreateInventoryButtonPrefab();
     }
 

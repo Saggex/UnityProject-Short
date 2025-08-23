@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 /// <summary>
 /// Displays inventory, flavour text, and interaction prompts.
@@ -8,7 +8,7 @@ public class UIManager : MonoBehaviour
 {
     [SerializeField] private Transform inventoryContainer;
     [SerializeField] private InventoryButton inventoryButtonPrefab;
-    [SerializeField] private Text flavourText;
+    [SerializeField] private TMP_Text flavourText;
     [SerializeField] private GameObject prompt;
     [SerializeField] private InventorySystem inventory;
 
