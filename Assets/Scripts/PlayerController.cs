@@ -70,6 +70,7 @@ public class PlayerController : MonoBehaviour
         if (nearbyPickups.Count > 0)
         {
             var pickup = nearbyPickups[0];
+            pickup.GetComponent<Highlightable>()?.SetHighlighted(false);
             inventory.AddItem(pickup.Item);
             ui?.RefreshInventory(inventory);
             ui?.ShowFlavourText($"Picked up {pickup.Item.DisplayName}");
@@ -106,6 +107,8 @@ public class PlayerController : MonoBehaviour
         {
             nearbyGhosts.Add(ghost);
         }
+
+        collision.GetComponent<Highlightable>()?.SetHighlighted(true);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -121,5 +124,7 @@ public class PlayerController : MonoBehaviour
         {
             nearbyGhosts.Remove(ghost);
         }
+
+        collision.GetComponent<Highlightable>()?.SetHighlighted(false);
     }
 }
