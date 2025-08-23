@@ -23,23 +23,38 @@ public class InventorySystem : MonoBehaviour
     /// </summary>
     public void AddItem(Item item)
     {
-        if (item == null || items.ContainsKey(item.Id)) return;
+        if (item == null || items.ContainsKey(item.Id))
+        {
+            Debug.Log($"[InventorySystem] AddItem ignored for {item?.DisplayName ?? "null"}");
+            return;
+        }
         items[item.Id] = item;
+        Debug.Log($"[InventorySystem] Added {item.DisplayName}");
         ItemAdded?.Invoke(item);
     }
 
     /// <summary>
     /// Determines whether the player has a specific item.
     /// </summary>
-    public bool HasItem(string id) => items.ContainsKey(id);
+    public bool HasItem(string id)
+    {
+        bool has = items.ContainsKey(id);
+        Debug.Log($"[InventorySystem] HasItem {id} = {has}");
+        return has;
+    }
 
     /// <summary>
     /// Removes an item without using it.
     /// </summary>
     public bool RemoveItem(string id)
     {
-        if (!items.TryGetValue(id, out var item)) return false;
+        if (!items.TryGetValue(id, out var item))
+        {
+            Debug.Log($"[InventorySystem] RemoveItem failed for {id}");
+            return false;
+        }
         items.Remove(id);
+        Debug.Log($"[InventorySystem] Removed {item.DisplayName}");
         ItemRemoved?.Invoke(item);
         return true;
     }
@@ -49,8 +64,13 @@ public class InventorySystem : MonoBehaviour
     /// </summary>
     public Item UseItem(string id)
     {
-        if (!items.TryGetValue(id, out var item)) return null;
+        if (!items.TryGetValue(id, out var item))
+        {
+            Debug.Log($"[InventorySystem] UseItem failed for {id}");
+            return null;
+        }
         items.Remove(id);
+        Debug.Log($"[InventorySystem] Used {item.DisplayName}");
         ItemRemoved?.Invoke(item);
         return item;
     }
@@ -58,5 +78,9 @@ public class InventorySystem : MonoBehaviour
     /// <summary>
     /// Returns all items for UI display.
     /// </summary>
-    public IEnumerable<Item> GetAllItems() => items.Values;
+    public IEnumerable<Item> GetAllItems()
+    {
+        Debug.Log($"[InventorySystem] GetAllItems count = {items.Count}");
+        return items.Values;
+    }
 }
