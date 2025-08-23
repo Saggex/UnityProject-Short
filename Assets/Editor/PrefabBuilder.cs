@@ -1,6 +1,7 @@
 #if UNITY_EDITOR
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary>
 /// Utility for generating placeholder prefabs for core systems.
@@ -21,6 +22,7 @@ public static class PrefabBuilder
         CreatePrefab<SoundManager>("SoundManager");
         CreatePrefab<UIManager>("UIManager");
         CreatePrefab<QuestManager>("QuestManager");
+        CreateInventoryButtonPrefab();
     }
 
     private static void EnsureFolder()
@@ -36,6 +38,19 @@ public static class PrefabBuilder
         var go = new GameObject(name);
         go.AddComponent<T>();
         var path = $"{PrefabFolder}/{name}.prefab";
+        PrefabUtility.SaveAsPrefabAsset(go, path);
+        Object.DestroyImmediate(go);
+    }
+
+    private static void CreateInventoryButtonPrefab()
+    {
+        var go = new GameObject("InventoryButton");
+        go.AddComponent<RectTransform>();
+        go.AddComponent<CanvasRenderer>();
+        go.AddComponent<Image>();
+        go.AddComponent<Button>();
+        go.AddComponent<InventoryButton>();
+        var path = $"{PrefabFolder}/InventoryButton.prefab";
         PrefabUtility.SaveAsPrefabAsset(go, path);
         Object.DestroyImmediate(go);
     }
