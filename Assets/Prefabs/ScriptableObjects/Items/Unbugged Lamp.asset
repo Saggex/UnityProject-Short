@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 127a4ddffc98da04f9ab87dacb7dd104, type: 3}
-  m_Name: Music Box
+  m_Name: Unbugged Lamp
   m_EditorClassIdentifier: 
-  id: 2
-  displayName: Music Player
-  description: You got it from a food chain. Plays a funky little tune. Some entities
-    do not like it though...
-  sprite: {fileID: 1150153907, guid: 6ceed08971aaccc4aa8a891e8b130520, type: 3}
+  id: 11
+  displayName: Lamps
+  description: Makes it a bit brighter.
+  sprite: {fileID: -1102455800, guid: 6ceed08971aaccc4aa8a891e8b130520, type: 3}
