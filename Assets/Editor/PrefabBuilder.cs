@@ -10,7 +10,7 @@ public static class PrefabBuilder
 {
     private const string PrefabFolder = "Assets/Prefabs";
 
-    [MenuItem("Tools/Build Prefabs")]
+    //[MenuItem("Tools/Build Prefabs")]
     public static void BuildPrefabs()
     {
         EnsureFolder();

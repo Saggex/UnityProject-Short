@@ -1,49 +1,50 @@
 using UnityEngine;
-using TMPro;
-
 /// <summary>
 /// Displays inventory, flavour text, and interaction prompts.
 /// </summary>
-public class UIManager : MonoBehaviour
+public class UIManager : PersistentSingleton<UIManager>
 {
     [SerializeField] private Transform inventoryContainer;
     [SerializeField] private InventoryButton inventoryButtonPrefab;
-    [SerializeField] private TMP_Text flavourText;
-    [SerializeField] private GameObject prompt;
-    [SerializeField] private InventorySystem inventory;
+    [SerializeField] private TypewriterText flavourText;
+    [SerializeField] private TypewriterText prompt;
+    private InventorySystem inventory;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
+        if (Instance != this)
+        {
+            return;
+        }
+
         if (inventory == null)
         {
-            inventory = FindObjectOfType<InventorySystem>();
+            inventory = InventorySystem.Instance ?? FindObjectOfType<InventorySystem>();
         }
         if (inventory != null)
         {
             inventory.ItemAdded += OnInventoryChanged;
             inventory.ItemRemoved += OnInventoryChanged;
-            Debug.Log("[UIManager] Bound to InventorySystem and subscribed to events");
             RefreshInventory(inventory);
         }
         else
         {
-            Debug.LogWarning("[UIManager] No InventorySystem found");
+            Debug.LogWarning("No InventorySystem found");
         }
     }
 
     private void OnDestroy()
     {
-        if (inventory != null)
+        if (Instance == this && inventory != null)
         {
             inventory.ItemAdded -= OnInventoryChanged;
             inventory.ItemRemoved -= OnInventoryChanged;
-            Debug.Log("[UIManager] Unsubscribed from InventorySystem events");
         }
     }
 
     private void OnInventoryChanged(Item item)
     {
-        Debug.Log($"[UIManager] Inventory changed due to {item.DisplayName}");
         RefreshInventory();
     }
 
@@ -59,7 +60,6 @@ public class UIManager : MonoBehaviour
 
         if (inventoryContainer == null || inventoryButtonPrefab == null || inventory == null)
         {
-            Debug.Log("[UIManager] Missing references for inventory refresh");
             return;
         }
 
@@ -74,8 +74,7 @@ public class UIManager : MonoBehaviour
             var button = Instantiate(inventoryButtonPrefab, inventoryContainer);
             var rt = button.GetComponent<RectTransform>();
             rt.anchoredPosition = new Vector2((index % 4) * 70, -(index / 4) * 70);
-            button.Initialize(item, this);
-            Debug.Log($"[UIManager] Created button for {item.DisplayName} at index {index}");
+            button.Initialize(item);
             index++;
         }
     }
@@ -85,20 +84,22 @@ public class UIManager : MonoBehaviour
     /// </summary>
     public void ShowFlavourText(string text)
     {
-        if (flavourText == null) return;
-        Debug.Log($"[UIManager] Flavour text: {text}");
-        flavourText.text = text;
+        flavourText?.Show(text);
     }
 
     /// <summary>
-    /// Shows or hides an interaction prompt.
+    /// Shows an interaction prompt.
     /// </summary>
-    public void TogglePrompt(bool isVisible)
+    public void ShowPrompt(string text)
     {
-        if (prompt != null)
-        {
-            Debug.Log($"[UIManager] Prompt visibility set to {isVisible}");
-            prompt.SetActive(isVisible);
-        }
+        prompt?.Show(text);
+    }
+
+    /// <summary>
+    /// Hides the interaction prompt immediately.
+    /// </summary>
+    public void HidePrompt()
+    {
+        prompt?.Hide();
     }
 }

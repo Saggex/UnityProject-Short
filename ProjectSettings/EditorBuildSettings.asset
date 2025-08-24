@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Prefab Garage.unity
     guid: 4007cb2c093614647b186b2bda342d3e
+  - enabled: 1
+    path: Assets/Scenes/Test Kitchen.unity
+    guid: 875290fcf2da1284ea9019b318b6614b
   m_configObjects: {}

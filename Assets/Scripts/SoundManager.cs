@@ -3,8 +3,17 @@ using UnityEngine;
 /// <summary>
 /// Plays background music, ambient sounds, and interaction cues.
 /// </summary>
-public class SoundManager : MonoBehaviour
+public class SoundManager : PersistentSingleton<SoundManager>
 {
+    protected override void Awake()
+    {
+        base.Awake();
+        if (Instance != this)
+        {
+            return;
+        }
+    }
+
     [SerializeField] private AudioSource musicSource;
     [SerializeField] private AudioSource sfxSource;
 

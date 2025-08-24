@@ -8,8 +8,7 @@ All scripts are located in `Assets/Scripts/`. Attach them to appropriate GameObj
 ### PlayerController.cs
 Handles player movement, tiptoeing, and interaction input.
 - Attach to the player GameObject with a `Rigidbody2D`.
-- Assign references for `InventorySystem` and `UIManager`.
-- Uses a raycast in the facing direction to pick up `ItemPickup` objects and satisfy `GhostAI` using items from the inventory.
+- Uses global `InventorySystem` and `UIManager` singletons to pick up `ItemPickup` objects and satisfy `GhostAI` requirements.
 
 ### InventorySystem.cs
 Stores collected items and provides methods for checking and using them.
@@ -56,7 +55,7 @@ Located in `Assets/Editor/`, this editor utility generates placeholder prefabs f
 The gameplay loop revolves around several small systems that communicate through trigger collisions and shared references:
 
 1. **Item collection** – `PlayerController` gathers nearby `ItemPickup` objects and stores their `Item` in the `InventorySystem`, prompting the `UIManager` to refresh its display.
-2. **Ghost encounters** – pressing the interact key near a `GhostAI` checks the inventory for the ghost's `requiredItemId`. If found, `GhostAI` fires `onDefeated` events and hides the ghost.
+2. **Ghost encounters** – pressing the interact key near a `GhostAI` checks the inventory for any required items. If all are present, `GhostAI` fires `onDefeated` events and hides the ghost.
 3. **Room transitions** – `RoomManager` loads new scenes and applies ambience by calling the `SoundManager` and adjusting lighting.
 
 ## Prefab Setup

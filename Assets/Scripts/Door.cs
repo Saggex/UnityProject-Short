@@ -7,44 +7,66 @@ using UnityEngine.Events;
 public class Door : MonoBehaviour
 {
     [SerializeField] private string targetScene;
-    [SerializeField] private string requiredItemId;
+    [SerializeField] private string[] requiredItemIds;
     [SerializeField] private bool consumeItem;
     [SerializeField] private UnityEvent onOpened;
     [SerializeField] private UnityEvent onFailed;
+    [SerializeField] [TextArea] private string[] successResponses;
+    [SerializeField] [TextArea] private string[] failedResponses;
 
     private RoomManager roomManager;
 
     private void Awake()
     {
-        roomManager = FindObjectOfType<RoomManager>();
+        roomManager = RoomManager.Instance;
     }
 
     /// <summary>
     /// Attempts to open the door using the player's inventory.
     /// </summary>
-    public bool Interact(InventorySystem inventory, UIManager ui)
+    public bool Interact()
     {
-        if (!string.IsNullOrEmpty(requiredItemId))
+        var inventory = InventorySystem.Instance;
+        var ui = UIManager.Instance;
+
+        if (requiredItemIds != null && requiredItemIds.Length > 0)
         {
-            if (!inventory.HasItem(requiredItemId))
+            foreach (var id in requiredItemIds)
             {
-                onFailed?.Invoke();
-                ui?.ShowFlavourText($"You need {requiredItemId}");
-                return false;
+                if (inventory == null || !inventory.HasItem(id))
+                {
+                    onFailed?.Invoke();
+                    ui?.ShowFlavourText(GetRandomResponse(failedResponses) ?? $"You need {string.Join(", ", requiredItemIds)}");
+                    return false;
+                }
             }
             if (consumeItem)
             {
-                inventory.UseItem(requiredItemId);
+                foreach (var id in requiredItemIds)
+                {
+                    inventory?.UseItem(id);
+                }
                 ui?.RefreshInventory(inventory);
             }
         }
 
         onOpened?.Invoke();
+        var success = GetRandomResponse(successResponses);
+        if (!string.IsNullOrEmpty(success))
+        {
+            ui?.ShowFlavourText(success);
+        }
 
         if (roomManager != null && !string.IsNullOrEmpty(targetScene))
         {
             roomManager.LoadRoom(targetScene);
         }
         return true;
+    }
+
+    private string GetRandomResponse(string[] responses)
+    {
+        if (responses == null || responses.Length == 0) return null;
+        return responses[Random.Range(0, responses.Length)];
     }
 }

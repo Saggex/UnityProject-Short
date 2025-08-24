@@ -4,7 +4,6 @@ This folder holds reusable templates for the game's interaction systems. Drop th
 
 ## Player.prefab
 - Components: `Rigidbody2D`, `BoxCollider2D`, `PlayerController`, `ScaleWithDepth`.
-- Assign the `InventorySystem` and `UIManager` references on `PlayerController`.
 - The collider should remain non-trigger so it can detect trigger colliders on interactables.
 
 ## ItemPickup.prefab
@@ -17,7 +16,7 @@ This folder holds reusable templates for the game's interaction systems. Drop th
 - Fill in **Required Item Id** and optionally hook UnityEvents to **On Defeated**.
 
 ## InventorySystem.prefab
-- Holds the `InventorySystem` component. Keep one instance in the scene and reference it from the player and UI.
+- Holds the `InventorySystem` component. A single instance persists across scenes and is accessed via `InventorySystem.Instance`.
 
 ## RoomManager.prefab
 - Provides `RoomManager`. Populate the **Rooms** array with ambience settings and link a `SoundManager`.

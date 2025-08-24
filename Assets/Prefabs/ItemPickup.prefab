@@ -48,6 +48,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 6c5f059d89ea4ec45a56dc0e977ad1f1, type: 2}
+  requiredItemIds: []
+  consumeItem: 0
+  onPickedUp:
+    m_PersistentCalls:
+      m_Calls: []
+  onFailed:
+    m_PersistentCalls:
+      m_Calls: []
+  successResponses:
+  - Yeah!
+  failedResponses:
+  - Meh!
 --- !u!212 &5289074834795746837
 SpriteRenderer:
   m_ObjectHideFlags: 0

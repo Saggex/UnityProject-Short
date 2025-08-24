@@ -6,41 +6,77 @@ using UnityEngine.Events;
 /// </summary>
 public class GhostAI : MonoBehaviour
 {
-    [SerializeField] private string requiredItemId;
+    [SerializeField] private string id;
+    [SerializeField] private string[] requiredItemIds;
     [SerializeField] private bool consumeItem = true;
     [SerializeField] private bool isDefeated;
     [SerializeField] private UnityEvent onDefeated;
     [SerializeField] private UnityEvent onFailed;
+    [SerializeField] [TextArea] private string[] successResponses;
+    [SerializeField] [TextArea] private string[] failedResponses;
 
     /// <summary>
-    /// Item id required to clear the ghost.
+    /// Item ids required to clear the ghost.
     /// </summary>
-    public string RequiredItemId => requiredItemId;
+    public string[] RequiredItemIds => requiredItemIds;
+
+    private void Awake()
+    {
+        if (DestroyState.IsDestroyed(GetId()))
+        {
+            isDefeated = true;
+            gameObject.SetActive(false);
+        }
+    }
 
     /// <summary>
     /// Attempts to interact with the ghost using the player's inventory.
     /// </summary>
-    public bool Interact(InventorySystem inventory, UIManager ui)
+    public bool Interact()
     {
         if (isDefeated) return false;
-        if (!string.IsNullOrEmpty(requiredItemId))
+        var inventory = InventorySystem.Instance;
+        var ui = UIManager.Instance;
+        if (requiredItemIds != null && requiredItemIds.Length > 0)
         {
-            if (!inventory.HasItem(requiredItemId))
+            foreach (var id in requiredItemIds)
             {
-                onFailed?.Invoke();
-                ui?.ShowFlavourText($"You need {requiredItemId}");
-                return false;
+                if (inventory == null || !inventory.HasItem(id))
+                {
+                    onFailed?.Invoke();
+                    ui?.ShowFlavourText(GetRandomResponse(failedResponses) ?? $"You need {string.Join(", ", requiredItemIds)}");
+                    return false;
+                }
             }
             if (consumeItem)
             {
-                inventory.UseItem(requiredItemId);
+                foreach (var id in requiredItemIds)
+                {
+                    inventory?.UseItem(id);
+                }
                 ui?.RefreshInventory(inventory);
             }
         }
-
         isDefeated = true;
+        DestroyState.MarkDestroyed(GetId());
         onDefeated?.Invoke();
+        var success = GetRandomResponse(successResponses);
+        if (!string.IsNullOrEmpty(success))
+        {
+            ui?.ShowFlavourText(success);
+        }
         gameObject.SetActive(false);
         return true;
+    }
+
+    private string GetId()
+    {
+        return string.IsNullOrEmpty(id) ? gameObject.name : id;
+    }
+
+    private string GetRandomResponse(string[] responses)
+    {
+        if (responses == null || responses.Length == 0) return null;
+        return responses[Random.Range(0, responses.Length)];
     }
 }

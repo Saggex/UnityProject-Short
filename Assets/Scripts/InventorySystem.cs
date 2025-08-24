@@ -4,9 +4,17 @@ using UnityEngine;
 /// <summary>
 /// Stores collected items and provides usage checks.
 /// </summary>
-public class InventorySystem : MonoBehaviour
+public class InventorySystem : PersistentSingleton<InventorySystem>
 {
-    private readonly Dictionary<string, Item> items = new();
+    private const string InventoryKey = "Inventory_Items";
+    private readonly Dictionary<string, Item> items = new Dictionary<string, Item>();
+    private static Dictionary<string, Item> resourceCache;
+
+    private void Awake()
+    {
+        base.Awake();
+        LoadInventory();
+    }
 
     /// <summary>
     /// Raised when an item is added to the inventory.
@@ -25,12 +33,11 @@ public class InventorySystem : MonoBehaviour
     {
         if (item == null || items.ContainsKey(item.Id))
         {
-            Debug.Log($"[InventorySystem] AddItem ignored for {item?.DisplayName ?? "null"}");
             return;
         }
         items[item.Id] = item;
-        Debug.Log($"[InventorySystem] Added {item.DisplayName}");
         ItemAdded?.Invoke(item);
+        SaveInventory();
     }
 
     /// <summary>
@@ -38,9 +45,7 @@ public class InventorySystem : MonoBehaviour
     /// </summary>
     public bool HasItem(string id)
     {
-        bool has = items.ContainsKey(id);
-        Debug.Log($"[InventorySystem] HasItem {id} = {has}");
-        return has;
+        return items.ContainsKey(id);
     }
 
     /// <summary>
@@ -50,12 +55,11 @@ public class InventorySystem : MonoBehaviour
     {
         if (!items.TryGetValue(id, out var item))
         {
-            Debug.Log($"[InventorySystem] RemoveItem failed for {id}");
             return false;
         }
         items.Remove(id);
-        Debug.Log($"[InventorySystem] Removed {item.DisplayName}");
         ItemRemoved?.Invoke(item);
+        SaveInventory();
         return true;
     }
 
@@ -66,12 +70,11 @@ public class InventorySystem : MonoBehaviour
     {
         if (!items.TryGetValue(id, out var item))
         {
-            Debug.Log($"[InventorySystem] UseItem failed for {id}");
             return null;
         }
         items.Remove(id);
-        Debug.Log($"[InventorySystem] Used {item.DisplayName}");
         ItemRemoved?.Invoke(item);
+        SaveInventory();
         return item;
     }
 
@@ -80,7 +83,49 @@ public class InventorySystem : MonoBehaviour
     /// </summary>
     public IEnumerable<Item> GetAllItems()
     {
-        Debug.Log($"[InventorySystem] GetAllItems count = {items.Count}");
         return items.Values;
+    }
+
+    private void LoadInventory()
+    {
+        items.Clear();
+        var saved = PlayerPrefs.GetString(InventoryKey, string.Empty);
+        if (string.IsNullOrEmpty(saved)) return;
+        var ids = saved.Split(',');
+        foreach (var id in ids)
+        {
+            if (string.IsNullOrEmpty(id)) continue;
+            var item = FindItem(id);
+            if (item != null)
+            {
+                items[id] = item;
+            }
+        }
+    }
+
+    private void SaveInventory()
+    {
+        var ids = string.Join(",", items.Keys);
+        Debug.Log("Saving inventory with items: " + ids);
+        PlayerPrefs.SetString(InventoryKey, ids);
+        PlayerPrefs.Save();
+    }
+
+    private Item FindItem(string id)
+    {
+        if (string.IsNullOrEmpty(id)) return null;
+        if (resourceCache == null)
+        {
+            resourceCache = new Dictionary<string, Item>();
+            foreach (var it in Resources.LoadAll<Item>(string.Empty))
+            {
+                if (!string.IsNullOrEmpty(it.Id))
+                {
+                    resourceCache[it.Id] = it;
+                }
+            }
+        }
+        resourceCache.TryGetValue(id, out var item);
+        return item;
     }
 }
