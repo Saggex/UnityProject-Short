@@ -3,6 +3,7 @@ Shader "Custom/PixelArt/Melt"
     Properties
     {
         _MainTex ("Sprite Texture", 2D) = "white" {}
+        _Color ("Tint", Color) = (1,1,1,1)
         _Amount ("Melt Amount", Range(0,1)) = 1
         _Speed ("Melt Speed", Float) = 1
     }
@@ -25,15 +26,18 @@ Shader "Custom/PixelArt/Melt"
             {
                 float4 vertex : POSITION;
                 float2 uv : TEXCOORD0;
+                fixed4 color : COLOR;
             };
 
             struct v2f
             {
                 float4 vertex : SV_POSITION;
                 float2 uv : TEXCOORD0;
+                fixed4 color : COLOR;
             };
 
             sampler2D _MainTex;
+            fixed4 _Color;
             float _Amount;
             float _Speed;
 
@@ -42,6 +46,7 @@ Shader "Custom/PixelArt/Melt"
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv = v.uv;
+                o.color = v.color * _Color;
                 return o;
             }
 
@@ -56,7 +61,7 @@ Shader "Custom/PixelArt/Melt"
             fixed4 frag (v2f i) : SV_Target
             {
                 float2 uv = ApplyMelt(i.uv);
-                return tex2D(_MainTex, uv);
+                return tex2D(_MainTex, uv) * i.color;
             }
             ENDCG
         }

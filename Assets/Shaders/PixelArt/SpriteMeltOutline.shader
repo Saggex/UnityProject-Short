@@ -3,6 +3,7 @@ Shader "Custom/PixelArt/MeltOutline"
     Properties
     {
         _MainTex ("Sprite Texture", 2D) = "white" {}
+        _Color ("Tint", Color) = (1,1,1,1)
         _OutlineColor ("Outline Color", Color) = (1,1,0,1)
         _OutlineSize ("Outline Size", Float) = 1
         _Amount ("Melt Amount", Range(0,1)) = 1
@@ -27,16 +28,19 @@ Shader "Custom/PixelArt/MeltOutline"
             {
                 float4 vertex : POSITION;
                 float2 uv : TEXCOORD0;
+                fixed4 color : COLOR;
             };
 
             struct v2f
             {
                 float4 vertex : SV_POSITION;
                 float2 uv : TEXCOORD0;
+                fixed4 color : COLOR;
             };
 
             sampler2D _MainTex;
             float4 _MainTex_TexelSize;
+            fixed4 _Color;
             fixed4 _OutlineColor;
             float _OutlineSize;
             float _Amount;
@@ -55,13 +59,14 @@ Shader "Custom/PixelArt/MeltOutline"
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv = v.uv;
+                o.color = v.color * _Color;
                 return o;
             }
 
             fixed4 frag (v2f i) : SV_Target
             {
                 float2 uv = ApplyMelt(i.uv);
-                fixed4 c = tex2D(_MainTex, uv);
+                fixed4 c = tex2D(_MainTex, uv) * i.color;
                 if (c.a == 0)
                 {
                     float2 offset = _MainTex_TexelSize.xy * _OutlineSize;
@@ -72,7 +77,7 @@ Shader "Custom/PixelArt/MeltOutline"
                     alpha += tex2D(_MainTex, ApplyMelt(i.uv + float2(0, -offset.y))).a;
                     if (alpha > 0)
                     {
-                        return _OutlineColor;
+                        return _OutlineColor * i.color;
                     }
                     return 0;
                 }

@@ -3,6 +3,7 @@ Shader "Custom/PixelArt/Morph"
     Properties
     {
         _MainTex ("Sprite Texture", 2D) = "white" {}
+        _Color ("Tint", Color) = (1,1,1,1)
         _Amplitude ("Morph Amplitude", Range(0,1)) = 0.1
         _Frequency ("Morph Frequency", Float) = 5
         _Speed ("Morph Speed", Float) = 1
@@ -26,15 +27,18 @@ Shader "Custom/PixelArt/Morph"
             {
                 float4 vertex : POSITION;
                 float2 uv : TEXCOORD0;
+                fixed4 color : COLOR;
             };
 
             struct v2f
             {
                 float4 vertex : SV_POSITION;
                 float2 uv : TEXCOORD0;
+                fixed4 color : COLOR;
             };
 
             sampler2D _MainTex;
+            fixed4 _Color;
             float _Amplitude;
             float _Frequency;
             float _Speed;
@@ -46,12 +50,13 @@ Shader "Custom/PixelArt/Morph"
                 v.vertex.y += wave;
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv = v.uv;
+                o.color = v.color * _Color;
                 return o;
             }
 
             fixed4 frag (v2f i) : SV_Target
             {
-                return tex2D(_MainTex, i.uv);
+                return tex2D(_MainTex, i.uv) * i.color;
             }
             ENDCG
         }
