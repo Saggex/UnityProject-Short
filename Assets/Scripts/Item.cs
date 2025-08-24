@@ -10,8 +10,10 @@ public class Item : ScriptableObject
     [SerializeField] private string displayName;
     [TextArea] [SerializeField] private string description;
     [SerializeField] private Sprite sprite;
+    [SerializeField] private AudioClip sound;
     public Sprite Sprite => sprite;
     public string Id => id;
     public string DisplayName => displayName;
     public string Description => description;
+    public AudioClip Sound => sound;
 }
