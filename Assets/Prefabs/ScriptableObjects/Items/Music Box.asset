@@ -17,3 +17,4 @@ MonoBehaviour:
   description: You got it from a food chain. Plays a funky little tune. Some entities
     do not like it though...
   sprite: {fileID: 1150153907, guid: 6ceed08971aaccc4aa8a891e8b130520, type: 3}
+  sound: {fileID: 8300000, guid: 92e1351151cd4994e9a922cb6ccfd916, type: 3}
