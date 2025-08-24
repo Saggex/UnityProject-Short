@@ -15,7 +15,7 @@ public static class GameSetupEditor
     private const string CanvasPrefabPath = "Assets/Prefabs/UICanvas.prefab";
     private const string InventoryButtonPrefabPath = "Assets/Prefabs/InventoryButton.prefab";
 
-    [MenuItem("Tools/Setup Game")]
+    //[MenuItem("Tools/Setup Game")]
     public static void SetupGame()
     {
         EnsureSortingLayers();

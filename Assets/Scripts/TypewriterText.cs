@@ -42,6 +42,11 @@ public class TypewriterText : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    private void Start()
+    {
+        Show("   ");
+    }
+
     /// <summary>
     /// Shows the provided text with effects, restarting any existing animation.
     /// </summary>
