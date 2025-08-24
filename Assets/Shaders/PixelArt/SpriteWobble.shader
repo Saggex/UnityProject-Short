@@ -7,6 +7,7 @@ Shader "Custom/PixelArt/Wobble"
         _Amplitude ("Wobble Amplitude", Range(0,0.5)) = 0.05
         _Frequency ("Wobble Frequency", Float) = 10
         _Speed ("Wobble Speed", Float) = 5
+        _Direction ("Wobble Direction", Vector) = (1,0,0,0)
     }
     SubShader
     {
@@ -42,6 +43,7 @@ Shader "Custom/PixelArt/Wobble"
             float _Amplitude;
             float _Frequency;
             float _Speed;
+            float4 _Direction;
 
             v2f vert (appdata v)
             {
@@ -55,7 +57,10 @@ Shader "Custom/PixelArt/Wobble"
             fixed4 frag (v2f i) : SV_Target
             {
                 float2 uv = i.uv;
-                uv.y += sin(uv.x * _Frequency + _Time.y * _Speed) * _Amplitude;
+                float2 dir = normalize(_Direction.xy);
+                float wave = sin(dot(uv, dir) * _Frequency + _Time.y * _Speed) * _Amplitude;
+                float2 perp = float2(-dir.y, dir.x);
+                uv += perp * wave;
                 return tex2D(_MainTex, uv) * i.color;
             }
             ENDCG
