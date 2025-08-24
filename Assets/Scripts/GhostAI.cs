@@ -22,14 +22,16 @@ public class GhostAI : MonoBehaviour
     /// <summary>
     /// Attempts to interact with the ghost using the player's inventory.
     /// </summary>
-    public bool Interact(InventorySystem inventory, UIManager ui)
+    public bool Interact()
     {
         if (isDefeated) return false;
+        var inventory = InventorySystem.Instance;
+        var ui = UIManager.Instance;
         if (requiredItemIds != null && requiredItemIds.Length > 0)
         {
             foreach (var id in requiredItemIds)
             {
-                if (!inventory.HasItem(id))
+                if (inventory == null || !inventory.HasItem(id))
                 {
                     onFailed?.Invoke();
                     ui?.ShowFlavourText(GetRandomResponse(failedResponses) ?? $"You need {string.Join(", ", requiredItemIds)}");
@@ -40,7 +42,7 @@ public class GhostAI : MonoBehaviour
             {
                 foreach (var id in requiredItemIds)
                 {
-                    inventory.UseItem(id);
+                    inventory?.UseItem(id);
                 }
                 ui?.RefreshInventory(inventory);
             }

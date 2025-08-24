@@ -4,7 +4,7 @@ using UnityEngine;
 /// <summary>
 /// Stores collected items and provides usage checks.
 /// </summary>
-public class InventorySystem : MonoBehaviour
+public class InventorySystem : PersistentSingleton<InventorySystem>
 {
     private readonly Dictionary<string, Item> items = new Dictionary<string, Item>();
 
