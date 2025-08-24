@@ -7,12 +7,11 @@ using UnityEngine;
 public class InventorySystem : PersistentSingleton<InventorySystem>
 {
     private const string InventoryKey = "Inventory_Items";
+    [SerializeField] private Item[] allItems;
     private readonly Dictionary<string, Item> items = new Dictionary<string, Item>();
-    private static Dictionary<string, Item> resourceCache;
 
     private void Awake()
     {
-        base.Awake();
         LoadInventory();
     }
 
@@ -106,26 +105,20 @@ public class InventorySystem : PersistentSingleton<InventorySystem>
     private void SaveInventory()
     {
         var ids = string.Join(",", items.Keys);
-        Debug.Log("Saving inventory with items: " + ids);
         PlayerPrefs.SetString(InventoryKey, ids);
         PlayerPrefs.Save();
     }
 
     private Item FindItem(string id)
     {
-        if (string.IsNullOrEmpty(id)) return null;
-        if (resourceCache == null)
+        if (string.IsNullOrEmpty(id) || allItems == null) return null;
+        foreach (var it in allItems)
         {
-            resourceCache = new Dictionary<string, Item>();
-            foreach (var it in Resources.LoadAll<Item>(string.Empty))
+            if (it != null && it.Id == id)
             {
-                if (!string.IsNullOrEmpty(it.Id))
-                {
-                    resourceCache[it.Id] = it;
-                }
+                return it;
             }
         }
-        resourceCache.TryGetValue(id, out var item);
-        return item;
+        return null;
     }
 }
