@@ -49,12 +49,12 @@ public class TypewriterText : MonoBehaviour
     {
         StopAllCoroutines();
         ParseEffects(source, out var plainText);
-        gameObject.SetActive(true);
         textComponent.text = plainText;
         textComponent.maxVisibleCharacters = 0;
         textComponent.ForceMeshUpdate();
         originalMeshInfo = textComponent.textInfo.CopyMeshInfoVertexData();
         canvasGroup.alpha = 1f;
+        gameObject.SetActive(true);
         isAnimating = true;
         StartCoroutine(TypeRoutine());
     }
