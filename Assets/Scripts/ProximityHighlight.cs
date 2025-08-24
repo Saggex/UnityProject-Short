@@ -34,6 +34,7 @@ public class ProximityHighlight : MonoBehaviour, IHighlightable
         if (outlineShader != null)
         {
             outlineMaterial = new Material(outlineShader);
+            outlineMaterial.CopyPropertiesFromMaterial(originalMaterial);
         }
         else
         {
@@ -52,9 +53,12 @@ public class ProximityHighlight : MonoBehaviour, IHighlightable
 
         if (highlighted && outlineMaterial != null)
         {
+            //outlineMaterial.CopyPropertiesFromMaterial(originalMaterial);
             outlineMaterial.SetColor("_OutlineColor", highlightColor);
             outlineMaterial.SetFloat("_OutlineSize", outlineSize);
+            
             spriteRenderer.material = outlineMaterial;
+           
         }
         else
         {
