@@ -16,7 +16,7 @@ public class Door : MonoBehaviour
 
     private RoomManager roomManager;
 
-    private void Awake()
+    private void Start()
     {
         roomManager = RoomManager.Instance;
     }
