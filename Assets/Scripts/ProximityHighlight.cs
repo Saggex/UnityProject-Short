@@ -16,7 +16,6 @@ public class ProximityHighlight : MonoBehaviour, IHighlightable
 
     private void Awake()
     {
-        Debug.Log($"[ProximityHighlight] Awake on {name}");
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (spriteRenderer != null)
         {
@@ -24,23 +23,21 @@ public class ProximityHighlight : MonoBehaviour, IHighlightable
         }
         else
         {
-            Debug.LogWarning($"[ProximityHighlight] No SpriteRenderer found on {name}");
+            Debug.LogWarning($"No SpriteRenderer found on {name}");
         }
 
         if (outlineShader == null)
         {
             outlineShader = Shader.Find("Custom/Outline");
-            Debug.Log($"[ProximityHighlight] Outline shader {(outlineShader != null ? "found" : "not found")} via Shader.Find on {name}");
         }
 
         if (outlineShader != null)
         {
             outlineMaterial = new Material(outlineShader);
-            Debug.Log($"[ProximityHighlight] Outline material created for {name}");
         }
         else
         {
-            Debug.LogWarning($"[ProximityHighlight] Outline shader missing for {name}, highlighting will fallback to original material");
+            Debug.LogWarning($"Outline shader missing for {name}, highlighting will fallback to original material");
         }
     }
 
@@ -49,23 +46,19 @@ public class ProximityHighlight : MonoBehaviour, IHighlightable
     {
         if (spriteRenderer == null)
         {
-            Debug.LogWarning($"[ProximityHighlight] SpriteRenderer missing on {name} when trying to set highlight");
+            Debug.LogWarning($"SpriteRenderer missing on {name} when trying to set highlight");
             return;
         }
-
-        Debug.Log($"[ProximityHighlight] SetHighlighted({highlighted}) on {name}");
 
         if (highlighted && outlineMaterial != null)
         {
             outlineMaterial.SetColor("_OutlineColor", highlightColor);
             outlineMaterial.SetFloat("_OutlineSize", outlineSize);
             spriteRenderer.material = outlineMaterial;
-            Debug.Log($"[ProximityHighlight] Applied outline material to {name}");
         }
         else
         {
             spriteRenderer.material = originalMaterial;
-            Debug.Log($"[ProximityHighlight] Restored original material on {name}");
         }
     }
 }
