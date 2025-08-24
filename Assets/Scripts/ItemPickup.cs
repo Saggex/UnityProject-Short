@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class ItemPickup : MonoBehaviour
 {
     [SerializeField] private Item item;
+    [SerializeField] private string id;
     [SerializeField] private string[] requiredItemIds;
     [SerializeField] private bool consumeItem;
     [SerializeField] private UnityEvent onPickedUp;
@@ -18,6 +19,15 @@ public class ItemPickup : MonoBehaviour
     /// The item granted when picked up.
     /// </summary>
     public Item Item => item;
+
+    private void Awake()
+    {
+        var key = GetId();
+        if (DestroyState.IsDestroyed(key))
+        {
+            Destroy(gameObject);
+        }
+    }
 
     /// <summary>
     /// Attempts to pick up the item using the player's inventory.
@@ -51,6 +61,7 @@ public class ItemPickup : MonoBehaviour
         ui?.RefreshInventory(inventory);
         ui?.ShowFlavourText(GetRandomResponse(successResponses) ?? $"Picked up {item.DisplayName}");
         onPickedUp?.Invoke();
+        DestroyState.MarkDestroyed(GetId());
         Destroy(gameObject);
         return true;
     }
@@ -59,5 +70,10 @@ public class ItemPickup : MonoBehaviour
     {
         if (responses == null || responses.Length == 0) return null;
         return responses[Random.Range(0, responses.Length)];
+    }
+
+    private string GetId()
+    {
+        return string.IsNullOrEmpty(id) ? item?.Id : id;
     }
 }
