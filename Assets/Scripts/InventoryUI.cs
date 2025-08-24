@@ -3,10 +3,12 @@ using UnityEngine;
 /// <summary>
 /// Toggles the inventory panel when the player presses a key.
 /// </summary>
-public class InventoryUI : PersistentSingleton<InventoryUI>
-{
-    [SerializeField] private GameObject inventoryPanel;
-    [SerializeField] private KeyCode toggleKey = KeyCode.I;
+    public class InventoryUI : PersistentSingleton<InventoryUI>
+    {
+        [SerializeField] private GameObject inventoryPanel;
+        [SerializeField] private KeyCode toggleKey = KeyCode.I;
+
+        public bool IsInventoryOpen => inventoryPanel != null && inventoryPanel.activeSelf;
 
     protected override void Awake()
     {
