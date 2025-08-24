@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 127a4ddffc98da04f9ab87dacb7dd104, type: 3}
   m_Name: Jacket
   m_EditorClassIdentifier: 
-  id: 
+  id: 9
   displayName: Jacket
   description: It smells nice. Big and comfortable.
   sprite: {fileID: -49010073, guid: f153b69a46285eb42a6822d32397b4d5, type: 3}
