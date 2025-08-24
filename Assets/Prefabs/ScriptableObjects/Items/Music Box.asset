@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 127a4ddffc98da04f9ab87dacb7dd104, type: 3}
   m_Name: Music Box
   m_EditorClassIdentifier: 
-  id: 1
+  id: 2
   displayName: Music Player
   description: You got it from a food chain. Plays a funky little tune. Some entities
     do not like it though...

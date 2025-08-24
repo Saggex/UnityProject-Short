@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 127a4ddffc98da04f9ab87dacb7dd104, type: 3}
   m_Name: Bucket
   m_EditorClassIdentifier: 
-  id: 
+  id: 10
   displayName: Bucket
   description: Makes you tall!
   sprite: {fileID: -391546302, guid: 6ceed08971aaccc4aa8a891e8b130520, type: 3}

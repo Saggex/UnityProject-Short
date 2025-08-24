@@ -20,14 +20,20 @@ public class PlayerController : MonoBehaviour
     public List<GhostAI> nearbyGhosts = new List<GhostAI>();
     public List<Door> nearbyDoors = new List<Door>();
 
+    private Animator animator; //Animation
+    private SpriteRenderer spriteRenderer;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponentInChildren<Animator>(); //Animation
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>(); //Animation
     }
 
     private void Update()
     {
         HandleInput();
+        UpdateAnimations();
     }
 
     private void FixedUpdate()
@@ -60,6 +66,30 @@ public class PlayerController : MonoBehaviour
     {
         float speed = isTiptoeing ? tiptoeSpeed : walkSpeed;
         rb.velocity = input.normalized * speed;
+    }
+
+    private void UpdateAnimations() //Animation
+    {
+        bool isMoving = input.sqrMagnitude > 0.01f;
+
+        if (isMoving)
+        {
+            // walking horizontally if X is stronger than Y
+            bool walkingHorizontal = Mathf.Abs(input.x) > Mathf.Abs(input.y);
+            animator.SetBool("Walking_Horizontal", walkingHorizontal);
+            animator.SetBool("Walking_Vertical", !walkingHorizontal);
+            
+            //Flip X
+            if (walkingHorizontal && Mathf.Abs(input.x) > 0.01f)
+            {
+                spriteRenderer.flipX = input.x > 0;
+            }
+        }
+        else
+        {
+            animator.SetBool("Walking_Horizontal", false);
+            animator.SetBool("Walking_Vertical", false);
+        }
     }
 
     private void Interact()
