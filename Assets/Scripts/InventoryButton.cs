@@ -15,6 +15,7 @@ public class InventoryButton : MonoBehaviour
 
     private void Awake()
     {
+        if(!icon)
         icon = GetComponentInChildren<Image>();
         button = GetComponent<Button>();
         button.onClick.AddListener(OnClick);
