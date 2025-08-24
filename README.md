@@ -1,6 +1,6 @@
 # UnityProject-Short
 
-This repository contains a minimal Unity project with foundational scripts for a 1-bit style adventure prototype. These scripts provide basic gameplay behaviour for movement, inventory management, and more.
+This repository contains a minimal Unity project with foundational scripts for a 1-bit style adventure prototype. These scripts provide basic gameplay behaviour for movement, inventory management, and more. Utility components also supply menu navigation, save/load functionality, and configurable audio settings.
 
 ## Scripts
 All scripts are located in `Assets/Scripts/`. Attach them to appropriate GameObjects in your scenes and configure their fields in the Unity Inspector.
@@ -29,14 +29,35 @@ Manages ghost behavior that blocks progress until a specific item is used.
 - UnityEvents `onDefeated` and `onFailed` fire on success or failure.
 
 ### RoomManager.cs
-Loads room scenes and applies atmosphere cues.
-- Define `RoomSettings` to pair room ids with ambient clips and lighting.
-- Use `LoadRoom` to transition to another scene and call `ApplyAtmosphere` after loading.
+Tracks and loads room scenes.
+- `LoadRoom` transitions to the target scene and records it as the current room.
 
 ### SoundManager.cs
 Plays background music and sound effects.
 - Requires two `AudioSource` components: one for music and one for SFX.
-- Provides `StopMusic` to halt the current track.
+- Provides `StopMusic` to halt the current track and exposes `SetMusicVolume` and `SetSFXVolume` for runtime volume control.
+
+### SaveLoadManager.cs
+Persists player progress to a single JSON save file.
+- Call `Save()` and `Load()` to write or read data.
+- Stores the current room, player position, and inventory item ids.
+
+### MainMenu.cs
+Button callbacks for the title screen.
+- `StartNewGame()` clears an existing save and loads the first scene.
+- `ContinueGame()` loads the save file if present.
+- `QuitGame()` exits the application.
+
+### PauseMenu.cs
+Toggles gameplay pausing and exposes additional menu actions.
+- Pressing *Escape* calls `Pause()`/`Resume()`.
+- `SaveGame()` and `LoadGame()` bridge to `SaveLoadManager`.
+- `QuitToMenu()` returns to the main menu scene.
+
+### SettingsManager.cs & SettingsMenu.cs
+Maintain and display user configurable options.
+- Currently supports music and SFX volume with values stored in `PlayerPrefs`.
+- `SettingsMenu` links UI sliders to the manager.
 
 ### UIManager.cs
 Displays inventory contents, flavour text, and interaction prompts.
@@ -66,6 +87,7 @@ Prefab templates for these systems are provided in `Assets/Prefabs/`. Drop them 
 2. Populate scenes with interactable objects and ghosts, assigning the appropriate scripts.
 3. Create `Item` assets for Lamp, Spatula, Shoes, Insecticide, Stool, Toilet Brush, Garden Key, Jacket, Cough Medicine, Bucket, and Shovel.
 4. Run **Tools > Build Prefabs** to generate prefabs for the core systems.
+5. Set up UI canvases using `MainMenu`, `PauseMenu`, and `SettingsMenu` to enable saving/loading and audio options.
 
 These scripts form a basic framework for the prototype—extend them further to complete the game.
 

@@ -119,6 +119,40 @@ public class InventorySystem : PersistentSingleton<InventorySystem>
         return Items;
     }
 
+    /// <summary>
+    /// Returns the ids of all items currently in the inventory.
+    /// Used by the save system.
+    /// </summary>
+    public List<string> GetItemIds()
+    {
+        List<string> ids = new List<string>();
+        foreach (Item item in Items)
+        {
+            ids.Add(item.Id);
+        }
+        return ids;
+    }
+
+    /// <summary>
+    /// Replaces the inventory contents with the given item ids.
+    /// </summary>
+    public void SetItemsByIds(IEnumerable<string> ids)
+    {
+        Items.Clear();
+        if (ids == null) return;
+        foreach (var id in ids)
+        {
+            if (string.IsNullOrEmpty(id)) continue;
+            var item = FindItem(id);
+            if (item != null)
+            {
+                Items.Add(item);
+                ItemAdded?.Invoke(item);
+            }
+        }
+        SaveInventory();
+    }
+
     private void LoadInventory()
     {
         Items.Clear();
