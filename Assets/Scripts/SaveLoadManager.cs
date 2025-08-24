@@ -1,96 +1,82 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.IO;
 using UnityEngine;
 
 /// <summary>
 /// Handles serialising and deserialising persistent game data.
-/// Uses a single JSON save file under
-/// <see cref="Application.persistentDataPath"/>.
+/// Uses Unity's PlayerPrefs system for storage.
 /// </summary>
 public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
 {
-    private const string FileName = "save.json";
+    private const string RoomKey = "Save_Room";
+    private const string PlayerXKey = "Save_Player_X";
+    private const string PlayerYKey = "Save_Player_Y";
+    private const string PlayerZKey = "Save_Player_Z";
 
     /// <summary>
-    /// Data representation of the player's progress.
-    /// </summary>
-    [System.Serializable]
-    public class SaveData
-    {
-        public string roomName;
-        public float[] playerPosition;
-        public List<string> inventoryIds;
-    }
-
-    /// <summary>
-    /// Saves the current game state to disk.
+    /// Saves the current game state to PlayerPrefs.
     /// </summary>
     public void Save()
     {
-        var data = new SaveData();
-        data.roomName = RoomManager.Instance.CurrentRoom;
+        PlayerPrefs.SetString(RoomKey, RoomManager.Instance.CurrentRoom);
 
         var player = GameObject.FindWithTag("Player");
         if (player != null)
         {
             Vector3 pos = player.transform.position;
-            data.playerPosition = new float[3] { pos.x, pos.y, pos.z };
+            PlayerPrefs.SetFloat(PlayerXKey, pos.x);
+            PlayerPrefs.SetFloat(PlayerYKey, pos.y);
+            PlayerPrefs.SetFloat(PlayerZKey, pos.z);
         }
-        data.inventoryIds = InventorySystem.Instance.GetItemIds();
 
-        string json = JsonUtility.ToJson(data, true);
-        File.WriteAllText(GetPath(), json);
+        PlayerPrefs.Save();
     }
 
     /// <summary>
-    /// Loads the game state from disk.
+    /// Loads the game state from PlayerPrefs.
     /// </summary>
     public void Load()
     {
-        string path = GetPath();
-        if (!File.Exists(path)) return;
-        string json = File.ReadAllText(path);
-        var data = JsonUtility.FromJson<SaveData>(json);
-        StartCoroutine(LoadRoutine(data));
+        if (!SaveExists()) return;
+        StartCoroutine(LoadRoutine());
     }
 
-    private IEnumerator LoadRoutine(SaveData data)
+    private IEnumerator LoadRoutine()
     {
-        RoomManager.Instance.LoadRoom(data.roomName);
-        yield return null;
-
-        var player = GameObject.FindWithTag("Player");
-        if (player != null && data.playerPosition != null && data.playerPosition.Length == 3)
+        string roomName = PlayerPrefs.GetString(RoomKey, string.Empty);
+        if (!string.IsNullOrEmpty(roomName))
         {
-            player.transform.position = new Vector3(data.playerPosition[0], data.playerPosition[1], data.playerPosition[2]);
+            RoomManager.Instance.LoadRoom(roomName);
+            yield return null;
         }
 
-        InventorySystem.Instance.SetItemsByIds(data.inventoryIds);
+        var player = GameObject.FindWithTag("Player");
+        if (player != null && PlayerPrefs.HasKey(PlayerXKey) && PlayerPrefs.HasKey(PlayerYKey) && PlayerPrefs.HasKey(PlayerZKey))
+        {
+            player.transform.position = new Vector3(
+                PlayerPrefs.GetFloat(PlayerXKey),
+                PlayerPrefs.GetFloat(PlayerYKey),
+                PlayerPrefs.GetFloat(PlayerZKey));
+        }
     }
 
     /// <summary>
-    /// Deletes the save file.
+    /// Deletes the save data.
     /// </summary>
     public void Delete()
     {
-        string path = GetPath();
-        if (File.Exists(path))
-        {
-            File.Delete(path);
-        }
+        PlayerPrefs.DeleteKey(RoomKey);
+        PlayerPrefs.DeleteKey(PlayerXKey);
+        PlayerPrefs.DeleteKey(PlayerYKey);
+        PlayerPrefs.DeleteKey(PlayerZKey);
+        PlayerPrefs.DeleteKey(InventorySystem.InventoryKey);
+        PlayerPrefs.Save();
     }
 
     /// <summary>
-    /// Returns whether a save file exists.
+    /// Returns whether save data exists.
     /// </summary>
     public bool SaveExists()
     {
-        return File.Exists(GetPath());
-    }
-
-    private string GetPath()
-    {
-        return Path.Combine(Application.persistentDataPath, FileName);
+        return PlayerPrefs.HasKey(RoomKey);
     }
 }
