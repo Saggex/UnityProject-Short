@@ -277,7 +277,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   successResponses: []
-  failedResponses: []
+  failedResponses:
+  - Can't go there.
 --- !u!114 &12998228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -376,6 +377,63 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!1001 &210711288
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7892727041084704792, guid: 2ded1c787ddb272429f5e2dc68de9a72, type: 3}
+      propertyPath: m_Name
+      value: RoomManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208761160112864487, guid: 2ded1c787ddb272429f5e2dc68de9a72, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208761160112864487, guid: 2ded1c787ddb272429f5e2dc68de9a72, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208761160112864487, guid: 2ded1c787ddb272429f5e2dc68de9a72, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208761160112864487, guid: 2ded1c787ddb272429f5e2dc68de9a72, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208761160112864487, guid: 2ded1c787ddb272429f5e2dc68de9a72, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208761160112864487, guid: 2ded1c787ddb272429f5e2dc68de9a72, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208761160112864487, guid: 2ded1c787ddb272429f5e2dc68de9a72, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208761160112864487, guid: 2ded1c787ddb272429f5e2dc68de9a72, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208761160112864487, guid: 2ded1c787ddb272429f5e2dc68de9a72, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208761160112864487, guid: 2ded1c787ddb272429f5e2dc68de9a72, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2ded1c787ddb272429f5e2dc68de9a72, type: 3}
 --- !u!1 &628431258
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,6 +577,10 @@ PrefabInstance:
     - target: {fileID: 5289074834795746837, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
       propertyPath: m_SortingOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083909586666423228, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: id
+      value: Test Spatula
       objectReference: {fileID: 0}
     - target: {fileID: 7083909586666423228, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
       propertyPath: item
@@ -1234,6 +1296,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1860075522
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 72765436474478187, guid: 5d1ef1d6a4d813a459724c09358ac904, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 72765436474478187, guid: 5d1ef1d6a4d813a459724c09358ac904, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 72765436474478187, guid: 5d1ef1d6a4d813a459724c09358ac904, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 72765436474478187, guid: 5d1ef1d6a4d813a459724c09358ac904, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 72765436474478187, guid: 5d1ef1d6a4d813a459724c09358ac904, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 72765436474478187, guid: 5d1ef1d6a4d813a459724c09358ac904, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 72765436474478187, guid: 5d1ef1d6a4d813a459724c09358ac904, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 72765436474478187, guid: 5d1ef1d6a4d813a459724c09358ac904, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 72765436474478187, guid: 5d1ef1d6a4d813a459724c09358ac904, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 72765436474478187, guid: 5d1ef1d6a4d813a459724c09358ac904, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055021505067362947, guid: 5d1ef1d6a4d813a459724c09358ac904, type: 3}
+      propertyPath: m_Name
+      value: SoundManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5d1ef1d6a4d813a459724c09358ac904, type: 3}
 --- !u!1 &1978758650
 GameObject:
   m_ObjectHideFlags: 0
@@ -1414,3 +1533,5 @@ SceneRoots:
   - {fileID: 845858568}
   - {fileID: 1978758652}
   - {fileID: 12998225}
+  - {fileID: 210711288}
+  - {fileID: 1860075522}

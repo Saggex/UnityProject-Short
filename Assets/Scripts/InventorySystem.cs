@@ -12,6 +12,7 @@ public class InventorySystem : PersistentSingleton<InventorySystem>
 
     private void Awake()
     {
+        base.Awake();
         LoadInventory();
     }
 
@@ -105,6 +106,7 @@ public class InventorySystem : PersistentSingleton<InventorySystem>
     private void SaveInventory()
     {
         var ids = string.Join(",", items.Keys);
+        Debug.Log("Saving inventory with items: " + ids);
         PlayerPrefs.SetString(InventoryKey, ids);
         PlayerPrefs.Save();
     }
