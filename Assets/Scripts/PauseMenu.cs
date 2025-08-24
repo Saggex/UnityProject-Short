@@ -33,14 +33,14 @@ public class PauseMenu : MonoBehaviour
         isPaused = false;
     }
 
-    public void SaveGame(int slot)
+    public void SaveGame()
     {
-        SaveLoadManager.Instance.Save(slot);
+        SaveLoadManager.Instance.Save();
     }
 
-    public void LoadGame(int slot)
+    public void LoadGame()
     {
-        SaveLoadManager.Instance.Load(slot);
+        SaveLoadManager.Instance.Load();
         Resume();
     }
 

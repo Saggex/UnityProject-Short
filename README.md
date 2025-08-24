@@ -29,9 +29,8 @@ Manages ghost behavior that blocks progress until a specific item is used.
 - UnityEvents `onDefeated` and `onFailed` fire on success or failure.
 
 ### RoomManager.cs
-Loads room scenes and applies atmosphere cues.
-- Define `RoomSettings` to pair room ids with ambient clips and lighting.
-- Use `LoadRoom` to transition to another scene and call `ApplyAtmosphere` after loading.
+Tracks and loads room scenes.
+- `LoadRoom` transitions to the target scene and records it as the current room.
 
 ### SoundManager.cs
 Plays background music and sound effects.
@@ -39,20 +38,20 @@ Plays background music and sound effects.
 - Provides `StopMusic` to halt the current track and exposes `SetMusicVolume` and `SetSFXVolume` for runtime volume control.
 
 ### SaveLoadManager.cs
-Persists player progress to JSON save files.
-- Call `Save(slot)` and `Load(slot)` to write or read data.
-- Stores the current scene, player position, and inventory item ids.
+Persists player progress to a single JSON save file.
+- Call `Save()` and `Load()` to write or read data.
+- Stores the current room, player position, and inventory item ids.
 
 ### MainMenu.cs
 Button callbacks for the title screen.
-- `StartNewGame(slot)` clears an existing save and loads the first scene.
-- `LoadGame(slot)` loads a save file if present.
+- `StartNewGame()` clears an existing save and loads the first scene.
+- `ContinueGame()` loads the save file if present.
 - `QuitGame()` exits the application.
 
 ### PauseMenu.cs
 Toggles gameplay pausing and exposes additional menu actions.
 - Pressing *Escape* calls `Pause()`/`Resume()`.
-- `SaveGame(slot)` and `LoadGame(slot)` bridge to `SaveLoadManager`.
+- `SaveGame()` and `LoadGame()` bridge to `SaveLoadManager`.
 - `QuitToMenu()` returns to the main menu scene.
 
 ### SettingsManager.cs & SettingsMenu.cs

@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class RoomManager : PersistentSingleton<RoomManager>
 {
+    public string CurrentRoom { get; private set; }
+
     protected override void Awake()
     {
         base.Awake();
@@ -13,17 +15,19 @@ public class RoomManager : PersistentSingleton<RoomManager>
         {
             return;
         }
+        CurrentRoom = SceneManager.GetActiveScene().name;
     }
 
 
     [SerializeField] private SoundManager soundManager;
     /// <summary>
-    /// Loads a room scene by name.
+    /// Loads a room scene by name and records it as the current room.
     /// </summary>
     public void LoadRoom(string sceneName)
     {
+        CurrentRoom = sceneName;
         SceneManager.LoadScene(sceneName);
     }
 
-    
+
 }

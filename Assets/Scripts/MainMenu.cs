@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Handles top level menu actions such as starting a new game,
@@ -11,24 +10,24 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private string firstSceneName = "Bedroom";
 
     /// <summary>
-    /// Starts a fresh game by clearing the specified save slot
+    /// Starts a fresh game by clearing the save file
     /// and loading the first gameplay scene.
     /// </summary>
-    public void StartNewGame(int slot)
+    public void StartNewGame()
     {
-        SaveLoadManager.Instance.Delete(slot);
+        SaveLoadManager.Instance.Delete();
         InventorySystem.Instance.SetItemsByIds(null);
-        SceneManager.LoadScene(firstSceneName);
+        RoomManager.Instance.LoadRoom(firstSceneName);
     }
 
     /// <summary>
-    /// Loads a saved game from the provided slot if one exists.
+    /// Continues from the existing save if present.
     /// </summary>
-    public void LoadGame(int slot)
+    public void ContinueGame()
     {
-        if (SaveLoadManager.Instance.SaveExists(slot))
+        if (SaveLoadManager.Instance.SaveExists())
         {
-            SaveLoadManager.Instance.Load(slot);
+            SaveLoadManager.Instance.Load();
         }
     }
 

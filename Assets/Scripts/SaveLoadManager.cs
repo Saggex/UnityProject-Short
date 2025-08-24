@@ -2,16 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Handles serialising and deserialising persistent game data.
-/// Supports multiple save slots stored as JSON files under
+/// Uses a single JSON save file under
 /// <see cref="Application.persistentDataPath"/>.
 /// </summary>
 public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
 {
-    private const string FilePattern = "save_{0}.json";
+    private const string FileName = "save.json";
 
     /// <summary>
     /// Data representation of the player's progress.
@@ -19,18 +18,18 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
     [System.Serializable]
     public class SaveData
     {
-        public string sceneName;
+        public string roomName;
         public float[] playerPosition;
         public List<string> inventoryIds;
     }
 
     /// <summary>
-    /// Saves the current game state to the specified slot.
+    /// Saves the current game state to disk.
     /// </summary>
-    public void Save(int slot)
+    public void Save()
     {
         var data = new SaveData();
-        data.sceneName = SceneManager.GetActiveScene().name;
+        data.roomName = RoomManager.Instance.CurrentRoom;
 
         var player = GameObject.FindWithTag("Player");
         if (player != null)
@@ -41,15 +40,15 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
         data.inventoryIds = InventorySystem.Instance.GetItemIds();
 
         string json = JsonUtility.ToJson(data, true);
-        File.WriteAllText(GetPath(slot), json);
+        File.WriteAllText(GetPath(), json);
     }
 
     /// <summary>
-    /// Loads the game state from the specified slot.
+    /// Loads the game state from disk.
     /// </summary>
-    public void Load(int slot)
+    public void Load()
     {
-        string path = GetPath(slot);
+        string path = GetPath();
         if (!File.Exists(path)) return;
         string json = File.ReadAllText(path);
         var data = JsonUtility.FromJson<SaveData>(json);
@@ -58,11 +57,8 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
 
     private IEnumerator LoadRoutine(SaveData data)
     {
-        AsyncOperation op = SceneManager.LoadSceneAsync(data.sceneName);
-        while (!op.isDone)
-        {
-            yield return null;
-        }
+        RoomManager.Instance.LoadRoom(data.roomName);
+        yield return null;
 
         var player = GameObject.FindWithTag("Player");
         if (player != null && data.playerPosition != null && data.playerPosition.Length == 3)
@@ -74,11 +70,11 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
     }
 
     /// <summary>
-    /// Deletes the save file at the given slot.
+    /// Deletes the save file.
     /// </summary>
-    public void Delete(int slot)
+    public void Delete()
     {
-        string path = GetPath(slot);
+        string path = GetPath();
         if (File.Exists(path))
         {
             File.Delete(path);
@@ -86,15 +82,15 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
     }
 
     /// <summary>
-    /// Returns whether a save file exists in the slot.
+    /// Returns whether a save file exists.
     /// </summary>
-    public bool SaveExists(int slot)
+    public bool SaveExists()
     {
-        return File.Exists(GetPath(slot));
+        return File.Exists(GetPath());
     }
 
-    private string GetPath(int slot)
+    private string GetPath()
     {
-        return Path.Combine(Application.persistentDataPath, string.Format(FilePattern, slot));
+        return Path.Combine(Application.persistentDataPath, FileName);
     }
 }
