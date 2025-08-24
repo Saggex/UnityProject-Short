@@ -6,7 +6,8 @@ using UnityEngine.Audio;
 /// </summary>
 public class SoundManager : PersistentSingleton<SoundManager>
 {
-
+    public bool startMusicRandom;
+    public AudioClip MainTheme;
     public AudioMixerGroup MusicMixer;
     public AudioMixerGroup SfxMixer;
     public Vector2 AudioClamps;
@@ -28,6 +29,11 @@ public class SoundManager : PersistentSingleton<SoundManager>
     {
         SetMusicVolume(musicVolume);
         SetSFXVolume(sfxVolume);
+        if(MainTheme)
+            PlayMusic(MainTheme);
+        if (startMusicRandom) { 
+            musicSource.time = musicSource.clip.length * Random.value;
+        }
     }
 
     /// <summary>
@@ -39,6 +45,7 @@ public class SoundManager : PersistentSingleton<SoundManager>
         musicSource.clip = clip;
         musicSource.loop = true;
         musicSource.Play();
+
     }
 
     /// <summary>

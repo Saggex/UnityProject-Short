@@ -1063,6 +1063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetScene: Kitchen
+  targetSpawnId: GarageDoorSpawn
   requiredItemIds: []
   consumeItem: 0
   onOpened:

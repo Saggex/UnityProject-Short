@@ -1071,6 +1071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetScene: Kitchen
+  targetSpawnId: LivingroomDoorSpawn
   requiredItemIds: []
   consumeItem: 0
   onOpened:

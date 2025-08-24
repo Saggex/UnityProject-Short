@@ -1617,6 +1617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetScene: Hallway
+  targetSpawnId: BathroomDoorSpawn
   requiredItemIds: []
   consumeItem: 0
   onOpened:
