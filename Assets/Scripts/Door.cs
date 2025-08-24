@@ -18,7 +18,7 @@ public class Door : MonoBehaviour
 
     private void Awake()
     {
-        roomManager = FindObjectOfType<RoomManager>();
+        roomManager = RoomManager.Instance;
     }
 
     /// <summary>

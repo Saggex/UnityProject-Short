@@ -17,6 +17,7 @@ public abstract class PersistentSingleton<T> : MonoBehaviour where T : MonoBehav
     {
         if (Instance != null && Instance != this)
         {
+            Debug.Log("Destroying Instance of " + this + " called " + this.gameObject);
             Destroy(gameObject);
             return;
         }

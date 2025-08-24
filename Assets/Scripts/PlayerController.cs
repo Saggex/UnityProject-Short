@@ -17,8 +17,8 @@ public class PlayerController : MonoBehaviour
     private bool isTiptoeing;
 
     public List<ItemPickup> nearbyPickups = new List<ItemPickup>();
-    public readonly List<GhostAI> nearbyGhosts = new List<GhostAI>();
-    public readonly List<Door> nearbyDoors = new List<Door>();
+    public List<GhostAI> nearbyGhosts = new List<GhostAI>();
+    public List<Door> nearbyDoors = new List<Door>();
 
     private void Awake()
     {
@@ -67,20 +67,25 @@ public class PlayerController : MonoBehaviour
         if (nearbyPickups.Count > 0)
         {
             var pickup = nearbyPickups[0];
+            Debug.Log("Interacting with " + pickup);
             pickup.Interact();
             return;
         }
 
         if (nearbyDoors.Count > 0)
         {
+            
             var door = nearbyDoors[0];
+            Debug.Log("Interacting with " + door);
             door.Interact();
             return;
         }
 
         if (nearbyGhosts.Count > 0)
         {
+
             var ghost = nearbyGhosts[0];
+            Debug.Log("Interacting with " + ghost);
             ghost.Interact();
         }
     }

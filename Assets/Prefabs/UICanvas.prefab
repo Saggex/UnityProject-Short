@@ -110,7 +110,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7328078149051482209
 RectTransform:
   m_ObjectHideFlags: 0
@@ -544,7 +544,6 @@ MonoBehaviour:
   inventoryButtonPrefab: {fileID: 1720667103602952089, guid: 0037356ee62c470eb98e397c3cfd6fd3, type: 3}
   flavourText: {fileID: 1321065222137628670}
   prompt: {fileID: 1321065222137628670}
-  inventory: {fileID: 0}
 --- !u!114 &3732311167130828911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -559,7 +558,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventoryPanel: {fileID: 193681974378496438}
   toggleKey: 105
-  ui: {fileID: 2349624548146162056}
 --- !u!1 &6404627191058803658
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,7 +812,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &9136397240048935232
 RectTransform:
   m_ObjectHideFlags: 0
