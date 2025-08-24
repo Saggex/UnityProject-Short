@@ -61,6 +61,7 @@ public class ItemPickup : MonoBehaviour
         ui?.RefreshInventory(inventory);
         ui?.ShowFlavourText(GetRandomResponse(successResponses) ?? $"Picked up {item.DisplayName}");
         onPickedUp?.Invoke();
+        SoundManager.Instance.PlaySFX(item.Sound);
         DestroyState.MarkDestroyed(GetId());
         Destroy(gameObject);
         return true;
