@@ -437,6 +437,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 9069790161812303274, guid: d535cb8161983284c9d417921d6bf514, type: 3}
+      propertyPath: bottomY
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069790161812303274, guid: d535cb8161983284c9d417921d6bf514, type: 3}
+      propertyPath: maxScale
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1159,9 +1167,27 @@ EdgeCollider2D:
   m_EdgeRadius: 0
   m_Points:
   - {x: -4.222437, y: -1.2801871}
-  - {x: -9.764872, y: -4.8933296}
-  - {x: 8.84876, y: -4.684695}
-  - {x: 7.1933436, y: -1.1798246}
+  - {x: -5.241415, y: -1.9076408}
+  - {x: -6.0683236, y: -1.7960844}
+  - {x: -7.542813, y: -2.394691}
+  - {x: -9.240505, y: -5.526939}
+  - {x: -6.9218497, y: -6.3593}
+  - {x: 8.127756, y: -6.519976}
+  - {x: 9.657157, y: -6.1922474}
+  - {x: 8.691024, y: -3.544913}
+  - {x: 7.688872, y: -1.2440685}
+  - {x: 7.1784086, y: -0.88115}
+  - {x: 4.024049, y: -0.8909685}
+  - {x: 3.8623984, y: -0.52593267}
+  - {x: 2.2811155, y: -0.6207253}
+  - {x: 2.2368822, y: -0.92104256}
+  - {x: -1.8109488, y: -0.86383057}
+  - {x: -2.0416718, y: -0.923729}
+  - {x: -2.3539038, y: -0.88303083}
+  - {x: -2.4914706, y: -1.1930134}
+  - {x: -3.1183546, y: -1.1816528}
+  - {x: -3.2345273, y: -0.9511633}
+  - {x: -3.5816858, y: -0.94484293}
   - {x: -4.1295457, y: -1.319257}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
