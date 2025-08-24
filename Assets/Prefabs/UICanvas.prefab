@@ -455,7 +455,7 @@ MonoBehaviour:
   inventoryContainer: {fileID: 1907278445462861731}
   inventoryButtonPrefab: {fileID: 1720667103602952089, guid: 0037356ee62c470eb98e397c3cfd6fd3, type: 3}
   flavourText: {fileID: 0}
-  prompt: {fileID: 8448835614338910721}
+  prompt: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!114 &3732311167130828911
 MonoBehaviour:

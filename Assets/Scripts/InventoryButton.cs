@@ -37,14 +37,12 @@ public class InventoryButton : MonoBehaviour
             button.onClick.RemoveAllListeners();
             button.onClick.AddListener(OnClick);
         }
-        Debug.Log($"[InventoryButton] Initialized for {item.DisplayName}");
     }
 
     private void OnClick()
     {
         if (ui != null && item != null)
         {
-            Debug.Log($"[InventoryButton] {item.DisplayName} clicked");
             ui.ShowFlavourText(item.Description);
         }
     }
