@@ -1,11 +1,13 @@
-Shader "Custom/Outline"
+Shader "Custom/PixelArt/Wobble"
 {
     Properties
     {
         _MainTex ("Sprite Texture", 2D) = "white" {}
         _Color ("Tint", Color) = (1,1,1,1)
-        _OutlineColor ("Outline Color", Color) = (1,1,0,1)
-        _OutlineSize ("Outline Size", Float) = 1
+        _Amplitude ("Wobble Amplitude", Range(0,0.5)) = 0.05
+        _Frequency ("Wobble Frequency", Float) = 10
+        _Speed ("Wobble Speed", Float) = 5
+        _Direction ("Wobble Direction", Vector) = (1,0,0,0)
     }
     SubShader
     {
@@ -37,10 +39,11 @@ Shader "Custom/Outline"
             };
 
             sampler2D _MainTex;
-            float4 _MainTex_TexelSize;
             fixed4 _Color;
-            fixed4 _OutlineColor;
-            float _OutlineSize;
+            float _Amplitude;
+            float _Frequency;
+            float _Speed;
+            float4 _Direction;
 
             v2f vert (appdata v)
             {
@@ -53,22 +56,12 @@ Shader "Custom/Outline"
 
             fixed4 frag (v2f i) : SV_Target
             {
-                fixed4 c = tex2D(_MainTex, i.uv) * i.color;
-                if (c.a == 0)
-                {
-                    float2 offset = _MainTex_TexelSize.xy * _OutlineSize;
-                    float alpha = 0;
-                    alpha += tex2D(_MainTex, i.uv + float2(offset.x, 0)).a;
-                    alpha += tex2D(_MainTex, i.uv + float2(-offset.x, 0)).a;
-                    alpha += tex2D(_MainTex, i.uv + float2(0, offset.y)).a;
-                    alpha += tex2D(_MainTex, i.uv + float2(0, -offset.y)).a;
-                    if (alpha > 0)
-                    {
-                        return _OutlineColor * i.color;
-                    }
-                    return 0;
-                }
-                return c;
+                float2 uv = i.uv;
+                float2 dir = normalize(_Direction.xy);
+                float wave = sin(dot(uv, dir) * _Frequency + _Time.y * _Speed) * _Amplitude;
+                float2 perp = float2(-dir.y, dir.x);
+                uv += perp * wave;
+                return tex2D(_MainTex, uv) * i.color;
             }
             ENDCG
         }
