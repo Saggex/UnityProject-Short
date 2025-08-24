@@ -182,7 +182,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetScene: Kitchen
-  requiredItemId: 9999
+  requiredItemIds:
+  - 9999
   consumeItem: 0
   onOpened:
     m_PersistentCalls:

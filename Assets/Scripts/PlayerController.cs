@@ -20,31 +20,27 @@ public class PlayerController : MonoBehaviour
     private Vector2 facing = Vector2.down;
     private bool isTiptoeing;
 
-    public List<ItemPickup> nearbyPickups = new();
-    public readonly List<GhostAI> nearbyGhosts = new();
-    public readonly List<Door> nearbyDoors = new();
+    public List<ItemPickup> nearbyPickups = new List<ItemPickup>();
+    public readonly List<GhostAI> nearbyGhosts = new List<GhostAI>();
+    public readonly List<Door> nearbyDoors = new List<Door>();
 
     private void Awake()
     {
-        Debug.Log($"[PlayerController] Awake on {name}");
         rb = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
     {
-        Debug.Log("[PlayerController] Update");
         HandleInput();
     }
 
     private void FixedUpdate()
     {
-        Debug.Log("[PlayerController] FixedUpdate");
         Move();
     }
 
     private void HandleInput()
     {
-        Debug.Log("[PlayerController] HandleInput start");
         input = Vector2.zero;
         if (Input.GetKey(KeyCode.W)) input.y += 1f;
         if (Input.GetKey(KeyCode.S)) input.y -= 1f;
@@ -60,27 +56,21 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E) || Input.GetButtonDown("Fire1"))
         {
-            Debug.Log("[PlayerController] Interaction input detected");
             Interact();
         }
-
-        Debug.Log($"[PlayerController] HandleInput result - input: {input}, facing: {facing}, isTiptoeing: {isTiptoeing}");
     }
 
     private void Move()
     {
         float speed = isTiptoeing ? tiptoeSpeed : walkSpeed;
         rb.velocity = input.normalized * speed;
-        Debug.Log($"[PlayerController] Move - speed: {speed}, velocity: {rb.velocity}");
     }
 
     private void Interact()
     {
-        Debug.Log("[PlayerController] Interact called");
         if (nearbyPickups.Count > 0)
         {
             var pickup = nearbyPickups[0];
-            Debug.Log($"[PlayerController] Interacting with pickup {pickup.name}");
             pickup.Interact(inventory, ui);
             return;
         }
@@ -88,7 +78,6 @@ public class PlayerController : MonoBehaviour
         if (nearbyDoors.Count > 0)
         {
             var door = nearbyDoors[0];
-            Debug.Log($"[PlayerController] Interacting with door {door.name}");
             door.Interact(inventory, ui);
             return;
         }
@@ -96,71 +85,60 @@ public class PlayerController : MonoBehaviour
         if (nearbyGhosts.Count > 0)
         {
             var ghost = nearbyGhosts[0];
-            Debug.Log($"[PlayerController] Interacting with ghost {ghost.name}");
             ghost.Interact(inventory, ui);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log($"[PlayerController] OnTriggerEnter2D with {collision.name}");
         var pickup = collision.GetComponent<ItemPickup>();
         if (pickup != null && !nearbyPickups.Contains(pickup))
         {
             nearbyPickups.Add(pickup);
-            Debug.Log($"[PlayerController] Pickup {pickup.name} added to nearby list");
         }
 
         var door = collision.GetComponent<Door>();
         if (door != null && !nearbyDoors.Contains(door))
         {
             nearbyDoors.Add(door);
-            Debug.Log($"[PlayerController] Door {door.name} added to nearby list");
         }
 
         var ghost = collision.GetComponent<GhostAI>();
         if (ghost != null && !nearbyGhosts.Contains(ghost))
         {
             nearbyGhosts.Add(ghost);
-            Debug.Log($"[PlayerController] Ghost {ghost.name} added to nearby list");
         }
 
         var highlight = collision.GetComponent<IHighlightable>();
         if (highlight != null)
         {
-            Debug.Log($"[PlayerController] Highlighting {collision.name}");
             highlight.SetHighlighted(true);
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log($"[PlayerController] OnTriggerExit2D with {collision.name}");
         var pickup = collision.GetComponent<ItemPickup>();
         if (pickup != null)
         {
             nearbyPickups.Remove(pickup);
-            Debug.Log($"[PlayerController] Pickup {pickup.name} removed from nearby list");
         }
 
         var door = collision.GetComponent<Door>();
         if (door != null)
         {
             nearbyDoors.Remove(door);
-            Debug.Log($"[PlayerController] Door {door.name} removed from nearby list");
         }
 
         var ghost = collision.GetComponent<GhostAI>();
         if (ghost != null)
         {
             nearbyGhosts.Remove(ghost);
-            Debug.Log($"[PlayerController] Ghost {ghost.name} removed from nearby list");
         }
 
         var highlight = collision.GetComponent<IHighlightable>();
         if (highlight != null)
         {
-            Debug.Log($"[PlayerController] Removing highlight from {collision.name}");
             highlight.SetHighlighted(false);
         }
     }

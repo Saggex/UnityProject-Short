@@ -6,7 +6,7 @@ using UnityEngine.Events;
 /// </summary>
 public class GhostAI : MonoBehaviour
 {
-    [SerializeField] private string requiredItemId;
+    [SerializeField] private string[] requiredItemIds;
     [SerializeField] private bool consumeItem = true;
     [SerializeField] private bool isDefeated;
     [SerializeField] private UnityEvent onDefeated;
@@ -15,9 +15,9 @@ public class GhostAI : MonoBehaviour
     [SerializeField] [TextArea] private string[] failedResponses;
 
     /// <summary>
-    /// Item id required to clear the ghost.
+    /// Item ids required to clear the ghost.
     /// </summary>
-    public string RequiredItemId => requiredItemId;
+    public string[] RequiredItemIds => requiredItemIds;
 
     /// <summary>
     /// Attempts to interact with the ghost using the player's inventory.
@@ -25,17 +25,23 @@ public class GhostAI : MonoBehaviour
     public bool Interact(InventorySystem inventory, UIManager ui)
     {
         if (isDefeated) return false;
-        if (!string.IsNullOrEmpty(requiredItemId))
+        if (requiredItemIds != null && requiredItemIds.Length > 0)
         {
-            if (!inventory.HasItem(requiredItemId))
+            foreach (var id in requiredItemIds)
             {
-                onFailed?.Invoke();
-                ui?.ShowFlavourText(GetRandomResponse(failedResponses) ?? $"You need {requiredItemId}");
-                return false;
+                if (!inventory.HasItem(id))
+                {
+                    onFailed?.Invoke();
+                    ui?.ShowFlavourText(GetRandomResponse(failedResponses) ?? $"You need {string.Join(", ", requiredItemIds)}");
+                    return false;
+                }
             }
             if (consumeItem)
             {
-                inventory.UseItem(requiredItemId);
+                foreach (var id in requiredItemIds)
+                {
+                    inventory.UseItem(id);
+                }
                 ui?.RefreshInventory(inventory);
             }
         }

@@ -6,7 +6,7 @@ using UnityEngine;
 /// </summary>
 public class InventorySystem : MonoBehaviour
 {
-    private readonly Dictionary<string, Item> items = new();
+    private readonly Dictionary<string, Item> items = new Dictionary<string, Item>();
 
     /// <summary>
     /// Raised when an item is added to the inventory.
@@ -25,11 +25,9 @@ public class InventorySystem : MonoBehaviour
     {
         if (item == null || items.ContainsKey(item.Id))
         {
-            Debug.Log($"[InventorySystem] AddItem ignored for {item?.DisplayName ?? "null"}");
             return;
         }
         items[item.Id] = item;
-        Debug.Log($"[InventorySystem] Added {item.DisplayName}");
         ItemAdded?.Invoke(item);
     }
 
@@ -38,9 +36,7 @@ public class InventorySystem : MonoBehaviour
     /// </summary>
     public bool HasItem(string id)
     {
-        bool has = items.ContainsKey(id);
-        Debug.Log($"[InventorySystem] HasItem {id} = {has}");
-        return has;
+        return items.ContainsKey(id);
     }
 
     /// <summary>
@@ -50,11 +46,9 @@ public class InventorySystem : MonoBehaviour
     {
         if (!items.TryGetValue(id, out var item))
         {
-            Debug.Log($"[InventorySystem] RemoveItem failed for {id}");
             return false;
         }
         items.Remove(id);
-        Debug.Log($"[InventorySystem] Removed {item.DisplayName}");
         ItemRemoved?.Invoke(item);
         return true;
     }
@@ -66,11 +60,9 @@ public class InventorySystem : MonoBehaviour
     {
         if (!items.TryGetValue(id, out var item))
         {
-            Debug.Log($"[InventorySystem] UseItem failed for {id}");
             return null;
         }
         items.Remove(id);
-        Debug.Log($"[InventorySystem] Used {item.DisplayName}");
         ItemRemoved?.Invoke(item);
         return item;
     }
@@ -80,7 +72,6 @@ public class InventorySystem : MonoBehaviour
     /// </summary>
     public IEnumerable<Item> GetAllItems()
     {
-        Debug.Log($"[InventorySystem] GetAllItems count = {items.Count}");
         return items.Values;
     }
 }

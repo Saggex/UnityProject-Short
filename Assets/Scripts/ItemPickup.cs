@@ -7,7 +7,7 @@ using UnityEngine.Events;
 public class ItemPickup : MonoBehaviour
 {
     [SerializeField] private Item item;
-    [SerializeField] private string requiredItemId;
+    [SerializeField] private string[] requiredItemIds;
     [SerializeField] private bool consumeItem;
     [SerializeField] private UnityEvent onPickedUp;
     [SerializeField] private UnityEvent onFailed;
@@ -24,17 +24,23 @@ public class ItemPickup : MonoBehaviour
     /// </summary>
     public bool Interact(InventorySystem inventory, UIManager ui)
     {
-        if (!string.IsNullOrEmpty(requiredItemId))
+        if (requiredItemIds != null && requiredItemIds.Length > 0)
         {
-            if (!inventory.HasItem(requiredItemId))
+            foreach (var id in requiredItemIds)
             {
-                onFailed?.Invoke();
-                ui?.ShowFlavourText(GetRandomResponse(failedResponses) ?? $"You need {requiredItemId}");
-                return false;
+                if (!inventory.HasItem(id))
+                {
+                    onFailed?.Invoke();
+                    ui?.ShowFlavourText(GetRandomResponse(failedResponses) ?? $"You need {string.Join(", ", requiredItemIds)}");
+                    return false;
+                }
             }
             if (consumeItem)
             {
-                inventory.UseItem(requiredItemId);
+                foreach (var id in requiredItemIds)
+                {
+                    inventory.UseItem(id);
+                }
                 ui?.RefreshInventory(inventory);
             }
         }
