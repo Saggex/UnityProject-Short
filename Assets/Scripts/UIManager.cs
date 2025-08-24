@@ -53,13 +53,16 @@ public class UIManager : PersistentSingleton<UIManager>
     /// </summary>
     public void RefreshInventory(InventorySystem inv = null)
     {
+        Debug.Log("Refreshing Inventory");
         if (inv != null)
         {
+            
             inventory = inv;
         }
 
         if (inventoryContainer == null || inventoryButtonPrefab == null || inventory == null)
         {
+            Debug.Log("Oh! You don't have an inventory or another component is missing");
             return;
         }
 
@@ -71,11 +74,11 @@ public class UIManager : PersistentSingleton<UIManager>
         int index = 0;
         foreach (var item in inventory.GetAllItems())
         {
+            Debug.Log("Adding "+item.name+" to inventory!");
             var button = Instantiate(inventoryButtonPrefab, inventoryContainer);
             var rt = button.GetComponent<RectTransform>();
-            rt.anchoredPosition = new Vector2((index % 4) * 70, -(index / 4) * 70);
+            //rt.anchoredPosition = new Vector2((index % 4) * 70, -(index / 4) * 70);
             button.Initialize(item);
-            index++;
         }
     }
 

@@ -7,11 +7,12 @@ using UnityEngine;
 public class InventorySystem : PersistentSingleton<InventorySystem>
 {
     private const string InventoryKey = "Inventory_Items";
-    [SerializeField] private Item[] allItems;
-    private readonly Dictionary<string, Item> items = new Dictionary<string, Item>();
+    [SerializeField] public Item[] allItems;
+    [SerializeField] public List<Item> Items;
 
     private void Awake()
     {
+        base.Awake();
         LoadInventory();
     }
 
@@ -30,11 +31,13 @@ public class InventorySystem : PersistentSingleton<InventorySystem>
     /// </summary>
     public void AddItem(Item item)
     {
-        if (item == null || items.ContainsKey(item.Id))
+        Debug.Log("Adding Item " + item.name);
+        if (item == null || Items.Contains(item))
         {
+            Debug.Log("You already have " + item.name);
             return;
         }
-        items[item.Id] = item;
+        Items.Add(item);
         ItemAdded?.Invoke(item);
         SaveInventory();
     }
@@ -44,7 +47,21 @@ public class InventorySystem : PersistentSingleton<InventorySystem>
     /// </summary>
     public bool HasItem(string id)
     {
-        return items.ContainsKey(id);
+        foreach(Item item in Items) { 
+            if(item.Id == id)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /// <summary>
+    /// Determines whether the player has a specific item.
+    /// </summary>
+    public bool HasItem(Item item)
+    {
+        return Items.Contains(item);
     }
 
     /// <summary>
@@ -52,11 +69,27 @@ public class InventorySystem : PersistentSingleton<InventorySystem>
     /// </summary>
     public bool RemoveItem(string id)
     {
-        if (!items.TryGetValue(id, out var item))
+        if (!HasItem(id))
         {
             return false;
         }
-        items.Remove(id);
+        Item item = FindItem(id);
+        Items.Remove(item);
+        ItemRemoved?.Invoke(item);
+        SaveInventory();
+        return true;
+    }
+
+    /// <summary>
+    /// Removes an item without using it.
+    /// </summary>
+    public bool RemoveItem(Item item)
+    {
+        if (!HasItem(item))
+        {
+            return false;
+        }
+        Items.Remove(item);
         ItemRemoved?.Invoke(item);
         SaveInventory();
         return true;
@@ -67,11 +100,12 @@ public class InventorySystem : PersistentSingleton<InventorySystem>
     /// </summary>
     public Item UseItem(string id)
     {
-        if (!items.TryGetValue(id, out var item))
+        Item item = FindItem(id);
+        if (!HasItem(item))
         {
             return null;
         }
-        items.Remove(id);
+        Items.Remove(item);
         ItemRemoved?.Invoke(item);
         SaveInventory();
         return item;
@@ -82,12 +116,12 @@ public class InventorySystem : PersistentSingleton<InventorySystem>
     /// </summary>
     public IEnumerable<Item> GetAllItems()
     {
-        return items.Values;
+        return Items;
     }
 
     private void LoadInventory()
     {
-        items.Clear();
+        Items.Clear();
         var saved = PlayerPrefs.GetString(InventoryKey, string.Empty);
         if (string.IsNullOrEmpty(saved)) return;
         var ids = saved.Split(',');
@@ -97,14 +131,19 @@ public class InventorySystem : PersistentSingleton<InventorySystem>
             var item = FindItem(id);
             if (item != null)
             {
-                items[id] = item;
+                Items.Add(item);
             }
         }
     }
 
     private void SaveInventory()
     {
-        var ids = string.Join(",", items.Keys);
+        List<string> idList = new List<string>();
+        foreach(Item item in Items)
+        {
+            idList.Add(item.Id);
+        }
+        string ids = string.Join(",", idList);
         PlayerPrefs.SetString(InventoryKey, ids);
         PlayerPrefs.Save();
     }
