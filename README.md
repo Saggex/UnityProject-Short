@@ -8,8 +8,7 @@ All scripts are located in `Assets/Scripts/`. Attach them to appropriate GameObj
 ### PlayerController.cs
 Handles player movement, tiptoeing, and interaction input.
 - Attach to the player GameObject with a `Rigidbody2D`.
-- Assign references for `InventorySystem` and `UIManager`.
-- Uses a raycast in the facing direction to pick up `ItemPickup` objects and satisfy `GhostAI` using items from the inventory.
+- Uses global `InventorySystem` and `UIManager` singletons to pick up `ItemPickup` objects and satisfy `GhostAI` requirements.
 
 ### InventorySystem.cs
 Stores collected items and provides methods for checking and using them.

@@ -22,13 +22,15 @@ public class ItemPickup : MonoBehaviour
     /// <summary>
     /// Attempts to pick up the item using the player's inventory.
     /// </summary>
-    public bool Interact(InventorySystem inventory, UIManager ui)
+    public bool Interact()
     {
+        var inventory = InventorySystem.Instance;
+        var ui = UIManager.Instance;
         if (requiredItemIds != null && requiredItemIds.Length > 0)
         {
             foreach (var id in requiredItemIds)
             {
-                if (!inventory.HasItem(id))
+                if (inventory == null || !inventory.HasItem(id))
                 {
                     onFailed?.Invoke();
                     ui?.ShowFlavourText(GetRandomResponse(failedResponses) ?? $"You need {string.Join(", ", requiredItemIds)}");
@@ -39,13 +41,13 @@ public class ItemPickup : MonoBehaviour
             {
                 foreach (var id in requiredItemIds)
                 {
-                    inventory.UseItem(id);
+                    inventory?.UseItem(id);
                 }
                 ui?.RefreshInventory(inventory);
             }
         }
 
-        inventory.AddItem(item);
+        inventory?.AddItem(item);
         ui?.RefreshInventory(inventory);
         ui?.ShowFlavourText(GetRandomResponse(successResponses) ?? $"Picked up {item.DisplayName}");
         onPickedUp?.Invoke();

@@ -11,10 +11,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float walkSpeed = 3f;
     [SerializeField] private float tiptoeSpeed = 1.5f;
 
-    [Header("References")]
-    [SerializeField] private InventorySystem inventory;
-    [SerializeField] private UIManager ui;
-
     private Rigidbody2D rb;
     private Vector2 input;
     private Vector2 facing = Vector2.down;
@@ -71,21 +67,21 @@ public class PlayerController : MonoBehaviour
         if (nearbyPickups.Count > 0)
         {
             var pickup = nearbyPickups[0];
-            pickup.Interact(inventory, ui);
+            pickup.Interact();
             return;
         }
 
         if (nearbyDoors.Count > 0)
         {
             var door = nearbyDoors[0];
-            door.Interact(inventory, ui);
+            door.Interact();
             return;
         }
 
         if (nearbyGhosts.Count > 0)
         {
             var ghost = nearbyGhosts[0];
-            ghost.Interact(inventory, ui);
+            ghost.Interact();
         }
     }
 

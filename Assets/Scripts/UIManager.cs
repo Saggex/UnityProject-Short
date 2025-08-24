@@ -2,19 +2,25 @@ using UnityEngine;
 /// <summary>
 /// Displays inventory, flavour text, and interaction prompts.
 /// </summary>
-public class UIManager : MonoBehaviour
+public class UIManager : PersistentSingleton<UIManager>
 {
     [SerializeField] private Transform inventoryContainer;
     [SerializeField] private InventoryButton inventoryButtonPrefab;
     [SerializeField] private TypewriterText flavourText;
     [SerializeField] private TypewriterText prompt;
-    [SerializeField] private InventorySystem inventory;
+    private InventorySystem inventory;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
+        if (Instance != this)
+        {
+            return;
+        }
+
         if (inventory == null)
         {
-            inventory = FindObjectOfType<InventorySystem>();
+            inventory = InventorySystem.Instance ?? FindObjectOfType<InventorySystem>();
         }
         if (inventory != null)
         {
@@ -30,7 +36,7 @@ public class UIManager : MonoBehaviour
 
     private void OnDestroy()
     {
-        if (inventory != null)
+        if (Instance == this && inventory != null)
         {
             inventory.ItemAdded -= OnInventoryChanged;
             inventory.ItemRemoved -= OnInventoryChanged;
@@ -68,7 +74,7 @@ public class UIManager : MonoBehaviour
             var button = Instantiate(inventoryButtonPrefab, inventoryContainer);
             var rt = button.GetComponent<RectTransform>();
             rt.anchoredPosition = new Vector2((index % 4) * 70, -(index / 4) * 70);
-            button.Initialize(item, this);
+            button.Initialize(item);
             index++;
         }
     }

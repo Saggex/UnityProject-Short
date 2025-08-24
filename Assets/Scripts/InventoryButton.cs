@@ -9,7 +9,6 @@ using UnityEngine.UI;
 public class InventoryButton : MonoBehaviour
 {
     public Item item;
-    public UIManager ui;
     public Image icon;
     public Button button;
 
@@ -22,12 +21,11 @@ public class InventoryButton : MonoBehaviour
     }
 
     /// <summary>
-    /// Initializes the button with an item and UI manager reference.
+    /// Initializes the button with an item.
     /// </summary>
-    public void Initialize(Item item, UIManager ui)
+    public void Initialize(Item item)
     {
         this.item = item;
-        this.ui = ui;
         if (icon != null)
         {
             icon.sprite = item.Sprite;
@@ -41,9 +39,9 @@ public class InventoryButton : MonoBehaviour
 
     private void OnClick()
     {
-        if (ui != null && item != null)
+        if (item != null)
         {
-            ui.ShowFlavourText(item.Description);
+            UIManager.Instance?.ShowFlavourText(item.Description);
         }
     }
 }
