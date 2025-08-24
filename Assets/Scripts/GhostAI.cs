@@ -6,6 +6,7 @@ using UnityEngine.Events;
 /// </summary>
 public class GhostAI : MonoBehaviour
 {
+    [SerializeField] private string id;
     [SerializeField] private string[] requiredItemIds;
     [SerializeField] private bool consumeItem = true;
     [SerializeField] private bool isDefeated;
@@ -18,6 +19,15 @@ public class GhostAI : MonoBehaviour
     /// Item ids required to clear the ghost.
     /// </summary>
     public string[] RequiredItemIds => requiredItemIds;
+
+    private void Awake()
+    {
+        if (DestroyState.IsDestroyed(GetId()))
+        {
+            isDefeated = true;
+            gameObject.SetActive(false);
+        }
+    }
 
     /// <summary>
     /// Attempts to interact with the ghost using the player's inventory.
@@ -47,8 +57,8 @@ public class GhostAI : MonoBehaviour
                 ui?.RefreshInventory(inventory);
             }
         }
-
         isDefeated = true;
+        DestroyState.MarkDestroyed(GetId());
         onDefeated?.Invoke();
         var success = GetRandomResponse(successResponses);
         if (!string.IsNullOrEmpty(success))
@@ -57,6 +67,11 @@ public class GhostAI : MonoBehaviour
         }
         gameObject.SetActive(false);
         return true;
+    }
+
+    private string GetId()
+    {
+        return string.IsNullOrEmpty(id) ? gameObject.name : id;
     }
 
     private string GetRandomResponse(string[] responses)
