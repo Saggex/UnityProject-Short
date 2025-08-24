@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Test Kitchen.unity
     guid: 875290fcf2da1284ea9019b318b6614b
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 8ec0e3d59b8c0474cb895a336b019256
   m_configObjects: {}

@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.UI;
 /// <summary>
 /// Handles top level menu actions such as starting a new game,
 /// loading a save and quitting the application.
@@ -8,6 +8,15 @@ using UnityEngine;
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] private string firstSceneName = "Bedroom";
+    public Button ContinueButton;
+
+    private void Start()
+    {
+        if ( ContinueButton && !SaveLoadManager.Instance.SaveExists())
+        {
+            ContinueButton.interactable = false;
+        }
+    }
 
     /// <summary>
     /// Starts a fresh game by clearing the save file
