@@ -6,7 +6,7 @@ using UnityEngine;
 /// </summary>
 public class InventorySystem : PersistentSingleton<InventorySystem>
 {
-    private const string InventoryKey = "Inventory_Items";
+    public const string InventoryKey = "Inventory_Items";
     [SerializeField] public Item[] allItems;
     [SerializeField] public List<Item> Items;
 
@@ -139,15 +139,17 @@ public class InventorySystem : PersistentSingleton<InventorySystem>
     public void SetItemsByIds(IEnumerable<string> ids)
     {
         Items.Clear();
-        if (ids == null) return;
-        foreach (var id in ids)
+        if (ids != null)
         {
-            if (string.IsNullOrEmpty(id)) continue;
-            var item = FindItem(id);
-            if (item != null)
+            foreach (var id in ids)
             {
-                Items.Add(item);
-                ItemAdded?.Invoke(item);
+                if (string.IsNullOrEmpty(id)) continue;
+                var item = FindItem(id);
+                if (item != null)
+                {
+                    Items.Add(item);
+                    ItemAdded?.Invoke(item);
+                }
             }
         }
         SaveInventory();

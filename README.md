@@ -38,9 +38,9 @@ Plays background music and sound effects.
 - Provides `StopMusic` to halt the current track and exposes `SetMusicVolume` and `SetSFXVolume` for runtime volume control.
 
 ### SaveLoadManager.cs
-Persists player progress to a single JSON save file.
+Persists player progress using Unity's `PlayerPrefs` system.
 - Call `Save()` and `Load()` to write or read data.
-- Stores the current room, player position, and inventory item ids.
+- Stores the current room and player position. Inventory is saved separately by `InventorySystem`.
 
 ### MainMenu.cs
 Button callbacks for the title screen.
