@@ -52,7 +52,7 @@ public class TypewriterText : MonoBehaviour
         textComponent.text = plainText;
         textComponent.maxVisibleCharacters = 0;
         textComponent.ForceMeshUpdate();
-        originalMeshInfo = textComponent.textInfo.CopyMeshInfoVertexData();
+        //originalMeshInfo = textComponent.textInfo.CopyMeshInfoVertexData();
         canvasGroup.alpha = 1f;
         gameObject.SetActive(true);
         isAnimating = true;
