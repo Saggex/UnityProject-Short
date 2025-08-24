@@ -45,10 +45,10 @@ Material:
     - _Amplitude: 0.968
     - _EnableExternalAlpha: 0
     - _Frequency: 47.08
-    - _Intensity: 0.0125
-    - _NoiseScale: 4
+    - _Intensity: 0.00625
+    - _NoiseScale: 6
     - _OutlineSize: 1
-    - _Speed: 1
+    - _Speed: 0.25
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}

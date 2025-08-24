@@ -1065,7 +1065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlightColor: {r: 0, g: 0, b: 0, a: 1}
   outlineSize: 1
-  outlineShader: {fileID: 0}
+  outlineShader: {fileID: 4800000, guid: 1b59dfc599eb47a881f5368693ea8d5e, type: 3}
 --- !u!61 &1058165197
 BoxCollider2D:
   m_ObjectHideFlags: 0
