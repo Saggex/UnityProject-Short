@@ -42,6 +42,7 @@ public class InventoryButton : MonoBehaviour
         if (item != null)
         {
             UIManager.Instance?.ShowFlavourText(item.Description);
+            SoundManager.Instance?.PlaySFX(item.Sound);
         }
     }
 }

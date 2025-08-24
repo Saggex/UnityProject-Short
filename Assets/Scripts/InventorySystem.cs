@@ -108,6 +108,7 @@ public class InventorySystem : PersistentSingleton<InventorySystem>
         Items.Remove(item);
         ItemRemoved?.Invoke(item);
         SaveInventory();
+        SoundManager.Instance?.PlaySFX(item.Sound);
         return item;
     }
 

@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class Door : MonoBehaviour
 {
     [SerializeField] private string targetScene;
+    [SerializeField] private string targetSpawnId;
     [SerializeField] private string[] requiredItemIds;
     [SerializeField] private bool consumeItem;
     [SerializeField] private UnityEvent onOpened;
@@ -59,7 +60,7 @@ public class Door : MonoBehaviour
 
         if (roomManager != null && !string.IsNullOrEmpty(targetScene))
         {
-            roomManager.LoadRoom(targetScene);
+            roomManager.LoadRoom(targetScene, targetSpawnId);
         }
         return true;
     }

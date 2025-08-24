@@ -26,6 +26,7 @@ public class MainMenu : MonoBehaviour
     {
         SaveLoadManager.Instance.Delete();
         InventorySystem.Instance.SetItemsByIds(null);
+        DestroyState.ResetAll();
         RoomManager.Instance.LoadRoom(firstSceneName);
     }
 

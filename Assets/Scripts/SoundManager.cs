@@ -1,10 +1,15 @@
 using UnityEngine;
+using UnityEngine.Audio;
 
 /// <summary>
 /// Plays background music, ambient sounds, and interaction cues.
 /// </summary>
 public class SoundManager : PersistentSingleton<SoundManager>
 {
+
+    public AudioMixerGroup MusicMixer;
+    public AudioMixerGroup SfxMixer;
+    public Vector2 AudioClamps;
     protected override void Awake()
     {
         base.Awake();
@@ -59,9 +64,9 @@ public class SoundManager : PersistentSingleton<SoundManager>
     /// </summary>
     public void SetMusicVolume(float volume)
     {
+
         musicVolume = Mathf.Clamp01(volume);
-        if (musicSource != null)
-            musicSource.volume = musicVolume;
+        MusicMixer.audioMixer.SetFloat("MusicVol", AudioClamps.x + (AudioClamps.y-AudioClamps.x) * musicVolume);
     }
 
     /// <summary>
@@ -70,8 +75,7 @@ public class SoundManager : PersistentSingleton<SoundManager>
     public void SetSFXVolume(float volume)
     {
         sfxVolume = Mathf.Clamp01(volume);
-        if (sfxSource != null)
-            sfxSource.volume = sfxVolume;
+        SfxMixer.audioMixer.SetFloat("SfxVol", AudioClamps.x + (AudioClamps.y - AudioClamps.x) * sfxVolume);
     }
 
     public float GetMusicVolume() => musicVolume;

@@ -43,6 +43,13 @@ public class PlayerController : MonoBehaviour
 
     private void HandleInput()
     {
+        if (InventoryUI.Instance != null && InventoryUI.Instance.IsInventoryOpen)
+        {
+            input = Vector2.zero;
+            rb.velocity = Vector2.zero;
+            return;
+        }
+
         input = Vector2.zero;
         if (Input.GetKey(KeyCode.W)) input.y += 1f;
         if (Input.GetKey(KeyCode.S)) input.y -= 1f;

@@ -42,11 +42,6 @@ public class TypewriterText : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    private void Start()
-    {
-        Show("   ");
-    }
-
     /// <summary>
     /// Shows the provided text with effects, restarting any existing animation.
     /// </summary>
@@ -54,9 +49,9 @@ public class TypewriterText : MonoBehaviour
     {
         StopAllCoroutines();
         ParseEffects(source, out var plainText);
-        textComponent.text = plainText;
+        textComponent.text = source;
         textComponent.maxVisibleCharacters = 0;
-        textComponent.ForceMeshUpdate();
+        //textComponent.ForceMeshUpdate();
         //originalMeshInfo = textComponent.textInfo.CopyMeshInfoVertexData();
         canvasGroup.alpha = 1f;
         gameObject.SetActive(true);
@@ -76,7 +71,9 @@ public class TypewriterText : MonoBehaviour
 
     private IEnumerator TypeRoutine()
     {
+        yield return new WaitForSeconds(5f/charactersPerSecond);
         int total = textComponent.textInfo.characterCount;
+        Debug.Log(total);
         for (int i = 0; i <= total; i++)
         {
             textComponent.maxVisibleCharacters = i;
@@ -141,7 +138,7 @@ public class TypewriterText : MonoBehaviour
             effects.Add(new EffectRange { start = start, end = plainIndex, type = type });
         }
     }
-
+    /*
     private void LateUpdate()
     {
         if (!isAnimating || effects.Count == 0)
@@ -195,4 +192,5 @@ public class TypewriterText : MonoBehaviour
             textComponent.UpdateGeometry(meshInfo.mesh, i);
         }
     }
+    */
 }
