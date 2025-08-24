@@ -335,6 +335,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 218661866984916667, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: highlightColor.b
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 218661866984916667, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: highlightColor.g
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 218661866984916667, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: highlightColor.r
+      value: 0.39215687
+      objectReference: {fileID: 0}
     - target: {fileID: 1346474321720459833, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.75
@@ -416,6 +428,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1712257175}
     m_Modifications:
+    - target: {fileID: 218661866984916667, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: highlightColor.b
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 218661866984916667, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: highlightColor.g
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 218661866984916667, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: highlightColor.r
+      value: 0.39215687
+      objectReference: {fileID: 0}
     - target: {fileID: 356119847346795356, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
       propertyPath: m_SpriteTilingProperty.border.w
       value: 0
@@ -500,6 +524,14 @@ PrefabInstance:
       propertyPath: item
       value: 
       objectReference: {fileID: 11400000, guid: 437dd59b37920f04ca7a366e198d6419, type: 2}
+    - target: {fileID: 7083909586666423228, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: failedResponses.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083909586666423228, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: successResponses.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7083909586666423228, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
       propertyPath: onPickedUp.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -748,7 +780,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.13746572, y: -0.37608528}
+  m_Offset: {x: -0.15326345, y: -0.48945665}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -759,7 +791,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.8990502, y: 4.337969}
+  m_Size: {x: 1.5257456, y: 4.564712}
   m_EdgeRadius: 0
 --- !u!114 &824622978
 MonoBehaviour:
@@ -799,7 +831,7 @@ MonoBehaviour:
   successResponses:
   - I can finally reach the cabinet.
   failedResponses:
-  - "I can't reach the cabinet...\t"
+  - I don't want to get close...
   - Eww...
   - ...
   - Fear.
@@ -815,7 +847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a2770e474213b04f818f8e2ccbb96d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  highlightColor: {r: 0.03773582, g: 0.037267774, b: 0.03186185, a: 1}
   outlineSize: 1
   outlineShader: {fileID: 0}
 --- !u!82 &824622980
@@ -968,7 +1000,7 @@ EdgeCollider2D:
   m_Points:
   - {x: -4.51255, y: -1.9083836}
   - {x: -4.8577085, y: -2.2218754}
-  - {x: -5.90863, y: -2.5378447}
+  - {x: -5.965607, y: -2.4238884}
   - {x: -6.181861, y: -4.059062}
   - {x: 5.978387, y: -4.052307}
   - {x: 5.947029, y: -2.715733}
@@ -1544,7 +1576,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -6.71747, y: -0.7946776}
+  m_Offset: {x: -6.9635897, y: -0.45234776}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1555,7 +1587,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0245686, y: 4.3897686}
+  m_Size: {x: 0.53233004, y: 3.7051086}
   m_EdgeRadius: 0
 --- !u!114 &1888939070
 MonoBehaviour:
@@ -1569,7 +1601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a2770e474213b04f818f8e2ccbb96d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  highlightColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 1}
   outlineSize: 1
   outlineShader: {fileID: 4800000, guid: e028f3e5855845a59d2faf4e7ef53b55, type: 3}
 --- !u!114 &1888939071

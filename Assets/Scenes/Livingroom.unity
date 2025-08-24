@@ -289,6 +289,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 218661866984916667, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: highlightColor.b
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 218661866984916667, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: highlightColor.g
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 218661866984916667, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: highlightColor.r
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 356119847346795356, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: m_Size.y
+      value: 2.8534355
+      objectReference: {fileID: 0}
+    - target: {fileID: 356119847346795356, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.92671776
+      objectReference: {fileID: 0}
     - target: {fileID: 356119847346795356, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
       propertyPath: m_SpriteTilingProperty.border.w
       value: 0
@@ -382,9 +402,49 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7083909586666423228, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: id
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083909586666423228, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
       propertyPath: item
       value: 
       objectReference: {fileID: 11400000, guid: f0a800503719fd6478276e06b06a56f1, type: 2}
+    - target: {fileID: 7083909586666423228, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: consumeItem
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083909586666423228, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: failedResponses.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083909586666423228, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: requiredItemIds.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083909586666423228, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: successResponses.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083909586666423228, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: failedResponses.Array.data[0]
+      value: I can't reach it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083909586666423228, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: failedResponses.Array.data[1]
+      value: If my arm was longer, I could knock it off.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083909586666423228, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: failedResponses.Array.data[2]
+      value: The spatula is too short to reach it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083909586666423228, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: requiredItemIds.Array.data[0]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083909586666423228, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: successResponses.Array.data[0]
+      value: The key for the garden door.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -741,7 +801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a2770e474213b04f818f8e2ccbb96d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  highlightColor: {r: 0, g: 0, b: 0, a: 1}
   outlineSize: 1
   outlineShader: {fileID: 0}
 --- !u!61 &1058165197
@@ -803,7 +863,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: BR2
   requiredItemIds:
-  - 1
+  - 2
   consumeItem: 1
   isDefeated: 0
   onDefeated:
@@ -995,7 +1055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a2770e474213b04f818f8e2ccbb96d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  highlightColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 1}
   outlineSize: 1
   outlineShader: {fileID: 4800000, guid: e028f3e5855845a59d2faf4e7ef53b55, type: 3}
 --- !u!114 &1112420130
@@ -1010,7 +1070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6b8ff1f3b7aa684d8db58cb4a2f75ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScene: Garage
+  targetScene: Kitchen
   requiredItemIds: []
   consumeItem: 0
   onOpened:
@@ -1647,6 +1707,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 218661866984916667, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: highlightColor.b
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 218661866984916667, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: highlightColor.g
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 218661866984916667, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: highlightColor.r
+      value: 0.39215687
+      objectReference: {fileID: 0}
     - target: {fileID: 1346474321720459833, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.75
@@ -1711,6 +1783,18 @@ PrefabInstance:
       propertyPath: item
       value: 
       objectReference: {fileID: 11400000, guid: b1a031916d69f1c43acc3e7a28d05184, type: 2}
+    - target: {fileID: 7083909586666423228, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: failedResponses.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083909586666423228, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: successResponses.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083909586666423228, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: successResponses.Array.data[0]
+      value: I can use these to go outside.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
