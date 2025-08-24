@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 00651d62c80db2d47812d97d4445badb
+guid: 373621f0f60faec49bb56496ecffe71d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: On Stool-Sheet_0
+      name: Ending_Animation-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 64
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62fa710c2a46ce848966b5d56ec9103b
-      internalID: -2054706798
+      spriteID: d8c8a7fc043b6e3478272631cc2546bb
+      internalID: -2026557594
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: On Stool-Sheet_1
+      name: Ending_Animation-Sheet_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 192
         y: 0
-        width: 16
-        height: 64
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c88bd8345e1236498f6015b43c4b68e
-      internalID: 2020581682
+      spriteID: 701eb243e6ec3b345a6db3c7f3a03e19
+      internalID: -689421253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: On Stool-Sheet_2
+      name: Ending_Animation-Sheet_2
       rect:
         serializedVersion: 2
-        x: 32
+        x: 384
         y: 0
-        width: 16
-        height: 64
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b434c5d34e41b84289b7c36f1ff2d6a
-      internalID: 1266562123
+      spriteID: 47e24753b9361d34582623e92464ccc1
+      internalID: -1744147268
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: On Stool-Sheet_3
+      name: Ending_Animation-Sheet_3
       rect:
         serializedVersion: 2
-        x: 48
+        x: 576
         y: 0
-        width: 16
-        height: 64
+        width: 192
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ca960e42c9f3b447b57d183c37562ae
-      internalID: 1027873279
+      spriteID: 2cae5d75eadd8b8479e9cb58cab626a8
+      internalID: 1941634555
       vertices: []
       indices: 
       edges: []
@@ -217,10 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      On Stool-Sheet_0: -2054706798
-      On Stool-Sheet_1: 2020581682
-      On Stool-Sheet_2: 1266562123
-      On Stool-Sheet_3: 1027873279
+      Ending_Animation-Sheet_0: -2026557594
+      Ending_Animation-Sheet_1: -689421253
+      Ending_Animation-Sheet_2: -1744147268
+      Ending_Animation-Sheet_3: 1941634555
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
