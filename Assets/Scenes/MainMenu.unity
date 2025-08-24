@@ -1096,10 +1096,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6545722775640832452, guid: 5d1ef1d6a4d813a459724c09358ac904, type: 3}
-      propertyPath: musicSource
-      value: 
-      objectReference: {fileID: 1685649976}
     - target: {fileID: 9055021505067362947, guid: 5d1ef1d6a4d813a459724c09358ac904, type: 3}
       propertyPath: m_Name
       value: SoundManager
@@ -1109,11 +1105,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d1ef1d6a4d813a459724c09358ac904, type: 3}
---- !u!82 &1685649976 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 6576505843886588622, guid: 5d1ef1d6a4d813a459724c09358ac904, type: 3}
-  m_PrefabInstance: {fileID: 1685649975}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1966172474
 GameObject:
   m_ObjectHideFlags: 0
@@ -1294,9 +1285,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SettingsManager, Assembly-CSharp
-        m_MethodName: SetSfxVolume
+      - m_Target: {fileID: 6807570567167716709}
+        m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
+        m_MethodName: OnSfxVolumeChanged
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2149,9 +2140,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SettingsManager, Assembly-CSharp
-        m_MethodName: SetMusicVolume
+      - m_Target: {fileID: 6807570567167716709}
+        m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
+        m_MethodName: OnMusicVolumeChanged
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
