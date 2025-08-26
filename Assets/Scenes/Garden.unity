@@ -992,6 +992,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1676443431022768112, guid: d535cb8161983284c9d417921d6bf514, type: 3}
+      propertyPath: soundClips.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1676443431022768112, guid: d535cb8161983284c9d417921d6bf514, type: 3}
+      propertyPath: soundClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 69401ed3dde5b4d4c8d481e63145a9d0, type: 3}
+    - target: {fileID: 1676443431022768112, guid: d535cb8161983284c9d417921d6bf514, type: 3}
+      propertyPath: soundClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 09dd4edad152c53409b153fd1dffac65, type: 3}
+    - target: {fileID: 1676443431022768112, guid: d535cb8161983284c9d417921d6bf514, type: 3}
+      propertyPath: soundClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: f8dddeeaed60b494b85b1744b6f2c4b3, type: 3}
+    - target: {fileID: 1676443431022768112, guid: d535cb8161983284c9d417921d6bf514, type: 3}
+      propertyPath: soundClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4c0cd777a67f0d143816cc215bbf2d87, type: 3}
     - target: {fileID: 4887938404835018743, guid: d535cb8161983284c9d417921d6bf514, type: 3}
       propertyPath: ui
       value: 
@@ -1443,6 +1463,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetScene: Kitchen
+  targetSpawnId: 
   requiredItemIds: []
   consumeItem: 0
   onOpened:
