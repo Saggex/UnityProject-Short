@@ -72,8 +72,6 @@ Shader "Custom/CreepySprite"
                 float4 color : COLOR;
             };
 
-            float4 _Time;
-
             Varyings vert(Attributes IN)
             {
                 Varyings OUT;
