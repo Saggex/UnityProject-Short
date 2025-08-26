@@ -78,15 +78,15 @@ Shader "Custom/CreepySprite"
                 float2 uv = IN.uv;
 
                 // Glitch UV distortion
-                float2 glitchNoise = SAMPLE_TEXTURE2D(_NoiseTex, sampler_NoiseTex, uv * 2.0 + _Time.yz).rg - 0.5;
+                float2 glitchNoise = SAMPLE_TEXTURE2D_LOD(_NoiseTex, sampler_NoiseTex, uv * 2.0 + _Time.yz, 0).rg - 0.5;
                 uv += glitchNoise * _GlitchIntensity;
 
                 // Dripping / Melting
-                float melt = SAMPLE_TEXTURE2D(_NoiseTex, sampler_NoiseTex, float2(uv.x, uv.y + _Time.x * _MeltSpeed)).r;
+                float melt = SAMPLE_TEXTURE2D_LOD(_NoiseTex, sampler_NoiseTex, float2(uv.x, uv.y + _Time.x * _MeltSpeed), 0).r;
                 uv.y -= saturate(melt) * _MeltAmount;
 
                 // Flesh-crawling UV shift
-                float crawl = SAMPLE_TEXTURE2D(_NoiseTex, sampler_NoiseTex, uv * 4.0 + _Time.yx * _CrawlSpeed).r;
+                float crawl = SAMPLE_TEXTURE2D_LOD(_NoiseTex, sampler_NoiseTex, uv * 4.0 + _Time.yx * _CrawlSpeed, 0).r;
                 uv += (crawl - 0.5) * _CrawlAmount * 0.02;
 
                 OUT.uv = uv;
