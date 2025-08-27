@@ -312,7 +312,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 356119847346795356, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
       propertyPath: m_Size.y
-      value: 1.7902099
+      value: 2.2263725
       objectReference: {fileID: 0}
     - target: {fileID: 356119847346795356, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
       propertyPath: m_Offset.x
@@ -320,7 +320,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 356119847346795356, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
       propertyPath: m_Offset.y
-      value: -0.3951053
+      value: -0.6131865
       objectReference: {fileID: 0}
     - target: {fileID: 356119847346795356, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
       propertyPath: m_SpriteTilingProperty.border.w
@@ -571,7 +571,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d679be60a0bd60f48a1a6e881053dcea, type: 2}
+  - {fileID: 2100000, guid: 353640be70af80d429ce95370a56b4ea, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -591,7 +591,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 1e0ac5037dc07f6479006768a68620f9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -601,7 +601,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 2
   m_SpriteSortPoint: 0
 --- !u!1001 &913013571
 PrefabInstance:
@@ -708,6 +708,10 @@ PrefabInstance:
       value: Garden Key (1)
       objectReference: {fileID: 0}
     - target: {fileID: 5289074834795746837, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5289074834795746837, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
       propertyPath: m_Size.x
       value: 1
       objectReference: {fileID: 0}
@@ -720,13 +724,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -658061052, guid: 6ceed08971aaccc4aa8a891e8b130520, type: 3}
     - target: {fileID: 5289074834795746837, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5289074834795746837, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5289074834795746837, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5289074834795746837, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d679be60a0bd60f48a1a6e881053dcea, type: 2}
+      objectReference: {fileID: 2100000, guid: 353640be70af80d429ce95370a56b4ea, type: 2}
     - target: {fileID: 7083909586666423228, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
       propertyPath: id
       value: 6
@@ -1132,9 +1144,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a2770e474213b04f818f8e2ccbb96d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightColor: {r: 0.381132, g: 0.381132, b: 0.381132, a: 1}
+  highlightColor: {r: 1, g: 0, b: 0, a: 0.63529414}
   outlineSize: 1
-  outlineShader: {fileID: 4800000, guid: 1b59dfc599eb47a881f5368693ea8d5e, type: 3}
+  outlineShader: {fileID: -6465566751694194690, guid: 325f67478b20e2d478c1b527e92467d4, type: 3}
 --- !u!61 &1058165197
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1262,7 +1274,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d679be60a0bd60f48a1a6e881053dcea, type: 2}
+  - {fileID: 2100000, guid: 28697d6710ad53143b1b6b88cdc66a01, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1292,7 +1304,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 2
   m_SpriteSortPoint: 0
 --- !u!4 &1058165201
 Transform:
@@ -1556,6 +1568,10 @@ PrefabInstance:
       value: Shoes (1)
       objectReference: {fileID: 0}
     - target: {fileID: 5289074834795746837, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5289074834795746837, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
       propertyPath: m_Size.x
       value: 1
       objectReference: {fileID: 0}
@@ -1568,13 +1584,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -682074173, guid: 6ceed08971aaccc4aa8a891e8b130520, type: 3}
     - target: {fileID: 5289074834795746837, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5289074834795746837, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5289074834795746837, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5289074834795746837, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d679be60a0bd60f48a1a6e881053dcea, type: 2}
+      objectReference: {fileID: 2100000, guid: 353640be70af80d429ce95370a56b4ea, type: 2}
     - target: {fileID: 7083909586666423228, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
       propertyPath: item
       value: 
