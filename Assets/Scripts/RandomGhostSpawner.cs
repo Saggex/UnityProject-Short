@@ -39,11 +39,15 @@ public class RandomGhostSpawner : MonoBehaviour
         float distance = screenRadius + Random.Range(minExtraDistance, maxExtraDistance);
         Vector2 direction = Random.insideUnitCircle.normalized;
         Vector2 spawnPos = playerPos + direction * distance;
+        
+        spawnPos = new Vector2(spawnPos.x, -Mathf.Abs(spawnPos.y));
 
         var ghost = Instantiate(ghostPrefab, spawnPos, Quaternion.identity);
+        
         var chaser = ghost.AddComponent<GhostChaser>();
         chaser.speed = ghostSpeed;
         chaser.wanderStrength = ghostWanderStrength;
+        
     }
 }
 
