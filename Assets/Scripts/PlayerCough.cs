@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
@@ -8,7 +9,7 @@ using UnityEngine;
 public class PlayerCough : MonoBehaviour
 {
     [Tooltip("Sound that plays when the player coughs.")]
-    [SerializeField] private AudioClip coughClip;
+    [SerializeField] private List<AudioClip> coughClips;
 
     [Tooltip("Random delay range in seconds between coughs.")]
     [SerializeField] private Vector2 coughInterval = new Vector2(10f, 30f);
@@ -39,12 +40,13 @@ public class PlayerCough : MonoBehaviour
 
     private IEnumerator CoughRoutine()
     {
+        AudioClip coughClip = coughClips[Random.Range(0, coughClips.Count)];
         if (coughClip == null)
         {
             yield break;
         }
 
-        controller.enabled = false;
+        controller.isCoughing = true;
         Rigidbody2D rb = controller.GetComponent<Rigidbody2D>();
         if (rb != null)
         {
@@ -55,6 +57,6 @@ public class PlayerCough : MonoBehaviour
 
         yield return new WaitForSeconds(coughClip.length);
 
-        controller.enabled = true;
+        controller.isCoughing = false;
     }
 }

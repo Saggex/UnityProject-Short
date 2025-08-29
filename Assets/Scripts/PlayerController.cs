@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
 
     private Animator animator; //Animation
     private SpriteRenderer spriteRenderer;
+    public bool isCoughing = false;
 
     private void Awake()
     {
@@ -43,6 +44,7 @@ public class PlayerController : MonoBehaviour
 
     private void HandleInput()
     {
+        
         if (InventoryUI.Instance != null && InventoryUI.Instance.IsInventoryOpen)
         {
             input = Vector2.zero;
@@ -51,6 +53,10 @@ public class PlayerController : MonoBehaviour
         }
 
         input = Vector2.zero;
+        if (isCoughing)
+        {
+            return;
+        }
         if (Input.GetKey(KeyCode.W)) input.y += 1f;
         if (Input.GetKey(KeyCode.S)) input.y -= 1f;
         if (Input.GetKey(KeyCode.A)) input.x -= 1f;
@@ -78,6 +84,7 @@ public class PlayerController : MonoBehaviour
     private void UpdateAnimations() //Animation
     {
         bool isMoving = input.sqrMagnitude > 0.01f;
+        animator.SetBool("Coughing", isCoughing);
 
         if (isMoving)
         {
