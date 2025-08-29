@@ -74,7 +74,7 @@ Material:
     - _RainDensity: 1
     - _TwirlStrength: 0
     - _VerticalGlitchProbability: 0.95
-    - _WobbleIntensity: 0.001
+    - _WobbleIntensity: 0.5
     m_Colors:
     - _AuraColor: {r: 0, g: 1, b: 0, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
