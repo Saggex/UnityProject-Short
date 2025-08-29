@@ -16,3 +16,4 @@ MonoBehaviour:
   displayName: Garden Key
   description: Key to get into the garden.
   sprite: {fileID: -658061052, guid: 6ceed08971aaccc4aa8a891e8b130520, type: 3}
+  sound: {fileID: 8300000, guid: ad61f1994ea60224e87176457cf4e409, type: 3}

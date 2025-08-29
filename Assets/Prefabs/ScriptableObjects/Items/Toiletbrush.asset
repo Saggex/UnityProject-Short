@@ -16,3 +16,4 @@ MonoBehaviour:
   displayName: Toiletbrush
   description: Stinky...
   sprite: {fileID: 1123551135, guid: 6ceed08971aaccc4aa8a891e8b130520, type: 3}
+  sound: {fileID: 8300000, guid: 218900e573382ed4eb107549e99a90a9, type: 3}

@@ -16,3 +16,4 @@ MonoBehaviour:
   displayName: Stool
   description: Makes you a little taller.
   sprite: {fileID: 2073366913, guid: 6ceed08971aaccc4aa8a891e8b130520, type: 3}
+  sound: {fileID: 8300000, guid: aea9f7cffca22fd4791ce321ac5b1eda, type: 3}
