@@ -127,9 +127,9 @@ NavMeshSettings:
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Modification:
+  m_Modification:D asdklÖSEOIMP=eijeASM
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 0} LIUZW $
     m_Modifications:
     - target: {fileID: 1989959902030001375, guid: 389761551215b8043a3fac4d010cb679, type: 3}
       propertyPath: m_Name
