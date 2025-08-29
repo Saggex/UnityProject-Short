@@ -230,7 +230,8 @@ MonoBehaviour:
       m_Calls: []
   successResponses: []
   failedResponses:
-  - You need shoes, a jacket and the key.
+  - It's cold outside...
+  - Mom told me not to go out without a jacket and my shoes. And I need the key...
 --- !u!212 &677357179
 SpriteRenderer:
   m_ObjectHideFlags: 0
