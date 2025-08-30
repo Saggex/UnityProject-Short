@@ -53,7 +53,7 @@ public class UIManager : PersistentSingleton<UIManager>
     /// </summary>
     public void RefreshInventory(InventorySystem inv = null)
     {
-        Debug.Log("Refreshing Inventory");
+        //Debug.Log("Refreshing Inventory");
         if (inv != null)
         {
             
@@ -74,7 +74,7 @@ public class UIManager : PersistentSingleton<UIManager>
         int index = 0;
         foreach (var item in inventory.GetAllItems())
         {
-            Debug.Log("Adding "+item.name+" to inventory!");
+            //Debug.Log("Adding "+item.name+" to inventory!");
             var button = Instantiate(inventoryButtonPrefab, inventoryContainer);
             var rt = button.GetComponent<RectTransform>();
             //rt.anchoredPosition = new Vector2((index % 4) * 70, -(index / 4) * 70);

@@ -14,24 +14,29 @@ public class SoundManager : PersistentSingleton<SoundManager>
     protected override void Awake()
     {
         base.Awake();
+        if(Instance.musicSource && !Instance.musicSource.isPlaying)
+        {
+            Instance.PlayMusic(MainTheme);
+        }
         if (Instance != this)
         {
             return;
         }
     }
 
-    [SerializeField] private AudioSource musicSource;
-    [SerializeField] private AudioSource sfxSource;
-    [SerializeField, Range(0f,1f)] private float musicVolume = 1f;
-    [SerializeField, Range(0f,1f)] private float sfxVolume = 1f;
+    [SerializeField] public AudioSource musicSource;
+    [SerializeField] public AudioSource sfxSource;
+    [SerializeField, Range(0f, 1f)] private float musicVolume = 1f;
+    [SerializeField, Range(0f, 1f)] private float sfxVolume = 1f;
 
     private void Start()
     {
         SetMusicVolume(musicVolume);
         SetSFXVolume(sfxVolume);
-        if(MainTheme)
+        if (MainTheme)
             PlayMusic(MainTheme);
-        if (startMusicRandom) { 
+        if (startMusicRandom)
+        {
             musicSource.time = musicSource.clip.length * Random.value;
         }
     }
@@ -41,8 +46,13 @@ public class SoundManager : PersistentSingleton<SoundManager>
     /// </summary>
     public void PlayMusic(AudioClip clip)
     {
+        Debug.Log("Playing Music");
         if (musicSource == null || clip == null) return;
         musicSource.clip = clip;
+        if (startMusicRandom)
+        {
+            musicSource.time = musicSource.clip.length * Random.value;
+        }
         musicSource.loop = true;
         musicSource.Play();
 
@@ -53,7 +63,9 @@ public class SoundManager : PersistentSingleton<SoundManager>
     /// </summary>
     public void StopMusic()
     {
+        Debug.Log("Stopping Music");
         if (musicSource == null) return;
+
         musicSource.Stop();
     }
 
@@ -73,7 +85,7 @@ public class SoundManager : PersistentSingleton<SoundManager>
     {
 
         musicVolume = Mathf.Clamp01(volume);
-        MusicMixer.audioMixer.SetFloat("MusicVol", AudioClamps.x + (AudioClamps.y-AudioClamps.x) * musicVolume);
+        MusicMixer.audioMixer.SetFloat("MusicVol", AudioClamps.x + (AudioClamps.y - AudioClamps.x) * musicVolume);
     }
 
     /// <summary>

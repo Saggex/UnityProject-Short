@@ -302,6 +302,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed956c8ca9e1a584db7d28c17afa60eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startMusicRandom: 0
+  MainTheme: {fileID: 8300000, guid: 364d9b91ed3602e40ab3ce32b83e1360, type: 3}
   MusicMixer: {fileID: -6116253166551587393, guid: cecb945f31164804388b7d8907911c47, type: 2}
   SfxMixer: {fileID: -325002973424588920, guid: cecb945f31164804388b7d8907911c47, type: 2}
   AudioClamps: {x: -40, y: 0}
