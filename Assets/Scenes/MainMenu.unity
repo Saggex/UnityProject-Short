@@ -466,7 +466,7 @@ GameObject:
   - component: {fileID: 956357620}
   - component: {fileID: 956357619}
   m_Layer: 0
-  m_Name: Starting_Animation_0
+  m_Name: Sleeping
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2373,7 +2373,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 61.45
+  m_fontSize: 60.5
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3443,7 +3443,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 69.3
+  m_fontSize: 68.35
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
