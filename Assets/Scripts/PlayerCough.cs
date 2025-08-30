@@ -16,6 +16,7 @@ public class PlayerCough : MonoBehaviour
 
     private PlayerController controller;
     private AudioSource audioSource;
+    private GhostChaser chaser;
 
     private void Awake()
     {
@@ -26,13 +27,21 @@ public class PlayerCough : MonoBehaviour
     private void Start()
     {
         StartCoroutine(CoughLoop());
+        chaser = FindObjectOfType<GhostChaser>();
+        
     }
+
 
     private IEnumerator CoughLoop()
     {
         while (true)
         {
             float wait = Random.Range(coughInterval.x, coughInterval.y);
+            if (chaser)
+            {
+                wait *= Vector3.Distance(chaser.transform.position, controller.transform.position)/15;
+            }
+            Debug.Log("Coughed. Will wait for "+wait+" Seconds;");
             yield return new WaitForSeconds(wait);
             yield return CoughRoutine();
         }

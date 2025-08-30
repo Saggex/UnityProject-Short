@@ -15,7 +15,7 @@ public class RandomGhostSpawner : MonoBehaviour
     [SerializeField] private float ghostSpeed = 1f;
     [SerializeField] private float ghostWanderStrength = 0.5f;
 
-    private void Start()
+    private void Awake()
     {
         if (Random.value <= spawnChance)
         {
