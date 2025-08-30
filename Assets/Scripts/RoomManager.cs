@@ -49,6 +49,7 @@ public class RoomManager : PersistentSingleton<RoomManager>
             }
             pendingSpawnId = null;
         }
+        SaveLoadManager.Instance.Save();
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 }

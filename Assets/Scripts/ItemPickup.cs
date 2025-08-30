@@ -14,7 +14,7 @@ public class ItemPickup : MonoBehaviour
     [SerializeField] private UnityEvent onFailed;
     [SerializeField] [TextArea] private string[] successResponses;
     [SerializeField] [TextArea] private string[] failedResponses;
-
+    [SerializeField] private bool persists;
     /// <summary>
     /// The item granted when picked up.
     /// </summary>
@@ -23,7 +23,7 @@ public class ItemPickup : MonoBehaviour
     private void Awake()
     {
         var key = GetId();
-        if (DestroyState.IsDestroyed(key))
+        if (DestroyState.IsDestroyed(key) && !persists)
         {
             Destroy(gameObject);
         }
@@ -63,6 +63,7 @@ public class ItemPickup : MonoBehaviour
         onPickedUp?.Invoke();
         
         SoundManager.Instance?.PlaySFX(item.Sound);
+        if (persists) return true;
         DestroyState.MarkDestroyed(GetId());
         Destroy(gameObject);
         return true;
