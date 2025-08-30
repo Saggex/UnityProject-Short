@@ -71,7 +71,7 @@ Material:
     - _HorizontalGlitchProbability: 1
     - _MeltAmount: 0
     - _MeltSpeed: 1.85
-    - _RainDensity: 0
+    - _RainDensity: 0.25
     - _TwirlStrength: 0
     - _VerticalGlitchProbability: 1
     - _WobbleIntensity: 0.1
@@ -80,7 +80,7 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DissolveEdgeColor: {r: 1, g: 0, b: 0, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 0}
     - _RainDirection: {r: 0, g: 0.1, b: 0, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _TwirlCenter: {r: 0, g: 0, b: 0, a: 0}

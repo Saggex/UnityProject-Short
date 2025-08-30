@@ -1387,7 +1387,7 @@ PrefabInstance:
       objectReference: {fileID: -6465566751694194690, guid: 325f67478b20e2d478c1b527e92467d4, type: 3}
     - target: {fileID: 218661866984916667, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
       propertyPath: highlightColor.a
-      value: 0.48235294
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 218661866984916667, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
       propertyPath: highlightColor.b
