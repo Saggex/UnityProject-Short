@@ -1930,7 +1930,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 1b960d5489d5c574bb87b982b9514e10, type: 2}
     - target: {fileID: 7083909586666423228, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
       propertyPath: failedResponses.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7083909586666423228, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
       propertyPath: requiredItemIds.Array.size
@@ -1949,12 +1949,16 @@ PrefabInstance:
       value: I need something longer.
       objectReference: {fileID: 0}
     - target: {fileID: 7083909586666423228, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
+      propertyPath: failedResponses.Array.data[2]
+      value: They use that to kill bugs...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083909586666423228, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
       propertyPath: requiredItemIds.Array.data[0]
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7083909586666423228, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
       propertyPath: successResponses.Array.data[0]
-      value: Kills insects and arachnids.
+      value: I can reach it with the brush.
       objectReference: {fileID: 0}
     - target: {fileID: 7083909586666423228, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
       propertyPath: onPickedUp.m_PersistentCalls.m_Calls.Array.size
