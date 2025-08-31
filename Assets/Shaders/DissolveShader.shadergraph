@@ -1798,7 +1798,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "5e659595e78747d68c458a0b52fb1203",
     "m_Id": 0,
-    "m_DisplayName": "DissolveProgress",
+    "m_DisplayName": "_DissolveProgress",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -2930,9 +2930,9 @@
     "m_Guid": {
         "m_GuidSerialized": "16225c1d-6258-4cab-8a8f-44cc28cd40cd"
     },
-    "m_Name": "DissolveProgress",
+    "m_Name": "_DissolveProgress",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "DissolveProgress",
+    "m_RefNameGeneratedByDisplayName": "_DissolveProgress",
     "m_DefaultReferenceName": "_DissolveProgress",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
@@ -2956,7 +2956,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
     "m_ObjectId": "dc229194e0974c37af29b6dc99f0ea06",
     "m_Id": 0,
-    "m_DisplayName": "_OutlineColor",
+    "m_DisplayName": "_DissolveColor",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -3317,10 +3317,10 @@
     "m_Guid": {
         "m_GuidSerialized": "160095c1-7656-4862-8bc1-50ef017cda38"
     },
-    "m_Name": "_OutlineColor",
+    "m_Name": "_DissolveColor",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "_OutlineColor",
-    "m_DefaultReferenceName": "_OutlineColor",
+    "m_RefNameGeneratedByDisplayName": "_DissolveColor",
+    "m_DefaultReferenceName": "_DissolveColor",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,

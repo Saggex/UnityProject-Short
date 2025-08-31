@@ -46,7 +46,7 @@ public class Door : MonoBehaviour
                 {
                     onFailed?.Invoke();
                     if(doorSoundFail)
-                    soundManager.PlaySFX(doorSoundFail);
+                    soundManager?.PlaySFX(doorSoundFail);
                     ui?.ShowFlavourText(GetRandomResponse(failedResponses) ?? $"You need {string.Join(", ", requiredItemIds)}");
                     return false;
                 }
@@ -64,7 +64,7 @@ public class Door : MonoBehaviour
         onOpened?.Invoke();
         triggered = true;
         if(doorSoundSuccess)
-        soundManager.PlaySFX(doorSoundSuccess);
+            soundManager?.PlaySFX(doorSoundSuccess);
         var success = GetRandomResponse(successResponses);
         if (!string.IsNullOrEmpty(success))
         {

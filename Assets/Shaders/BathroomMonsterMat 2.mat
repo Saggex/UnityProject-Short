@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BathroomMonsterMat 1
+  m_Name: BathroomMonsterMat 2
   m_Shader: {fileID: -6465566751694194690, guid: 325f67478b20e2d478c1b527e92467d4, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -66,12 +66,12 @@ Material:
     - _FlickerIntensity: 0
     - _FlickerSpeed: 0
     - _GlitchColorOffset: 0
-    - _GlitchDistance: 0
+    - _GlitchDistance: 0.1
     - _GlitchIntensity: 0
-    - _HorizontalGlitchProbability: 0.95
+    - _HorizontalGlitchProbability: 1
     - _MeltAmount: 0
     - _MeltSpeed: 1.85
-    - _RainDensity: 0.25
+    - _RainDensity: 5
     - _TwirlStrength: 0
     - _VerticalGlitchProbability: 1
     - _WobbleIntensity: 0.5
@@ -80,11 +80,11 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DissolveEdgeColor: {r: 1, g: 0, b: 0, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0.32830185, g: 0, b: 0, a: 0.16470589}
+    - _OutlineColor: {r: 0.3283019, g: 0, b: 0, a: 1}
     - _RainDirection: {r: 0, g: -1, b: 0, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _TwirlCenter: {r: 0.5, g: 0.5, b: 0, a: 0}
-    - _WobbleScale: {r: 4, g: 0.5, b: 0, a: 0}
+    - _WobbleScale: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &3117028725448052815
 MonoBehaviour:

@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
+using System.Collections;
+using System.Collections.Generic;
 
 /// <summary>
 /// Simple ghost behavior that blocks progress until a required item is used.
@@ -14,6 +16,10 @@ public class GhostAI : MonoBehaviour
     [SerializeField] private UnityEvent onFailed;
     [SerializeField] [TextArea] private string[] successResponses;
     [SerializeField] [TextArea] private string[] failedResponses;
+    public Material dissolveMaterial;
+    public List<SpriteRenderer> renderers;
+    public float dissolveDuration = 1;
+    public Vector2 dissolveRange = new Vector2(-0.5f, 1);
 
     /// <summary>
     /// Item ids required to clear the ghost.
@@ -59,6 +65,32 @@ public class GhostAI : MonoBehaviour
         }
         isDefeated = true;
         DestroyState.MarkDestroyed(GetId());
+
+        StartCoroutine(Dissolve());
+        return true;
+    }
+
+    private IEnumerator Dissolve()
+    {
+
+        var ui = UIManager.Instance;
+        float t = 0f;
+        SpriteRenderer[] renderers = GetComponentsInChildren<SpriteRenderer>();
+        
+
+
+        while (t < dissolveDuration && dissolveMaterial)
+        {
+            
+            t += Time.deltaTime;
+            float alpha = Mathf.Lerp(dissolveRange.x, dissolveRange.y, t / dissolveDuration);
+            dissolveMaterial.SetFloat("_DissolveProgress", alpha);
+            foreach(SpriteRenderer renderer in renderers)
+            {
+                renderer.material = dissolveMaterial;
+            }
+            yield return null;
+        }
         onDefeated?.Invoke();
         var success = GetRandomResponse(successResponses);
         if (!string.IsNullOrEmpty(success))
@@ -66,7 +98,6 @@ public class GhostAI : MonoBehaviour
             ui?.ShowFlavourText(success);
         }
         gameObject.SetActive(false);
-        return true;
     }
 
     private string GetId()

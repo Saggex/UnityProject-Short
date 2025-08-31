@@ -180,6 +180,55 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ded1c787ddb272429f5e2dc68de9a72, type: 3}
+--- !u!1 &118971264
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 118971265}
+  - component: {fileID: 118971266}
+  m_Layer: 0
+  m_Name: Global Volume (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &118971265
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118971264}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1253.968, y: 705.6047, z: -11.190991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1058165201}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &118971266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118971264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: d5dc779b961783f46a8ebfc9ec1c2ad7, type: 2}
 --- !u!1001 &316559941
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1082,7 +1131,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -1299,7 +1348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a2770e474213b04f818f8e2ccbb96d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightColor: {r: 1, g: 0, b: 0, a: 0.63529414}
+  highlightColor: {r: 1, g: 0, b: 0, a: 0.72156864}
   outlineSize: 1
   outlineShader: {fileID: -6465566751694194690, guid: 325f67478b20e2d478c1b527e92467d4, type: 3}
 --- !u!61 &1058165197
@@ -1391,6 +1440,10 @@ MonoBehaviour:
   - I'm scared...
   - It seems to be bothered by the ticking clock...
   - It seems to be bothered by my steps...
+  dissolveMaterial: {fileID: -876546973899608171, guid: d12ad283812f6fb4f8942bde1a4987e5, type: 3}
+  renderers: []
+  dissolveDuration: 1
+  dissolveRange: {x: -0.5, y: 1}
 --- !u!95 &1058165199
 Animator:
   serializedVersion: 5
@@ -1480,6 +1533,7 @@ Transform:
   - {fileID: 596935475}
   - {fileID: 1120700724}
   - {fileID: 913013572}
+  - {fileID: 118971265}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1112420127

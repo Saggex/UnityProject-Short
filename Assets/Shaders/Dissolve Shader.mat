@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BathroomMonsterMat 1
-  m_Shader: {fileID: -6465566751694194690, guid: 325f67478b20e2d478c1b527e92467d4, type: 3}
+  m_Name: Dissolve Shader
+  m_Shader: {fileID: -6465566751694194690, guid: d12ad283812f6fb4f8942bde1a4987e5, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -28,7 +28,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 4e61e2e7584407f43a9bdadd9d4086f7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskTex:
@@ -62,29 +62,31 @@ Material:
     - _CrawlAmount: 0.109
     - _CrawlSpeed: 0.63
     - _DissolveAmount: 0.327
+    - _DissolveProgress: 1
     - _EnableExternalAlpha: 0
     - _FlickerIntensity: 0
     - _FlickerSpeed: 0
     - _GlitchColorOffset: 0
-    - _GlitchDistance: 0
+    - _GlitchDistance: 0.05
     - _GlitchIntensity: 0
-    - _HorizontalGlitchProbability: 0.95
+    - _HorizontalGlitchProbability: 0.97
     - _MeltAmount: 0
     - _MeltSpeed: 1.85
-    - _RainDensity: 0.25
+    - _RainDensity: 1
     - _TwirlStrength: 0
-    - _VerticalGlitchProbability: 1
+    - _VerticalGlitchProbability: 0.97
     - _WobbleIntensity: 0.5
     m_Colors:
     - _AuraColor: {r: 0, g: 1, b: 0, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DissolveColor: {r: 0.5, g: 1, b: 0.7753624, a: 1}
     - _DissolveEdgeColor: {r: 1, g: 0, b: 0, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0.32830185, g: 0, b: 0, a: 0.16470589}
+    - _OutlineColor: {r: 0.68200004, g: 1, b: 0.9152, a: 1}
     - _RainDirection: {r: 0, g: -1, b: 0, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-    - _TwirlCenter: {r: 0.5, g: 0.5, b: 0, a: 0}
-    - _WobbleScale: {r: 4, g: 0.5, b: 0, a: 0}
+    - _TwirlCenter: {r: 0.23, g: 0.5, b: 0, a: 0}
+    - _WobbleScale: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &3117028725448052815
 MonoBehaviour:

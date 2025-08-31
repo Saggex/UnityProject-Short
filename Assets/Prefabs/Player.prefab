@@ -363,6 +363,7 @@ MonoBehaviour:
   nearbyPickups: []
   nearbyGhosts: []
   nearbyDoors: []
+  animator: {fileID: 0}
   isCoughing: 0
 --- !u!114 &9069790161812303274
 MonoBehaviour:
