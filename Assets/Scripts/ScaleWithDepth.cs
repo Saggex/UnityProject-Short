@@ -31,5 +31,6 @@ public class ScaleWithDepth : MonoBehaviour
         float t = Mathf.InverseLerp(topY, bottomY, transform.position.y);
         float scale = Mathf.Lerp(minScale, maxScale, t);
         transform.localScale = new Vector3(scale, scale, 1f);
+        
     }
 }

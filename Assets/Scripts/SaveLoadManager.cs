@@ -64,6 +64,7 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
     /// </summary>
     public void Delete()
     {
+        DestroyState.ResetAll();
         PlayerPrefs.DeleteKey(RoomKey);
         PlayerPrefs.DeleteKey(PlayerXKey);
         PlayerPrefs.DeleteKey(PlayerYKey);

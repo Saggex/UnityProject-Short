@@ -10,13 +10,17 @@ public class PlayerCough : MonoBehaviour
 {
     [Tooltip("Sound that plays when the player coughs.")]
     [SerializeField] private List<AudioClip> coughClips;
+    [SerializeField] private string SceneToLoadOnDeath = "StarterScene";
+
 
     [Tooltip("Random delay range in seconds between coughs.")]
     [SerializeField] private Vector2 coughInterval = new Vector2(10f, 30f);
+    [SerializeField] private float deathDistance = 0.1f;
 
     private PlayerController controller;
     private AudioSource audioSource;
     private GhostChaser chaser;
+    public SpriteRenderer deathOverlay;
 
     private void Awake()
     {
@@ -26,11 +30,21 @@ public class PlayerCough : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(CoughLoop());
-        chaser = FindObjectOfType<GhostChaser>();
-        
-    }
 
+        chaser = FindObjectOfType<GhostChaser>();
+        StartCoroutine(CoughLoop());
+
+    }
+    private void Update()
+    {
+        if (deathOverlay && chaser)
+        {
+            Color tempColor = deathOverlay.color;
+            tempColor.a = Mathf.Min(Mathf.Max(1 + deathDistance - Vector3.Distance(chaser.transform.position, controller.transform.position) / 15, 0), 1);
+            deathOverlay.color = tempColor;
+
+        }
+    }
 
     private IEnumerator CoughLoop()
     {
@@ -39,9 +53,18 @@ public class PlayerCough : MonoBehaviour
             float wait = Random.Range(coughInterval.x, coughInterval.y);
             if (chaser)
             {
-                wait *= Vector3.Distance(chaser.transform.position, controller.transform.position)/15;
+                float distance = Vector3.Distance(chaser.transform.position, controller.transform.position) / 15;
+                wait *= distance;
+
+                if (distance < deathDistance)
+                {
+
+                    SaveLoadManager.Instance.Delete();
+                    RoomManager.Instance.LoadRoom(SceneToLoadOnDeath);
+
+                }
             }
-            Debug.Log("Coughed. Will wait for "+wait+" Seconds;");
+            Debug.Log("Coughed. Will wait for " + wait + " Seconds;");
             yield return new WaitForSeconds(wait);
             yield return CoughRoutine();
         }
