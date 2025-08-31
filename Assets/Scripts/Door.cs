@@ -14,12 +14,16 @@ public class Door : MonoBehaviour
     [SerializeField] private UnityEvent onFailed;
     [SerializeField] [TextArea] private string[] successResponses;
     [SerializeField] [TextArea] private string[] failedResponses;
+    public AudioClip doorSoundSuccess;
+    public AudioClip doorSoundFail;
 
     private RoomManager roomManager;
+    private SoundManager soundManager;
 
     private void Start()
     {
         roomManager = RoomManager.Instance;
+        soundManager = SoundManager.Instance;
     }
 
     /// <summary>
@@ -32,15 +36,18 @@ public class Door : MonoBehaviour
 
         if (requiredItemIds != null && requiredItemIds.Length > 0)
         {
+
             foreach (var id in requiredItemIds)
             {
                 if (inventory == null || !inventory.HasItem(id))
                 {
                     onFailed?.Invoke();
+                    soundManager.PlaySFX(doorSoundFail);
                     ui?.ShowFlavourText(GetRandomResponse(failedResponses) ?? $"You need {string.Join(", ", requiredItemIds)}");
                     return false;
                 }
             }
+            soundManager.PlaySFX(doorSoundSuccess);
             if (consumeItem)
             {
                 foreach (var id in requiredItemIds)
