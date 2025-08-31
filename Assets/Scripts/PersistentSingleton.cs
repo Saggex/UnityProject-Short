@@ -12,6 +12,11 @@ public abstract class PersistentSingleton<T> : MonoBehaviour where T : MonoBehav
 {
     public static T Instance { get; private set; }
 
+    public void DestroyPersistor()
+    {
+        GameObject.Destroy(gameObject);
+    }
+
     protected virtual void Awake()
     {
         if (Instance != null && Instance != this)
