@@ -2789,6 +2789,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5080936865557538661, guid: 2ded1c787ddb272429f5e2dc68de9a72, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7892727041084704792, guid: 2ded1c787ddb272429f5e2dc68de9a72, type: 3}
       propertyPath: m_Name
       value: RoomManager

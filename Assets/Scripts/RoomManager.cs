@@ -26,6 +26,7 @@ public class RoomManager : PersistentSingleton<RoomManager>
         // Ensure overlay starts invisible
         if (fadeOverlay != null)
         {
+            fadeOverlay.gameObject.SetActive(true);
             var c = fadeOverlay.color;
             c.a = 0f;
             fadeOverlay.color = c;
