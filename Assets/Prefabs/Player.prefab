@@ -359,7 +359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67fd1485bd738bf4893a221d55db091f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 2
+  walkSpeed: 1.5
   tiptoeSpeed: 1.5
   nearbyPickups: []
   nearbyGhosts: []
