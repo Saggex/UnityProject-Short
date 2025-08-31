@@ -47,7 +47,6 @@ public class Door : MonoBehaviour
                     return false;
                 }
             }
-            soundManager.PlaySFX(doorSoundSuccess);
             if (consumeItem)
             {
                 foreach (var id in requiredItemIds)
@@ -59,6 +58,7 @@ public class Door : MonoBehaviour
         }
 
         onOpened?.Invoke();
+        soundManager.PlaySFX(doorSoundSuccess);
         var success = GetRandomResponse(successResponses);
         if (!string.IsNullOrEmpty(success))
         {

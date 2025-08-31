@@ -16,4 +16,4 @@ MonoBehaviour:
   displayName: Spatula
   description: Nicely curved at the end.
   sprite: {fileID: 1958279696, guid: 3617bdd14d2e0454e9c0f71971ec47ab, type: 3}
-  sound: {fileID: 8300000, guid: 47c3d9f983907c94cad419ef5aa224a2, type: 3}
+  sound: {fileID: 8300000, guid: 5daf66d64ee6174458158df91fe376d8, type: 3}
