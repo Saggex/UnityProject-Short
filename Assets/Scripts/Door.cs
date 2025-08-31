@@ -42,6 +42,7 @@ public class Door : MonoBehaviour
                 if (inventory == null || !inventory.HasItem(id))
                 {
                     onFailed?.Invoke();
+                    if(doorSoundFail)
                     soundManager.PlaySFX(doorSoundFail);
                     ui?.ShowFlavourText(GetRandomResponse(failedResponses) ?? $"You need {string.Join(", ", requiredItemIds)}");
                     return false;
@@ -58,6 +59,7 @@ public class Door : MonoBehaviour
         }
 
         onOpened?.Invoke();
+        if(doorSoundSuccess)
         soundManager.PlaySFX(doorSoundSuccess);
         var success = GetRandomResponse(successResponses);
         if (!string.IsNullOrEmpty(success))

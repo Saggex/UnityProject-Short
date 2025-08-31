@@ -232,7 +232,7 @@ MonoBehaviour:
   failedResponses:
   - It's cold outside...
   - Mom told me not to go out without a jacket and my shoes. And I need the key...
-  doorSoundSuccess: {fileID: 8300000, guid: 6a18d7b6217415849aa22412e0fa4fa1, type: 3}
+  doorSoundSuccess: {fileID: 8300000, guid: 8648213bcc5587a499c3bebd0d1dc362, type: 3}
   doorSoundFail: {fileID: 8300000, guid: 875d460a4ff41474ea7704a5fd12254f, type: 3}
 --- !u!212 &677357179
 SpriteRenderer:
