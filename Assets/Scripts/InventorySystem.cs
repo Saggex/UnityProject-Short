@@ -64,6 +64,11 @@ public class InventorySystem : PersistentSingleton<InventorySystem>
         return Items.Contains(item);
     }
 
+    public void ClearInventory()
+    {
+        Items.Clear();
+    }
+
     /// <summary>
     /// Removes an item without using it.
     /// </summary>

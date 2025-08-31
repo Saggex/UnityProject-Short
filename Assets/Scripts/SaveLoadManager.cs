@@ -65,6 +65,7 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
     public void Delete()
     {
         DestroyState.ResetAll();
+        InventorySystem.Instance?.ClearInventory();
         PlayerPrefs.DeleteKey(RoomKey);
         PlayerPrefs.DeleteKey(PlayerXKey);
         PlayerPrefs.DeleteKey(PlayerYKey);

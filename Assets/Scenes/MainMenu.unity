@@ -2879,6 +2879,7 @@ GameObject:
   - component: {fileID: 6807570567167716706}
   - component: {fileID: 6807570567167716708}
   - component: {fileID: 6807570567167716709}
+  - component: {fileID: 6807570567167716710}
   m_Layer: 0
   m_Name: UICanvas
   m_TagString: Untagged
@@ -3029,6 +3030,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSlider: {fileID: 3494184214780974384}
   sfxSlider: {fileID: 364957163360676168}
+--- !u!225 &6807570567167716710
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5957001494366922622}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!114 &7103130633498727157
 MonoBehaviour:
   m_ObjectHideFlags: 0

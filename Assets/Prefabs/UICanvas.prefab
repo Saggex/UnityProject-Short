@@ -2124,6 +2124,7 @@ GameObject:
   - component: {fileID: 2349624548146162056}
   - component: {fileID: 3732311167130828911}
   - component: {fileID: 636947994279944181}
+  - component: {fileID: 7475326123990766001}
   m_Layer: 0
   m_Name: UICanvas
   m_TagString: Untagged
@@ -2264,6 +2265,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuRoot: {fileID: 8112934950849259002}
   mainMenuScene: MainMenu
+--- !u!225 &7475326123990766001
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5957001495070203296}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &6356184644444153006
 GameObject:
   m_ObjectHideFlags: 0

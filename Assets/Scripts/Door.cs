@@ -19,6 +19,7 @@ public class Door : MonoBehaviour
 
     private RoomManager roomManager;
     private SoundManager soundManager;
+    private bool triggered = false;
 
     private void Start()
     {
@@ -31,6 +32,8 @@ public class Door : MonoBehaviour
     /// </summary>
     public bool Interact()
     {
+        if (triggered)
+            return false;
         var inventory = InventorySystem.Instance;
         var ui = UIManager.Instance;
 
@@ -59,6 +62,7 @@ public class Door : MonoBehaviour
         }
 
         onOpened?.Invoke();
+        triggered = true;
         if(doorSoundSuccess)
         soundManager.PlaySFX(doorSoundSuccess);
         var success = GetRandomResponse(successResponses);

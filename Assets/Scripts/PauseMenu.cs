@@ -40,7 +40,7 @@ public class PauseMenu : MonoBehaviour
 
     public void SaveGame()
     {
-        SaveLoadManager.Instance.Save();
+        SaveLoadManager.Instance?.Save();
     }
 
     public void LoadGame()
@@ -51,8 +51,18 @@ public class PauseMenu : MonoBehaviour
 
     public void QuitToMenu()
     {
-        if (UIManager.Instance) GameObject.Destroy(UIManager.Instance.gameObject);
         Time.timeScale = 1f;
-        SceneManager.LoadScene(mainMenuScene);
+        
+        if (RoomManager.Instance)
+        {
+
+            RoomManager.Instance.onFadedOut.AddListener(DestroyUIManager);
+            RoomManager.Instance?.LoadRoom(mainMenuScene);
+        }
+    }
+    private void DestroyUIManager()
+    {
+        if (UIManager.Instance) GameObject.Destroy(UIManager.Instance.gameObject);
+        RoomManager.Instance.onFadedOut.RemoveListener(DestroyUIManager);
     }
 }
