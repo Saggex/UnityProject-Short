@@ -68,12 +68,12 @@ Material:
     - _GlitchColorOffset: 0
     - _GlitchDistance: 0.1
     - _GlitchIntensity: 0
-    - _HorizontalGlitchProbability: 0.9
+    - _HorizontalGlitchProbability: 1
     - _MeltAmount: 0
     - _MeltSpeed: 1.85
     - _RainDensity: 5
     - _TwirlStrength: 0
-    - _VerticalGlitchProbability: 0
+    - _VerticalGlitchProbability: 1
     - _WobbleIntensity: 0.5
     m_Colors:
     - _AuraColor: {r: 0, g: 1, b: 0, a: 1}
@@ -84,6 +84,7 @@ Material:
     - _RainDirection: {r: 0, g: -1, b: 0, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _TwirlCenter: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - _WobbleScale: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &3117028725448052815
 MonoBehaviour:
