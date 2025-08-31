@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     public List<GhostAI> nearbyGhosts = new List<GhostAI>();
     public List<Door> nearbyDoors = new List<Door>();
 
-    private Animator animator; //Animation
+    public Animator animator; //Animation
     private SpriteRenderer spriteRenderer;
     public bool isCoughing = false;
 

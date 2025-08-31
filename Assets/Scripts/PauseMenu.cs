@@ -26,6 +26,11 @@ public class PauseMenu : MonoBehaviour
         isPaused = true;
     }
 
+    public void ToggleInventory()
+    {
+        InventoryUI.Instance.showInventory();
+    }
+
     public void Resume()
     {
         Time.timeScale = 1f;

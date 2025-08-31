@@ -553,8 +553,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d9ed6235bdc19bb44bb64b659ce11508, type: 3}
   SceneToLoadOnDeath: StarterScene
   coughInterval: {x: 4, y: 10}
-  deathDistance: 0.1
-  deathOverlay: {fileID: 4056547250179998552}
+  deathDistance: 0.5
+  deathOverlay: {fileID: 0}
 --- !u!114 &1549499334516286244
 MonoBehaviour:
   m_ObjectHideFlags: 0

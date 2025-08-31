@@ -21,6 +21,7 @@ public class PlayerCough : MonoBehaviour
     private AudioSource audioSource;
     private GhostChaser chaser;
     public SpriteRenderer deathOverlay;
+    private bool dying = false;
 
     private void Awake()
     {
@@ -37,6 +38,11 @@ public class PlayerCough : MonoBehaviour
     }
     private void Update()
     {
+        if (dying)
+        {
+            controller.isCoughing = true;
+        }
+
         if (deathOverlay && chaser)
         {
             Color tempColor = deathOverlay.color;
@@ -56,11 +62,13 @@ public class PlayerCough : MonoBehaviour
                 float distance = Vector3.Distance(chaser.transform.position, controller.transform.position) / 15;
                 wait *= distance;
 
-                if (distance < deathDistance)
+                if (!dying && distance * 15 < deathDistance)
                 {
-
+                    dying = true;
+                    controller.animator.SetTrigger("Die");
                     SaveLoadManager.Instance.Delete();
-                    RoomManager.Instance.LoadRoom(SceneToLoadOnDeath);
+
+                    RoomManager.Instance.LoadRoom(SceneToLoadOnDeath, 10);
 
                 }
             }

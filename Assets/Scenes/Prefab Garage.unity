@@ -240,8 +240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetScene: Test Kitchen
   targetSpawnId: GarageDoorSpawn
-  requiredItemIds:
-  - 9999
+  requiredItemIds: []
   consumeItem: 0
   onOpened:
     m_PersistentCalls:
@@ -446,6 +445,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5080936865557538661, guid: 2ded1c787ddb272429f5e2dc68de9a72, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472750718223648107, guid: 2ded1c787ddb272429f5e2dc68de9a72, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7892727041084704792, guid: 2ded1c787ddb272429f5e2dc68de9a72, type: 3}
       propertyPath: m_Name
       value: RoomManager
