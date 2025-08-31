@@ -266,6 +266,8 @@ MonoBehaviour:
   - Damn! It won't open!
   - I can't go there.
   - I'm too scared.
+  doorSoundSuccess: {fileID: 8300000, guid: 6a18d7b6217415849aa22412e0fa4fa1, type: 3}
+  doorSoundFail: {fileID: 8300000, guid: 875d460a4ff41474ea7704a5fd12254f, type: 3}
 --- !u!212 &47511360
 SpriteRenderer:
   m_ObjectHideFlags: 0

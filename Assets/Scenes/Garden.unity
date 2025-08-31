@@ -1571,8 +1571,8 @@ MonoBehaviour:
         m_CallState: 2
   successResponses: []
   failedResponses: []
-  doorSoundSuccess: {fileID: 0}
-  doorSoundFail: {fileID: 0}
+  doorSoundSuccess: {fileID: 8300000, guid: 6a18d7b6217415849aa22412e0fa4fa1, type: 3}
+  doorSoundFail: {fileID: 8300000, guid: 875d460a4ff41474ea7704a5fd12254f, type: 3}
 --- !u!212 &2111373379
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -646,6 +646,8 @@ MonoBehaviour:
   failedResponses:
   - It's too dark...
   - I'm scared to go out there...
+  doorSoundSuccess: {fileID: 8300000, guid: 6a18d7b6217415849aa22412e0fa4fa1, type: 3}
+  doorSoundFail: {fileID: 8300000, guid: 875d460a4ff41474ea7704a5fd12254f, type: 3}
 --- !u!212 &872843273
 SpriteRenderer:
   m_ObjectHideFlags: 0

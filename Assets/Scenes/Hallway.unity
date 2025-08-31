@@ -455,6 +455,8 @@ MonoBehaviour:
       m_Calls: []
   successResponses: []
   failedResponses: []
+  doorSoundSuccess: {fileID: 8300000, guid: 6a18d7b6217415849aa22412e0fa4fa1, type: 3}
+  doorSoundFail: {fileID: 8300000, guid: 875d460a4ff41474ea7704a5fd12254f, type: 3}
 --- !u!212 &725070178
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -626,6 +628,8 @@ MonoBehaviour:
       m_Calls: []
   successResponses: []
   failedResponses: []
+  doorSoundSuccess: {fileID: 8300000, guid: 6a18d7b6217415849aa22412e0fa4fa1, type: 3}
+  doorSoundFail: {fileID: 8300000, guid: 875d460a4ff41474ea7704a5fd12254f, type: 3}
 --- !u!212 &974731288
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -982,6 +986,8 @@ MonoBehaviour:
       m_Calls: []
   successResponses: []
   failedResponses: []
+  doorSoundSuccess: {fileID: 8300000, guid: 6a18d7b6217415849aa22412e0fa4fa1, type: 3}
+  doorSoundFail: {fileID: 8300000, guid: 875d460a4ff41474ea7704a5fd12254f, type: 3}
 --- !u!212 &1145088866
 SpriteRenderer:
   m_ObjectHideFlags: 0
