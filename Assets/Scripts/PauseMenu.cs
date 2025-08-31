@@ -46,7 +46,7 @@ public class PauseMenu : MonoBehaviour
 
     public void QuitToMenu()
     {
-        GameObject.Destroy(UIManager.Instance.gameObject);
+        if (UIManager.Instance) GameObject.Destroy(UIManager.Instance.gameObject);
         Time.timeScale = 1f;
         SceneManager.LoadScene(mainMenuScene);
     }
