@@ -15,5 +15,5 @@ MonoBehaviour:
   id: 9
   displayName: Jacket
   description: It smells nice. Big and comfortable.
-  sprite: {fileID: -49010073, guid: f153b69a46285eb42a6822d32397b4d5, type: 3}
+  sprite: {fileID: 1884697664, guid: 3617bdd14d2e0454e9c0f71971ec47ab, type: 3}
   sound: {fileID: 8300000, guid: f84b6367080688c44b6c3a9ac5ddc084, type: 3}

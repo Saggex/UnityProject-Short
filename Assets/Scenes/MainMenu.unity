@@ -3013,7 +3013,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e65bdf37440dfc44ba1a37e10291780, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstSceneName: Bedroom
+  firstSceneName: StarterScene
   ContinueButton: {fileID: 2992406680386841279}
 --- !u!114 &6807570567167716709
 MonoBehaviour:

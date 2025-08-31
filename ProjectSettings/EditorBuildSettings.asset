@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 8ec0e3d59b8c0474cb895a336b019256
+  - enabled: 1
     path: Assets/Scenes/Bathroom.unity
     guid: 362bdf0dbadfc394c8489cbbe7a4b2b4
   - enabled: 1
@@ -33,9 +36,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Test Kitchen.unity
     guid: 875290fcf2da1284ea9019b318b6614b
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 8ec0e3d59b8c0474cb895a336b019256
-  - enabled: 1
     path: Assets/Scenes/DoorToGarden.unity
     guid: 76bce40783f5b754a8b971d00338c7fa
   - enabled: 1
@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndingScene.unity
     guid: 80ee8c3945b392642b87ce26f47eede8
+  - enabled: 1
+    path: Assets/Scenes/StarterScene.unity
+    guid: c8d3b0c0932adb44a820efab651340c0
   m_configObjects: {}
