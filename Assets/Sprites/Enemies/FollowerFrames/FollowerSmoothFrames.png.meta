@@ -1,0 +1,5996 @@
+fileFormatVersion: 2
+guid: aad9475112722aa44a3d2383fd0a2e1e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 2
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78360ac6a0c9ac04996420993405236a
+      internalID: -1946353289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 178db2bf722b66343a548f5fa61df446
+      internalID: 2020053207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cabbd679db9235a4e80fa12860606013
+      internalID: 1134929825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0fce342764d58a46ab844c081b70cff
+      internalID: -876692728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddf7cdbd7acea7040876e9dedd4ce6c2
+      internalID: 636589459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 150d8dc92d037574080f979b0b521e35
+      internalID: -1669648873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aed1fff310bdfe48a1115d0138a6a67
+      internalID: 565707473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33687f1dbc61e634cb1f5ab637bcbbcd
+      internalID: -1011991773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 312a3a969584fff4f932fc4153df649e
+      internalID: -1739841152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 820e42f21afb1074b8fc6897be31bb04
+      internalID: 1738068717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f3a882077423247834b9a40a7de087
+      internalID: 1988967003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_11
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca982a506eb997488cda79e58614fc5
+      internalID: -2032369080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_12
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed4a8063aed868e458eb7f0f4d4f1442
+      internalID: -957138511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_13
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25bf2119714ca3942ab8ba0ad2a380fe
+      internalID: -679280558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_14
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d577ce586ca8c048bc74f35e10447fb
+      internalID: -1575368234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_15
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77aad9dba04f454198f5e15fd3d2d5e
+      internalID: -1756654912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_16
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c37c6e7ab61ac4e98511189b533a99
+      internalID: 976884808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_17
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 763a96298f57b784eacc165cb26773ec
+      internalID: -1796985570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_18
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1604bad7a104224f8078429548f73b3
+      internalID: -1832261264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_19
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe45715e2da45124697aa4f71ef6d662
+      internalID: -1268819250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_20
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb1d78df1c77cb44396d7ca6a07c0f4a
+      internalID: 921274370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_21
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26913636abec0de49a694fd98893529b
+      internalID: 104837597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_22
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69bc18e1e8cb24848b366c12c6878216
+      internalID: 840133924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_23
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b167e3a96a566b47b6ac83b41bd3437
+      internalID: 803705046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_24
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef7236310b74ac439c872bbaf592798
+      internalID: 461847992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_25
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be6946d2556bc744b8b2e54fc9d059c1
+      internalID: 2077375545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_26
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f41c08dc84eb8f74ab6ee887f834f55f
+      internalID: 434985470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_27
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 528864e66cecd1b4984a4fc9d482e4c8
+      internalID: -383838841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_28
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9356080387f5f34448ef1227937d35e0
+      internalID: 1629684448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_29
+      rect:
+        serializedVersion: 2
+        x: 3712
+        y: 680
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f364dc9b173b64da56a3cfe6831a61
+      internalID: 130081897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e48020c471b865b4181d1bbfa7796c50
+      internalID: 526118406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_31
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d89bd3578cc1d849b1ab063574e29e1
+      internalID: -1349940809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_32
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a8089455521f934f9c18def5f50f329
+      internalID: -921608421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_33
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57d9d0c458122df468fa2a7272221749
+      internalID: 1265855069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_34
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c6978e7da2f6e548a6250b74438bcad
+      internalID: -735317926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_35
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdfaf2054337c2e48aa2e9cc5647a0d5
+      internalID: 1851622718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_36
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccea10211e690ca459f1008061619056
+      internalID: -925765366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_37
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4f2636ef7aa7d44a272a3a6632edbf
+      internalID: 1481483980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_38
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ec9579c63d1184d93ada5c18bc884f
+      internalID: 392350641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_39
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f3045ed86845564f82bb8cf06d13961
+      internalID: -113512623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_40
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa225e6aec3548e41a84c6b60c3e2b57
+      internalID: -211163640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_41
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1842b5bffe6e4224bbe78b778c846a4d
+      internalID: -954398331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_42
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55388d706998d04eae151fd69d12d08
+      internalID: -1093990692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_43
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a266d076843b58438e189f3e7e2a986
+      internalID: 324155016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_44
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c77cf278025eb34bb3800d08fa8d17a
+      internalID: 1678479908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_45
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9de4403bc8d917e45a79c25299c1dbf6
+      internalID: -1251940471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_46
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf43ddb869be2b8448dc2201a4d1b5cb
+      internalID: 1156428951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_47
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 743650b8d91ce574ca9608b0245f833a
+      internalID: 600906936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_48
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9da2181a41b7f0e4e9680366ab8c7d28
+      internalID: -181348771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_49
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e8778ebb60269498700d49ae8db016
+      internalID: 666405232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_50
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85eb761747af0c4faf3342b6bd49518
+      internalID: -1111816740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_51
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f046fcdab726e2b48aa76f71f2ef2c5a
+      internalID: -2057071457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_52
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78cbf5456b548c54490cc55c607002fc
+      internalID: -750722817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_53
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b782c3c12834e140b6ecac7bdb1832e
+      internalID: -775976474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_54
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611d432a217c8134d96ce45881b0caac
+      internalID: 136410773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_55
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cef6040a5ae0404ba24ce584ef870fb
+      internalID: -1010756547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_56
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5da9741470ac2246ac6605338d54fe6
+      internalID: 634089791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_57
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7225ce2f89884684b8e2529e617ae2e5
+      internalID: -1098385910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_58
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05ea19ec215819f408af875f3ee2b652
+      internalID: -1750442959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_59
+      rect:
+        serializedVersion: 2
+        x: 3712
+        y: 595
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e97b88db480ad48963a0e2f169ac24
+      internalID: -2134994742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c445f7138061345832b524559bff52
+      internalID: 64803329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_61
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baa84893f73f2b64983e1a66cbd3892a
+      internalID: 738379257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_62
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6000dd81b7bb19d47805be1a02a206cd
+      internalID: -2038522850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_63
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7751e222f27b89649bcda4d1d0189933
+      internalID: 965396100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_64
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0b5228190425046b4fbf838d38db4b
+      internalID: 1257082279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_65
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e12f5862e8998418f21bfc74163123
+      internalID: 1255908850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_66
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed725f639495f4945991816d7d544446
+      internalID: 23334409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_67
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c85958e3c55f9418da384bf9160876
+      internalID: 1051702641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_68
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b123334a88ea544a5e10b62b8c702f
+      internalID: -1039674407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_69
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 762e34c050be3b0408f5aac1e4dc2f55
+      internalID: 2101530784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_70
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 734777bd76bc9fd42bae7742b695bf81
+      internalID: 2082384221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_71
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d2247d39f23074d952f6c00375ca57
+      internalID: 1260230794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_72
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ba5765a4a100449b03de9a49381de6
+      internalID: -1224650638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_73
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db1c15f6f0bcf2540a83198481963db9
+      internalID: -1747078978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_74
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52e6e538afef89048bc8d758a5222db3
+      internalID: 817820001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_75
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 672fcef544d880d42968a441b9921acb
+      internalID: 1160116219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_76
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677949f9caa2a3a44bb0695e0fe9e733
+      internalID: 1874749686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_77
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8abaa78929b5d854c92a75e92d8f3cc0
+      internalID: -1699212892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_78
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37124e4eb6e6a8a4d962020651c9ceb5
+      internalID: 105525448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_79
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29f9fb5f135423b4f94f83481d82f1e7
+      internalID: -794848431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_80
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1fc5f1ddce048418947bfef142b572
+      internalID: -361023205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_81
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dee6792347f1cc4aadd3393801942e5
+      internalID: -1777315000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_82
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aa6b9cf9520a5e44bf4c5a85ff0f7fc
+      internalID: -928826490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_83
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b27f0d9bbb1569742b0958c76cc9b581
+      internalID: -146774536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_84
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e8c505300658146a82f4f7d38f438a
+      internalID: 240058558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_85
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c20c55a39b5db744987ff2392b72a341
+      internalID: 1386317210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_86
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5d3923cc934bf4cbbc0068df5c4493
+      internalID: 30458538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_87
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09a6ad2e6bace0419d022b665fccd96
+      internalID: -2009426231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_88
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5ab4e096e0bdc4dae94e30db15729b
+      internalID: -1818816741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_89
+      rect:
+        serializedVersion: 2
+        x: 3712
+        y: 510
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9169ddf85479c4449a747ba9878b8350
+      internalID: -464811539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1318a8077fea1064d82190aa90155a09
+      internalID: 1498610506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_91
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ae90f74c14e023478e99d49dbbe441d
+      internalID: 699667575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_92
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cde9f780096e6b4a84a5604c91de512
+      internalID: -76028272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_93
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5676a7716417064688b9ab05c9cc545
+      internalID: 272419363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_94
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f0ef4b740b62c042af252163096670c
+      internalID: 348757428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_95
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e65c3047f241648bd25b02548b4f93
+      internalID: -1282113830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_96
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2413e147b5e7a4f4c95f7e7074382fb3
+      internalID: 1884085786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_97
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 104be7e3a5b2e854a8d563dbfa43fba0
+      internalID: 1999902274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_98
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30bdc8111dfd83049a5648e1e4c1299b
+      internalID: 1664769445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_99
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edec1fa1c1fe7e143bc69794a717a106
+      internalID: 739149399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_100
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f01c8cda696041e4eb6cc3b423f1c20a
+      internalID: -1767959663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_101
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 352b0dd9e5c176f4f8d60fa5f85716f1
+      internalID: -1187790435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_102
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f203bfb957eb44fa8cc8fff6139088
+      internalID: -568498138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_103
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eebe37e58a47a646a1388a5993306ab
+      internalID: 451965593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_104
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3b1aa37b050054287099adc6adf990
+      internalID: -1053177049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_105
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181d1aed379fec746b271d1d30d47c32
+      internalID: -1132448109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_106
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31bfc8f2a500fce4eafdccf7446f1339
+      internalID: 1379795967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_107
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80433ee451302394d83d903aed38cffd
+      internalID: 1099076250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_108
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18d1f445948d874daef2ccdeac783fb
+      internalID: -231045818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_109
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3d2c8e328d73b48bd4e3b8461b94e1
+      internalID: -2080759215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_110
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6422b069d71ca5d4893f77743bf361b4
+      internalID: 1310950704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_111
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56239b6d3a0f1fd4d93bbb1553506a6a
+      internalID: -568066450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_112
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a0f7056ee5dba3439332cd272c6cf2d
+      internalID: 1533613004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_113
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 761be1841b89faa40904c8d56b84fa1f
+      internalID: -1414133156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_114
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4010fc81e9eaca54693c7e04d999855f
+      internalID: -440316359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_115
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f13f1395dce9e4ea19555e57a0d4c3
+      internalID: 397363652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_116
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6a2fe1ec67879540882a070b6c18eb5
+      internalID: -513898027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_117
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c510939d80ce1d47aba6e607ad99f4f
+      internalID: -1369420099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_118
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e34c7ae639805429faecaa0897e0c6
+      internalID: 2088450798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_119
+      rect:
+        serializedVersion: 2
+        x: 3712
+        y: 425
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4acae79429a78947ad97a3e5d4c302e
+      internalID: 1233094140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b364201ef1ea0c489da8c5dbaf269a6
+      internalID: 1320571859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_121
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140352a284c3a514d9c6297f651ac074
+      internalID: 73180794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_122
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6d75d8a28822c41895ded43090ea5d
+      internalID: 1318913601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_123
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ece2b2dbc6de4942a2e08f5b93ae282
+      internalID: -1547823491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_124
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b299ba51ac14f9d44ac8136ea3e048a2
+      internalID: -1464992773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_125
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbee8c9143b08dd4b87eee20bd6a7bf0
+      internalID: 1528303307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_126
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caee5a819c09b7444944c0feb5707162
+      internalID: 184047482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_127
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f2217488882a146860a8dc1def6a94
+      internalID: -199391465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_128
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd2fcbc8f2309f40a2fc00707c948a3
+      internalID: -893729309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_129
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcec7b8914804a044bb0cab1f228035e
+      internalID: -585367883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_130
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e8896d801427c047874209704da734a
+      internalID: -757426933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_131
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a49932e0cea78499ca13c4f330bad6
+      internalID: -589953837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_132
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e0881fe4da9ac41ab626a3283d8c47
+      internalID: -72743652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_133
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e0d4dc706bee143bf291d0d3a5f00d
+      internalID: 812179383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_134
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f4ac92d5afde84f9f0e5e05e82135e
+      internalID: 1946288764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_135
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c03c7f241964b498fa7ba8fa46cdf0
+      internalID: 1735455148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_136
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd16f2ac0154fa4598f62026c616078
+      internalID: -321541722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_137
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6c3fe1f109cd345a3732b443e63c1a
+      internalID: -939381978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_138
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 017b0b71412e16045966641bbda260f2
+      internalID: 1024098998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_139
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab4903f808ecf84388acebb976d4338
+      internalID: 1585570529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_140
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caaafa9768fc4234e96d4cb7b5d9d7cf
+      internalID: 355596327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_141
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1daf0a3d4351647850aeb35a8958f3
+      internalID: -559999315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_142
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cbd7d467c0300c4a89eb201040a55fa
+      internalID: -1591935006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_143
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5212be14187c75b488c18a6004bf21ad
+      internalID: 1938198664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_144
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac6a548cd669084ba7c298931ea7cf4
+      internalID: -1903212629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_145
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50eeec899acb02c418289cbccd7b4b1b
+      internalID: 1214063721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_146
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3afe1181704424b4eb63814b98b5caf4
+      internalID: 710210287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_147
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dac08cb66ce1ec4a8c87ec2e8bc87b7
+      internalID: -488679388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_148
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad4e758dd23d6e64f8d8820481e5468a
+      internalID: 1495346708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_149
+      rect:
+        serializedVersion: 2
+        x: 3712
+        y: 340
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11018c8284555f74b8133a72739a2408
+      internalID: -2104980635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_150
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2573fa2d6a4f6184d98817e8bac3b35e
+      internalID: -1964019802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_151
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6f3d9cb3935d24fac32117d3379f19
+      internalID: 1009888543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_152
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fbd139c71d940f4a816d4979a98edc5
+      internalID: 1706750471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_153
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62664a307f168e54285ca0d24f65766d
+      internalID: 1356718831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_154
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c2c5526c6bcbc4ebf375e265a41c06
+      internalID: -552094572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_155
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6478c1deea40ac41ae59cbadc4a9ad7
+      internalID: 1888479784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_156
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd2466867ff275a49b7b4c35ba5cc3ec
+      internalID: 1569309480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_157
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38181cd9587f6cd498e69dd502f0389c
+      internalID: 2090076855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_158
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 375862558880f004faf722ca68deffad
+      internalID: 1827018442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_159
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e307fb2026e63954c96c1bc32391153d
+      internalID: -1639299590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_160
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4e37b624d800524ca00033520e2644b
+      internalID: 993452572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_161
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e203484e6ed5e6428162f810516b977
+      internalID: 1818607837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_162
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be8a24405ca05404491441621864f80f
+      internalID: -1111733953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_163
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d180948e8d4dc774eb12894f1246c591
+      internalID: 315124182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_164
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f156488c19ca94889d8149ef3aefaa
+      internalID: -1458901361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_165
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dee162c634abf2b45bd777573fcf624c
+      internalID: 282079480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_166
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a6c3081596cbc428597d6de8c81d24
+      internalID: 1304490829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_167
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d55e03d199168e640b0cc375a9c80366
+      internalID: -781841462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_168
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548d80905a96bbf489a4c98a21430bc7
+      internalID: -31831474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_169
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8eaf0cc67e6b94a9973bc9aab47585
+      internalID: 232252955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_170
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f29a5ea9481078640bd6b61364f28fe2
+      internalID: 1540804681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_171
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeef015bc34ef6c41814d536c0328ac2
+      internalID: 1227514571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_172
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6451cb972d9704e40822be1c34490583
+      internalID: -1239437185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_173
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ab3778556b3f2f41b029df3411deaea
+      internalID: 257255323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_174
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aee072f1b2b9f54288967f4673b1928
+      internalID: 627559478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_175
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c904e743c8f73048abea553455f05be
+      internalID: -1766535740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_176
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed8d6eaf40255cc439b2ad0464dea5a6
+      internalID: 299404275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_177
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b75211bfc2fd6b439bbf8e38171ccd3
+      internalID: 392621545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_178
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2765d48f02edfe641ae3c353cb9f93d0
+      internalID: 1612358235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_179
+      rect:
+        serializedVersion: 2
+        x: 3712
+        y: 255
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db667e75320b3eb4e924ce35fa4bf9d3
+      internalID: -363473453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_180
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d150f15f9a1f92c41b63a0d773297e42
+      internalID: -152654438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_181
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebcf6d7f3f50f2740adcb32ae0d86d88
+      internalID: -1773397197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_182
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93b00c9201f7f784593e51e13832a111
+      internalID: -1825098729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_183
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6771a16c4d3eb0d4dabbba215b26cb70
+      internalID: 37150582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_184
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3416ffe601377d747bd6607e099ea285
+      internalID: 925509404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_185
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0879171147d403f4f987976fb18865c2
+      internalID: -1030790364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_186
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97ad149319445f49a07aed836ae86f4
+      internalID: -1692202249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_187
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2d0ba0e76d503e4fb219c21f16e2ed2
+      internalID: 1639808564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_188
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a00fb53a780ff84495f086e2b711771
+      internalID: -839036551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_189
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd9e1eb81ec7c34bb21ccf6945c5b4b
+      internalID: 2048871972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_190
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16518f3d882b82d4cb5566d314697b26
+      internalID: -1337149896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_191
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a80d9d9796d3bf46af77848f0d33992
+      internalID: -1625774782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_192
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b96e4d56970d647b1cbdda57c1491f
+      internalID: 1136236475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_193
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bfaf75089d6cd74a80ee218a7097db9
+      internalID: -1795272753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_194
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d46b473967e014479916686958f7a14
+      internalID: 291523012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_195
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e699b304950f004b8783ea866a89cbd
+      internalID: 614695657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_196
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f6e923434d4dd47ae9bf6a1cef729b
+      internalID: 857442295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_197
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40373041159fc424baae7192e87bc9a7
+      internalID: -1971530228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_198
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95e4749b90de9f546b078010b3f7cd9a
+      internalID: -2033955047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_199
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc009501f2472184c8dc6c519371db77
+      internalID: -34189627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_200
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fbac3bf6a8c51842a96fc9eeafa8e1e
+      internalID: -434139967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_201
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229f38de92eaa6a40be5fda0c4c050ef
+      internalID: -9219497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_202
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a774a188fdd462418d5f80618edaecb
+      internalID: -979397764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_203
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39e70aea57f932748adbc50a929e5e69
+      internalID: 851605155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_204
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9419af6f92e600f40b4b7f74fcbd7838
+      internalID: 1595839459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_205
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b323466f3e78e44c84fc6315f0c0f9d
+      internalID: 906959915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_206
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 031d3adb719667542bc4abee1f50407d
+      internalID: -1812736252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_207
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c3ab36f0098a24e90cb04f656e4f57
+      internalID: 354341057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_208
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac3ea4ab06a73e4ebe313ec4ce0882a
+      internalID: 1033231014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_209
+      rect:
+        serializedVersion: 2
+        x: 3712
+        y: 170
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f1965fe6d8feb49a6272fde9dfb0b9
+      internalID: -1917833007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_210
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56e8e627d46784342ac923187231010a
+      internalID: -739780127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_211
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb0e76252371834da5960341ff53b3d
+      internalID: 1841601184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_212
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ee794c135efcc46bc736ae120a1625
+      internalID: 18194514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_213
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9571d1d0049abb246b260c92cf22f83b
+      internalID: 1761373751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_214
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c99510f0bdf70c428edf73b74a3c6c4
+      internalID: -1349236935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_215
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00ffdab6cc24de1408aa549e8bf8c1b7
+      internalID: 1290584980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_216
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dedb052a294deea41834a19a28399b1e
+      internalID: -1637041084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_217
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21fa6053cbe0f46439290831c9b09c8a
+      internalID: 2096444277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_218
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 175943b3371dc83438d2ef468217b1cb
+      internalID: 260783193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_219
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec00f63b587ea494fa0d43fe9c788889
+      internalID: -1205183023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_220
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba9b90f1264f0be4cbf59334673f737b
+      internalID: 1742543655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_221
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6e45397666a484884cb9449b4d1ba8
+      internalID: -1506055362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_222
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 792cf7ba01ea4bf46ba59ece5db2dc40
+      internalID: 1417238880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_223
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6647f668eeded6d41aa859f46923bba9
+      internalID: -2071030021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_224
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18a6b0551e46d0043ab77e55340eff1f
+      internalID: 1216490256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_225
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308c7dc0d41a80b4fb5fd914574621d6
+      internalID: -1611441588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_226
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a73d658326de6d44f91fdc41a787862f
+      internalID: 348173753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_227
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e582194c6626beb4d9014cf9a18a6d46
+      internalID: 567347203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_228
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ace7c43d1d7f0b47bdd9de0d038ad19
+      internalID: 1815646430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_229
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24f8b96bca0173346a07a6555469e8f0
+      internalID: 1458450109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_230
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 886c78f8e12d9fe4c90a4869b9be2d48
+      internalID: 1528345313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_231
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f0a671de147f44082825716a718c68
+      internalID: -181981403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_232
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32cbfa57fc9127945bf7618cdda216c8
+      internalID: 1888316644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_233
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f83d53db3f8444e9a999886c3c20fb
+      internalID: 1002147762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_234
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d60b2a7f5286294fbd0d6e368ef9a93
+      internalID: -93758001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_235
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a9a0289d77a9f479b2b02c0c6193b6
+      internalID: -1820865307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_236
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5fc18f4f1abb041a8f9ae0b18c4848
+      internalID: 2130441810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_237
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73839192c4ae7974fa44a37e75f91cca
+      internalID: 524500915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_238
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da8e0854afbd525459bdc5834bb07350
+      internalID: 1630740910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_239
+      rect:
+        serializedVersion: 2
+        x: 3712
+        y: 85
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98eeb826c7df4ea42bfbfb8bebe9a43d
+      internalID: 1094309797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_240
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f0656d90e5ccd47b0e4d2b4dba3d25
+      internalID: 790004451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_241
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29cf3779946dea747925553e01942c64
+      internalID: 1998448512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_242
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46f339fd82f1b7f498302e5eca1e45da
+      internalID: -24702227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_243
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c703b22039d2444682a0f873c8ed11e
+      internalID: -1195957915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_244
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca8d1853a7bf394ba557c61c329b290
+      internalID: 600470666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_245
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b2575809036bf04fbddb377a6ed016c
+      internalID: -2124378416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_246
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd231ab5dead3704b8ebd519ca2a5700
+      internalID: -1413677150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_247
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f8f8f6d9028564196ef6fdb26501aa
+      internalID: 819155185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_248
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097d6ab06b893ed488ae237ab82f7210
+      internalID: 1104034917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_249
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 706fc6dee9359404b9bc5e7b8d293562
+      internalID: -1265981174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_250
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b4a6d15071d9aa4bbefd503b6127a34
+      internalID: 770875678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_251
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 0
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 985d462cd0a69e9499319f9332966841
+      internalID: -754026706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_252
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e11ae8e6ddc1ec4f81514677a496cbf
+      internalID: -640067635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_253
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 0
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42530b000f72174a982cff51ddff30d
+      internalID: 812695441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_254
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c56e25e7edb6682468bc5648382b18e2
+      internalID: -71288993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_255
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b64e04e1caf1b48b528822df529715
+      internalID: 1070698932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_256
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f4377a706880d94083544514cb460a5
+      internalID: 1888328587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_257
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 0
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b50d1434051334f80fc5bf086ac54f
+      internalID: -1480749104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_258
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 0
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c3c436738acbc245b85a54959f03536
+      internalID: -1672121243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_259
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 0
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a981d086bfe42e42abb68225c405dcb
+      internalID: 1583554404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_260
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f6d3453a16e82747a0e5f4ac943bc30
+      internalID: -1509534358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_261
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 0
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa6d450404df9fe41aeab0861a8bcf44
+      internalID: -270904305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_262
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 0
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a3e68abf42f7154eac559ddfae48a3f
+      internalID: -825108061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_263
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 0
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c08a6a86e0cec45b8f16b88e5a42a5
+      internalID: -1087508350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_264
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2761b8e7ed2e08a4c9e27fc5e6562a85
+      internalID: -246007338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowerSmoothFrames_265
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 128
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10ddd59d476252b48884d00ff1a04506
+      internalID: 145223766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      FollowerSmoothFrames_0: -1946353289
+      FollowerSmoothFrames_1: 2020053207
+      FollowerSmoothFrames_10: 1988967003
+      FollowerSmoothFrames_100: -1767959663
+      FollowerSmoothFrames_101: -1187790435
+      FollowerSmoothFrames_102: -568498138
+      FollowerSmoothFrames_103: 451965593
+      FollowerSmoothFrames_104: -1053177049
+      FollowerSmoothFrames_105: -1132448109
+      FollowerSmoothFrames_106: 1379795967
+      FollowerSmoothFrames_107: 1099076250
+      FollowerSmoothFrames_108: -231045818
+      FollowerSmoothFrames_109: -2080759215
+      FollowerSmoothFrames_11: -2032369080
+      FollowerSmoothFrames_110: 1310950704
+      FollowerSmoothFrames_111: -568066450
+      FollowerSmoothFrames_112: 1533613004
+      FollowerSmoothFrames_113: -1414133156
+      FollowerSmoothFrames_114: -440316359
+      FollowerSmoothFrames_115: 397363652
+      FollowerSmoothFrames_116: -513898027
+      FollowerSmoothFrames_117: -1369420099
+      FollowerSmoothFrames_118: 2088450798
+      FollowerSmoothFrames_119: 1233094140
+      FollowerSmoothFrames_12: -957138511
+      FollowerSmoothFrames_120: 1320571859
+      FollowerSmoothFrames_121: 73180794
+      FollowerSmoothFrames_122: 1318913601
+      FollowerSmoothFrames_123: -1547823491
+      FollowerSmoothFrames_124: -1464992773
+      FollowerSmoothFrames_125: 1528303307
+      FollowerSmoothFrames_126: 184047482
+      FollowerSmoothFrames_127: -199391465
+      FollowerSmoothFrames_128: -893729309
+      FollowerSmoothFrames_129: -585367883
+      FollowerSmoothFrames_13: -679280558
+      FollowerSmoothFrames_130: -757426933
+      FollowerSmoothFrames_131: -589953837
+      FollowerSmoothFrames_132: -72743652
+      FollowerSmoothFrames_133: 812179383
+      FollowerSmoothFrames_134: 1946288764
+      FollowerSmoothFrames_135: 1735455148
+      FollowerSmoothFrames_136: -321541722
+      FollowerSmoothFrames_137: -939381978
+      FollowerSmoothFrames_138: 1024098998
+      FollowerSmoothFrames_139: 1585570529
+      FollowerSmoothFrames_14: -1575368234
+      FollowerSmoothFrames_140: 355596327
+      FollowerSmoothFrames_141: -559999315
+      FollowerSmoothFrames_142: -1591935006
+      FollowerSmoothFrames_143: 1938198664
+      FollowerSmoothFrames_144: -1903212629
+      FollowerSmoothFrames_145: 1214063721
+      FollowerSmoothFrames_146: 710210287
+      FollowerSmoothFrames_147: -488679388
+      FollowerSmoothFrames_148: 1495346708
+      FollowerSmoothFrames_149: -2104980635
+      FollowerSmoothFrames_15: -1756654912
+      FollowerSmoothFrames_150: -1964019802
+      FollowerSmoothFrames_151: 1009888543
+      FollowerSmoothFrames_152: 1706750471
+      FollowerSmoothFrames_153: 1356718831
+      FollowerSmoothFrames_154: -552094572
+      FollowerSmoothFrames_155: 1888479784
+      FollowerSmoothFrames_156: 1569309480
+      FollowerSmoothFrames_157: 2090076855
+      FollowerSmoothFrames_158: 1827018442
+      FollowerSmoothFrames_159: -1639299590
+      FollowerSmoothFrames_16: 976884808
+      FollowerSmoothFrames_160: 993452572
+      FollowerSmoothFrames_161: 1818607837
+      FollowerSmoothFrames_162: -1111733953
+      FollowerSmoothFrames_163: 315124182
+      FollowerSmoothFrames_164: -1458901361
+      FollowerSmoothFrames_165: 282079480
+      FollowerSmoothFrames_166: 1304490829
+      FollowerSmoothFrames_167: -781841462
+      FollowerSmoothFrames_168: -31831474
+      FollowerSmoothFrames_169: 232252955
+      FollowerSmoothFrames_17: -1796985570
+      FollowerSmoothFrames_170: 1540804681
+      FollowerSmoothFrames_171: 1227514571
+      FollowerSmoothFrames_172: -1239437185
+      FollowerSmoothFrames_173: 257255323
+      FollowerSmoothFrames_174: 627559478
+      FollowerSmoothFrames_175: -1766535740
+      FollowerSmoothFrames_176: 299404275
+      FollowerSmoothFrames_177: 392621545
+      FollowerSmoothFrames_178: 1612358235
+      FollowerSmoothFrames_179: -363473453
+      FollowerSmoothFrames_18: -1832261264
+      FollowerSmoothFrames_180: -152654438
+      FollowerSmoothFrames_181: -1773397197
+      FollowerSmoothFrames_182: -1825098729
+      FollowerSmoothFrames_183: 37150582
+      FollowerSmoothFrames_184: 925509404
+      FollowerSmoothFrames_185: -1030790364
+      FollowerSmoothFrames_186: -1692202249
+      FollowerSmoothFrames_187: 1639808564
+      FollowerSmoothFrames_188: -839036551
+      FollowerSmoothFrames_189: 2048871972
+      FollowerSmoothFrames_19: -1268819250
+      FollowerSmoothFrames_190: -1337149896
+      FollowerSmoothFrames_191: -1625774782
+      FollowerSmoothFrames_192: 1136236475
+      FollowerSmoothFrames_193: -1795272753
+      FollowerSmoothFrames_194: 291523012
+      FollowerSmoothFrames_195: 614695657
+      FollowerSmoothFrames_196: 857442295
+      FollowerSmoothFrames_197: -1971530228
+      FollowerSmoothFrames_198: -2033955047
+      FollowerSmoothFrames_199: -34189627
+      FollowerSmoothFrames_2: 1134929825
+      FollowerSmoothFrames_20: 921274370
+      FollowerSmoothFrames_200: -434139967
+      FollowerSmoothFrames_201: -9219497
+      FollowerSmoothFrames_202: -979397764
+      FollowerSmoothFrames_203: 851605155
+      FollowerSmoothFrames_204: 1595839459
+      FollowerSmoothFrames_205: 906959915
+      FollowerSmoothFrames_206: -1812736252
+      FollowerSmoothFrames_207: 354341057
+      FollowerSmoothFrames_208: 1033231014
+      FollowerSmoothFrames_209: -1917833007
+      FollowerSmoothFrames_21: 104837597
+      FollowerSmoothFrames_210: -739780127
+      FollowerSmoothFrames_211: 1841601184
+      FollowerSmoothFrames_212: 18194514
+      FollowerSmoothFrames_213: 1761373751
+      FollowerSmoothFrames_214: -1349236935
+      FollowerSmoothFrames_215: 1290584980
+      FollowerSmoothFrames_216: -1637041084
+      FollowerSmoothFrames_217: 2096444277
+      FollowerSmoothFrames_218: 260783193
+      FollowerSmoothFrames_219: -1205183023
+      FollowerSmoothFrames_22: 840133924
+      FollowerSmoothFrames_220: 1742543655
+      FollowerSmoothFrames_221: -1506055362
+      FollowerSmoothFrames_222: 1417238880
+      FollowerSmoothFrames_223: -2071030021
+      FollowerSmoothFrames_224: 1216490256
+      FollowerSmoothFrames_225: -1611441588
+      FollowerSmoothFrames_226: 348173753
+      FollowerSmoothFrames_227: 567347203
+      FollowerSmoothFrames_228: 1815646430
+      FollowerSmoothFrames_229: 1458450109
+      FollowerSmoothFrames_23: 803705046
+      FollowerSmoothFrames_230: 1528345313
+      FollowerSmoothFrames_231: -181981403
+      FollowerSmoothFrames_232: 1888316644
+      FollowerSmoothFrames_233: 1002147762
+      FollowerSmoothFrames_234: -93758001
+      FollowerSmoothFrames_235: -1820865307
+      FollowerSmoothFrames_236: 2130441810
+      FollowerSmoothFrames_237: 524500915
+      FollowerSmoothFrames_238: 1630740910
+      FollowerSmoothFrames_239: 1094309797
+      FollowerSmoothFrames_24: 461847992
+      FollowerSmoothFrames_240: 790004451
+      FollowerSmoothFrames_241: 1998448512
+      FollowerSmoothFrames_242: -24702227
+      FollowerSmoothFrames_243: -1195957915
+      FollowerSmoothFrames_244: 600470666
+      FollowerSmoothFrames_245: -2124378416
+      FollowerSmoothFrames_246: -1413677150
+      FollowerSmoothFrames_247: 819155185
+      FollowerSmoothFrames_248: 1104034917
+      FollowerSmoothFrames_249: -1265981174
+      FollowerSmoothFrames_25: 2077375545
+      FollowerSmoothFrames_250: 770875678
+      FollowerSmoothFrames_251: -754026706
+      FollowerSmoothFrames_252: -640067635
+      FollowerSmoothFrames_253: 812695441
+      FollowerSmoothFrames_254: -71288993
+      FollowerSmoothFrames_255: 1070698932
+      FollowerSmoothFrames_256: 1888328587
+      FollowerSmoothFrames_257: -1480749104
+      FollowerSmoothFrames_258: -1672121243
+      FollowerSmoothFrames_259: 1583554404
+      FollowerSmoothFrames_26: 434985470
+      FollowerSmoothFrames_260: -1509534358
+      FollowerSmoothFrames_261: -270904305
+      FollowerSmoothFrames_262: -825108061
+      FollowerSmoothFrames_263: -1087508350
+      FollowerSmoothFrames_264: -246007338
+      FollowerSmoothFrames_265: 145223766
+      FollowerSmoothFrames_266: -831091919
+      FollowerSmoothFrames_267: 2009042834
+      FollowerSmoothFrames_268: -1808828184
+      FollowerSmoothFrames_269: 1362304725
+      FollowerSmoothFrames_27: -383838841
+      FollowerSmoothFrames_28: 1629684448
+      FollowerSmoothFrames_29: 130081897
+      FollowerSmoothFrames_3: -876692728
+      FollowerSmoothFrames_30: 526118406
+      FollowerSmoothFrames_31: -1349940809
+      FollowerSmoothFrames_32: -921608421
+      FollowerSmoothFrames_33: 1265855069
+      FollowerSmoothFrames_34: -735317926
+      FollowerSmoothFrames_35: 1851622718
+      FollowerSmoothFrames_36: -925765366
+      FollowerSmoothFrames_37: 1481483980
+      FollowerSmoothFrames_38: 392350641
+      FollowerSmoothFrames_39: -113512623
+      FollowerSmoothFrames_4: 636589459
+      FollowerSmoothFrames_40: -211163640
+      FollowerSmoothFrames_41: -954398331
+      FollowerSmoothFrames_42: -1093990692
+      FollowerSmoothFrames_43: 324155016
+      FollowerSmoothFrames_44: 1678479908
+      FollowerSmoothFrames_45: -1251940471
+      FollowerSmoothFrames_46: 1156428951
+      FollowerSmoothFrames_47: 600906936
+      FollowerSmoothFrames_48: -181348771
+      FollowerSmoothFrames_49: 666405232
+      FollowerSmoothFrames_5: -1669648873
+      FollowerSmoothFrames_50: -1111816740
+      FollowerSmoothFrames_51: -2057071457
+      FollowerSmoothFrames_52: -750722817
+      FollowerSmoothFrames_53: -775976474
+      FollowerSmoothFrames_54: 136410773
+      FollowerSmoothFrames_55: -1010756547
+      FollowerSmoothFrames_56: 634089791
+      FollowerSmoothFrames_57: -1098385910
+      FollowerSmoothFrames_58: -1750442959
+      FollowerSmoothFrames_59: -2134994742
+      FollowerSmoothFrames_6: 565707473
+      FollowerSmoothFrames_60: 64803329
+      FollowerSmoothFrames_61: 738379257
+      FollowerSmoothFrames_62: -2038522850
+      FollowerSmoothFrames_63: 965396100
+      FollowerSmoothFrames_64: 1257082279
+      FollowerSmoothFrames_65: 1255908850
+      FollowerSmoothFrames_66: 23334409
+      FollowerSmoothFrames_67: 1051702641
+      FollowerSmoothFrames_68: -1039674407
+      FollowerSmoothFrames_69: 2101530784
+      FollowerSmoothFrames_7: -1011991773
+      FollowerSmoothFrames_70: 2082384221
+      FollowerSmoothFrames_71: 1260230794
+      FollowerSmoothFrames_72: -1224650638
+      FollowerSmoothFrames_73: -1747078978
+      FollowerSmoothFrames_74: 817820001
+      FollowerSmoothFrames_75: 1160116219
+      FollowerSmoothFrames_76: 1874749686
+      FollowerSmoothFrames_77: -1699212892
+      FollowerSmoothFrames_78: 105525448
+      FollowerSmoothFrames_79: -794848431
+      FollowerSmoothFrames_8: -1739841152
+      FollowerSmoothFrames_80: -361023205
+      FollowerSmoothFrames_81: -1777315000
+      FollowerSmoothFrames_82: -928826490
+      FollowerSmoothFrames_83: -146774536
+      FollowerSmoothFrames_84: 240058558
+      FollowerSmoothFrames_85: 1386317210
+      FollowerSmoothFrames_86: 30458538
+      FollowerSmoothFrames_87: -2009426231
+      FollowerSmoothFrames_88: -1818816741
+      FollowerSmoothFrames_89: -464811539
+      FollowerSmoothFrames_9: 1738068717
+      FollowerSmoothFrames_90: 1498610506
+      FollowerSmoothFrames_91: 699667575
+      FollowerSmoothFrames_92: -76028272
+      FollowerSmoothFrames_93: 272419363
+      FollowerSmoothFrames_94: 348757428
+      FollowerSmoothFrames_95: -1282113830
+      FollowerSmoothFrames_96: 1884085786
+      FollowerSmoothFrames_97: 1999902274
+      FollowerSmoothFrames_98: 1664769445
+      FollowerSmoothFrames_99: 739149399
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
