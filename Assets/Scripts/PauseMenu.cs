@@ -52,12 +52,13 @@ public class PauseMenu : MonoBehaviour
     public void QuitToMenu()
     {
         Time.timeScale = 1f;
-        
+
+        SaveLoadManager.Instance?.Save();
         if (RoomManager.Instance)
         {
 
             RoomManager.Instance.onFadedOut.AddListener(DestroyUIManager);
-            RoomManager.Instance?.LoadRoom(mainMenuScene);
+            RoomManager.Instance.LoadRoom(mainMenuScene);
         }
     }
     private void DestroyUIManager()

@@ -7,6 +7,7 @@ using UnityEngine;
 /// </summary>
 public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
 {
+    
     private const string RoomKey = "Save_Room";
     private const string PlayerXKey = "Save_Player_X";
     private const string PlayerYKey = "Save_Player_Y";
@@ -27,8 +28,9 @@ public class SaveLoadManager : PersistentSingleton<SaveLoadManager>
             PlayerPrefs.SetFloat(PlayerYKey, pos.y);
             PlayerPrefs.SetFloat(PlayerZKey, pos.z);
         }
-
+        
         PlayerPrefs.Save();
+        Debug.Log("Saved");
     }
 
     /// <summary>

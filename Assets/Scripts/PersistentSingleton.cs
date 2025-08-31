@@ -19,6 +19,7 @@ public abstract class PersistentSingleton<T> : MonoBehaviour where T : MonoBehav
 
     protected virtual void Awake()
     {
+        transform.parent = null;
         if (Instance != null && Instance != this)
         {
             //Debug.Log($"Destroying duplicate instance of {typeof(T).Name} on {gameObject}");
