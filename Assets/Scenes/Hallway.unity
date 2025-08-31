@@ -833,6 +833,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3156556153664759363, guid: 52f430a2e5c98df429ee04aa8442acb2, type: 3}
+      propertyPath: ghostSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156556153664759363, guid: 52f430a2e5c98df429ee04aa8442acb2, type: 3}
+      propertyPath: spawnChance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156556153664759363, guid: 52f430a2e5c98df429ee04aa8442acb2, type: 3}
+      propertyPath: maxExtraDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156556153664759363, guid: 52f430a2e5c98df429ee04aa8442acb2, type: 3}
+      propertyPath: minExtraDistance
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5370767619976660813, guid: 52f430a2e5c98df429ee04aa8442acb2, type: 3}
       propertyPath: m_Name
       value: RandomGhostSpawner

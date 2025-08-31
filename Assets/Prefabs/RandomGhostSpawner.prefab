@@ -48,5 +48,5 @@ MonoBehaviour:
   spawnChance: 1
   minExtraDistance: 10
   maxExtraDistance: 13
-  ghostSpeed: 1
+  ghostSpeed: 3
   ghostWanderStrength: 15
