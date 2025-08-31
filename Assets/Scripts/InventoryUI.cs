@@ -23,12 +23,17 @@ using UnityEngine;
     {
         if (Input.GetKeyDown(toggleKey) && inventoryPanel != null)
         {
-            bool newActive = !inventoryPanel.activeSelf;
-            inventoryPanel.SetActive(newActive);
-            if (newActive)
-            {
-                UIManager.Instance?.RefreshInventory();
-            }
+            showInventory();
+        }
+    }
+
+    public void showInventory()
+    {
+        bool newActive = !inventoryPanel.activeSelf;
+        inventoryPanel.SetActive(newActive);
+        if (newActive)
+        {
+            UIManager.Instance?.RefreshInventory();
         }
     }
 }

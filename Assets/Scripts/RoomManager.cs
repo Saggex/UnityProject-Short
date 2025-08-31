@@ -14,10 +14,12 @@ public class RoomManager : PersistentSingleton<RoomManager>
     [SerializeField] private SoundManager soundManager;
     [Header("Fade Settings")]
     [SerializeField] private SpriteRenderer fadeOverlay;   // full screen black UI Image
-    [SerializeField] private float fadeDuration = 1f;
+    [SerializeField] public float fadeDuration = 1f;
+    private float ogFadeDuration;
 
     protected override void Awake()
     {
+        ogFadeDuration = fadeDuration;
         base.Awake();
         if (Instance != this) return;
 
@@ -32,6 +34,7 @@ public class RoomManager : PersistentSingleton<RoomManager>
             fadeOverlay.color = c;
         }
     }
+
 
     /// <summary>
     /// Loads a room scene with fade out and in.
@@ -50,6 +53,25 @@ public class RoomManager : PersistentSingleton<RoomManager>
         StartCoroutine(FadeTransition(sceneName));
     }
 
+    /// <summary>
+    /// Loads a room scene with fade out and in.
+    /// </summary>
+    public void LoadRoom(string sceneName, float customFadeTime, string spawnPointId = null)
+    {
+        fadeDuration = customFadeTime;
+        if (fadeOverlay == null)
+        {
+            Debug.LogWarning("No fade overlay assigned on RoomManager!");
+            SceneManager.LoadScene(sceneName);
+            return;
+        }
+
+        CurrentRoom = sceneName;
+        pendingSpawnId = spawnPointId;
+        StartCoroutine(FadeTransition(sceneName));
+
+    }
+
     private IEnumerator FadeTransition(string sceneName)
     {
         // Fade out
@@ -61,7 +83,7 @@ public class RoomManager : PersistentSingleton<RoomManager>
 
         // Wait one frame so scene loads before fading in
         yield return null;
-
+        fadeDuration = ogFadeDuration;
         // Fade in
         yield return StartCoroutine(Fade(1f, 0f));
     }
@@ -84,6 +106,7 @@ public class RoomManager : PersistentSingleton<RoomManager>
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        
         if (!string.IsNullOrEmpty(pendingSpawnId))
         {
             var spawn = GameObject.Find(pendingSpawnId);
