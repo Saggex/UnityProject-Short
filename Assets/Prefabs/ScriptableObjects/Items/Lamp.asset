@@ -15,5 +15,5 @@ MonoBehaviour:
   id: 1
   displayName: Lamp
   description: Makes it a bit brighter.
-  sprite: {fileID: -1102455800, guid: 6ceed08971aaccc4aa8a891e8b130520, type: 3}
+  sprite: {fileID: -2032226032, guid: 3617bdd14d2e0454e9c0f71971ec47ab, type: 3}
   sound: {fileID: 8300000, guid: f9cde518f6ae70040a39aa8d5d0dd526, type: 3}

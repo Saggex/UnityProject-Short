@@ -15,5 +15,5 @@ MonoBehaviour:
   id: 11
   displayName: Shovel
   description: Can reach things far away!
-  sprite: {fileID: 1996165948, guid: f153b69a46285eb42a6822d32397b4d5, type: 3}
+  sprite: {fileID: -1924722858, guid: 3617bdd14d2e0454e9c0f71971ec47ab, type: 3}
   sound: {fileID: 8300000, guid: 33a4f016554f11c409a798cae277db37, type: 3}

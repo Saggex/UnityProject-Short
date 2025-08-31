@@ -15,5 +15,5 @@ MonoBehaviour:
   id: 8
   displayName: Insecticide
   description: Kills insects and arachnids.
-  sprite: {fileID: 1308019174, guid: 6ceed08971aaccc4aa8a891e8b130520, type: 3}
+  sprite: {fileID: 2014762922, guid: 3617bdd14d2e0454e9c0f71971ec47ab, type: 3}
   sound: {fileID: 8300000, guid: e86b4dee5b4546a428cbc6251c691b89, type: 3}

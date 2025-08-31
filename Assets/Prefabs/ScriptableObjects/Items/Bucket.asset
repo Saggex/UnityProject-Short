@@ -15,5 +15,5 @@ MonoBehaviour:
   id: 10
   displayName: Bucket
   description: Makes you tall!
-  sprite: {fileID: -391546302, guid: 6ceed08971aaccc4aa8a891e8b130520, type: 3}
+  sprite: {fileID: -405600370, guid: 3617bdd14d2e0454e9c0f71971ec47ab, type: 3}
   sound: {fileID: 8300000, guid: 50bf69092ce695e49a1a26ce226b86be, type: 3}

@@ -15,5 +15,5 @@ MonoBehaviour:
   id: 91
   displayName: Cough Syrup
   description: ...a
-  sprite: {fileID: 0}
+  sprite: {fileID: -25825269, guid: 3617bdd14d2e0454e9c0f71971ec47ab, type: 3}
   sound: {fileID: 0}
