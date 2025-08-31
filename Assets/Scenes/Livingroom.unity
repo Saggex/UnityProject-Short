@@ -517,7 +517,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: f0a800503719fd6478276e06b06a56f1, type: 2}
     - target: {fileID: 7083909586666423228, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
       propertyPath: consumeItem
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7083909586666423228, guid: ffa4aaa4dbb980147a52f5f6d36c32dd, type: 3}
       propertyPath: failedResponses.Array.size
