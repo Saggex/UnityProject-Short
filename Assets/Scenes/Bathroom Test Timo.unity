@@ -889,6 +889,10 @@ MonoBehaviour:
   - Eww...
   - ...
   - Fear.
+  dissolveMaterial: {fileID: 0}
+  renderers: []
+  dissolveDuration: 1
+  dissolveRange: {x: -0.5, y: 1}
 --- !u!114 &824622979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1053,8 +1057,9 @@ EdgeCollider2D:
   m_EdgeRadius: 0
   m_Points:
   - {x: -4.51255, y: -1.9083836}
-  - {x: -4.8577085, y: -2.2218754}
-  - {x: -5.965607, y: -2.4238884}
+  - {x: -4.826648, y: -2.0144372}
+  - {x: -5.5658875, y: -2.0362408}
+  - {x: -5.9634657, y: -2.438775}
   - {x: -6.181861, y: -4.059062}
   - {x: 5.978387, y: -4.052307}
   - {x: 5.947029, y: -2.715733}
@@ -1811,7 +1816,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -6.9635897, y: -0.45234776}
+  m_Offset: {x: -6.895057, y: -0.45234776}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1822,7 +1827,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.53233004, y: 3.7051086}
+  m_Size: {x: 0.6693945, y: 3.7051086}
   m_EdgeRadius: 0
 --- !u!114 &1888939070
 MonoBehaviour:
